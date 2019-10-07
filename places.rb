@@ -11,7 +11,7 @@ geojson = {
   'features' => []
 }
 
-JSON.parse(Net::HTTP.get(URI('https://api.foursquare.com/v2/users/self/venuehistory?oauth_token=${FOURSQUARE_TOKEN}&v=20190819')))['response']['venues']['items'].each do |child|
+JSON.parse(Net::HTTP.get(URI('https://api.foursquare.com/v2/users/self/venuehistory?oauth_token=' + ARGV[0] + '&v=20190819')))['response']['venues']['items'].each do |child|
   geojson['features'] << {
     'type' => 'Feature',
     'geometry' => {
