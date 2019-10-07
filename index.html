@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<div class="container">
+  <h1 class="text-justify m-auto" style="width: 75%; margin-bottom: 76px !important;">28, male, new yorker, furry, coder, gamer, queer. <a href="https://nightwolf1298.com">NightWolf1298</a>'s husband. <a href="https://furpocalypse.org">Furpocalypse</a>'s assistant director of charity.</h1>
+  <div class="grid grid-about" style="margin-bottom: 76px;">
+    <a href="https://facebook.com/kovuthehusky" style="background-color: #4172B8;">
+      <img src="{{ '/node_modules/simple-icons/icons/facebook.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Facebook</span>
+    </a>
+    <a href="https://foursquare.com/kovuthehusky" style="background-color: #F94877;">
+      <img src="{{ '/node_modules/simple-icons/icons/foursquare.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Foursquare</span>
+    </a>
+    <a href="https://furaffinity.net/user/kovuthehusky" style="background-color: #FAAF3A;">
+      <img src="{{ '/node_modules/simple-icons/icons/furaffinity.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>FurAffinity</span>
+    </a>
+    <a href="https://github.com/kovuthehusky" style="background-color: #181717;">
+      <img src="{{ '/node_modules/simple-icons/icons/github.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>GitHub</span>
+    </a>
+    <a href="https://d.kovuthehusky.com/email" onclick="PopupCenter(this.href, 'Email - KovuTheHusky', 396, 578); return false;" style="background-color: #D14836;">
+      <img src="{{ '/node_modules/simple-icons/icons/gmail.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Gmail</span>
+    </a>
+    <a href="https://last.fm/user/kovuthehusky" style="background-color: #D51007;">
+      <img src="{{ '/node_modules/simple-icons/icons/last-dot-fm.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Last.fm</span>
+    </a>
+    <a href="https://paypal.me/kovuthehusky" style="background-color: #00457C;">
+      <img src="{{ '/node_modules/simple-icons/icons/paypal.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>PayPal</span>
+    </a>
+    <a href="https://reddit.com/user/kovuthehusky" style="background-color: #FF4500;">
+      <img src="{{ '/node_modules/simple-icons/icons/reddit.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Reddit</span>
+    </a>
+    <a href="https://steamcommunity.com/id/kovuthehusky" style="background-color: #000;">
+      <img src="{{ '/node_modules/simple-icons/icons/steam.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Steam</span>
+    </a>
+    <a href="swarm://users/1699855" style="background-color: #FFA633;">
+      <img src="{{ '/node_modules/simple-icons/icons/swarm.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Swarm</span>
+    </a>
+    <a href="https://t.me/kovuthehusky" style="background-color: #2CA5E0;">
+      <img src="{{ '/node_modules/simple-icons/icons/telegram.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Telegram</span>
+    </a>
+    <a href="https://twitch.tv/kovuthehusky" style="background-color: #6441A4;">
+      <img src="{{ '/node_modules/simple-icons/icons/twitch.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Twitch</span>
+    </a>
+    <a href="https://twitter.com/kovuthehusky" style="background-color: #1DA1F2;">
+      <img src="{{ '/node_modules/simple-icons/icons/twitter.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>Twitter</span>
+    </a>
+    <a href="https://youtube.com/user/kovuthehusky" style="background-color: #FF0000;">
+      <img src="{{ '/node_modules/simple-icons/icons/youtube.svg' | prepend: site.baseurl }}" style="filter: invert(1);" />
+      <span>YouTube</span>
+    </a>
+  </div>
+</div>
+<script>
+function PopupCenter(url, title, w, h) {
+  var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+  var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+  var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+  var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+  var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+  var top = ((height / 2) - (h / 2)) + dualScreenTop;
+  var newWindow = window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+  if (window.focus) {
+    newWindow.focus();
+  }
+}
+</script>

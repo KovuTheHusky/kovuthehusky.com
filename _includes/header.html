@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" style="height: 100%;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    <title>{% if page.title %}{{ page.title }} - {% endif %}KovuTheHusky</title>
+    <link rel="shortcut icon" href="{{ '/images/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ '/images/favicon.png' | prepend: site.baseurl }}" sizes="any" type="image/png">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | prepend: site.baseurl }}">
+    <script src="{{ '/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/node_modules/chart.js/dist/Chart.js' | prepend: site.baseurl }}"></script>
+    <script>
+      $(document).ready(function() {
+        $.ajaxSetup({ cache: false });
+      });
+    </script>
+  </head>
+  <body style="background-color: #000; height: 100%">
+    <nav class="navbar navbar-dark bg-transparent" style="z-index: 999; pointer-events: none;">
+      <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}" style="pointer-events: auto;">
+        <img src="{{ '/images/avatar.svg' | prepend: site.baseurl }}" alt="{{ site.title }}" class="rounded-circle" width="50" height="50">
+      </a>
+      <div class="dropdown" style="pointer-events: auto;">
+        <button class="navbar-toggler bg-dark" style="outline: none;" type="button" data-toggle="dropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item {% if page.url == '/' %}active{% endif %}" href="{{ '/' | prepend: site.baseurl }}">About</a>
+          <a class="dropdown-item {% if page.url == '/character' %}active{% endif %}" href="{{ '/character' | prepend: site.baseurl }}">Character</a>
+          <a class="dropdown-item {% if page.url == '/places' %}active{% endif %}" href="{{ '/places' | prepend: site.baseurl }}">Places</a>
+          <a class="dropdown-item {% if page.url == '/posts' %}active{% endif %}" href="{{ '/posts' | prepend: site.baseurl }}">Posts</a>
+          <a class="dropdown-item {% if page.url == '/projects' %}active{% endif %}" href="{{ '/projects' | prepend: site.baseurl }}">Projects</a>
+          <a class="dropdown-item {% if page.url == '/status' %}active{% endif %}" href="{{ '/status' | prepend: site.baseurl }}">Status</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Games</h6>
+          <a class="dropdown-item {% if page.url == '/minecraft' %}active{% endif %}" href="{{ '/minecraft' | prepend: site.baseurl }}">Minecraft</a>
+          <a class="dropdown-item {% if page.url == '/terraria' %}active{% endif %}" href="{{ '/terraria' | prepend: site.baseurl }}">Terraria</a>
+          <a class="dropdown-item {% if page.url == '/counterstrike' %}active{% endif %}" href="{{ '/counterstrike' | prepend: site.baseurl }}">Counter-Strike</a>
+          <a class="dropdown-item {% if page.url == '/pokemongo' %}active{% endif %}" href="{{ '/pokemongo' | prepend: site.baseurl }}">Pokémon GO</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Other</h6>
+          <a class="dropdown-item {% if page.url == '/credits' %}active{% endif %}" href="{{ '/credits' | prepend: site.baseurl }}">Credits</a>
+        </div>
+      </div>
+    </nav>
