@@ -1,0 +1,15 @@
+---
+layout: page
+title: Posts
+subtitle: "Thoughts, guides, updates &amp; more."
+permalink: /posts
+---
+<div class="container">
+  <ul class="list-group">
+{% for post in site.posts %}
+    <li class="list-group-item">
+      <a href="{{ post.url | prepend: site.baseurl }}" style="display: block; width: 100%; height: 100%;">{{ post.title }}<span class="float-right">{{ post.date | date: '%A, %d %B %Y' }}</span></a>
+    </li>
+{% endfor %}
+  </ul>
+</div>

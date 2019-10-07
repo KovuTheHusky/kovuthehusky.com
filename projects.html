@@ -1,0 +1,29 @@
+---
+layout: page
+title: Projects
+subtitle: "Applications, extensions, websites &amp; more."
+permalink: /projects
+---
+<div class="container">
+  <div class="card-columns">
+  {% for project in site.data.projects %}
+    <div class="card">
+      {% if project.image %}
+      <img src="{{ project.image | prepend: '/images/' | prepend: site.baseurl }}" class="card-img-top" alt="">
+      {% endif %}
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ project.title }}
+          {% if project.icon %}
+          <img class="float-right" src="{{ project.icon | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ project.title }}" style="width: 24px; height: 24px; vertical-align: top;" />
+          {% endif %}
+        </h5>
+        <p class="card-text">{{ project.description }}</p>
+        {% for button in project.buttons %}
+        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %} {% if button.disabled %}disabled{% endif %}">{{ button.label }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
