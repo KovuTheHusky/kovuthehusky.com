@@ -5,6 +5,10 @@ $primary: #5dde95;
 $tooltip-color: #000;
 $popover-body-color: #000;
 
+html, body {
+  height: 100%;
+}
+
 .btn-primary, .badge-primary {
   color: #fff !important;
 }
