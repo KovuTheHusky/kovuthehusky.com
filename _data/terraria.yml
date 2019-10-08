@@ -1,0 +1,35 @@
+- title: "Survival 2014"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: "Another world created for version 1.2.x shortly after the previous one. It ran for a very short period of time."
+  buttons:
+  - label: "Download"
+    link: "#"
+    primary: true
+  - label: "Map"
+    link: "#"
+
+- title: "Survival 2013"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: "A world created for version 1.2.x and retired after a short period of time. The first world with hard mode enabled."
+  buttons:
+  - label: "Download"
+    link: "#"
+    primary: true
+  - label: "Map"
+    link: "#"
+
+- title: "Survival 2011"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: "The original world created in version 1.0.x and retired sometime afterward. Created around the release of Terraria."
+  buttons:
+  - label: "Download"
+    link: "#"
+    primary: true
+  - label: "Map"
+    link: "#"
