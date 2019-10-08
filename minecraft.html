@@ -1,0 +1,315 @@
+---
+layout: page
+title: Minecraft
+subtitle: "Timeline, connection details, world downloads, maps."
+permalink: /minecraft
+---
+
+<div id="timeline" style="height:296px;">
+</div>
+
+<div class="container">
+
+  <div class="card-columns">
+
+      <div class="card">
+    
+          <div class="card-body">
+            <h5 class="card-title">
+              Survival
+              
+              <span id="status" class="badge badge-danger">Offline</span>
+              
+              
+            </h5>
+            <p class="card-text align-middle">The current world started in version 1.7.2. No world download is available at this time, but a live map is.</p>
+            
+          </div>
+            <ul id="live" class="list-group list-group-flush">
+              
+              <li class="list-group-item d-flex justify-content-between">Version<span id="version">Offline</span></li>
+              
+              <li class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
+
+              <li class="list-group-item d-flex justify-content-between">Tickrate<span id="tickrate">Offline</span></li>
+              <li class="list-group-item" style="border-top: 0; padding-top: 0;">
+                <canvas id="tickrate-chart" height="30"></canvas>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between">Memory<span id="memory">Offline</span></li>
+              <li class="list-group-item" style="border-top: 0; padding-top: 0;">
+                <canvas id="memory-chart" height="30"></canvas>
+              </li>
+              
+            </ul>
+            <div class="card-body">
+            
+            
+            <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-primary ">Connect</a>
+            
+            <a href="#" class="btn btn-link ">Map</a>
+            
+          </div>
+        </div>
+
+
+
+  {% for world in site.data.minecraft %}
+    <div class="card">
+    {% if world.image %}
+      <img src="{{ world.image | prepend: '/images/' | prepend: site.baseurl }}" class="card-img-top" alt="">
+    {% endif %}
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ world.title }}
+          {% if world.badge %}
+          <span id="status" class="badge badge-{{ world.badge.color }}">{{ world.badge.label }}</span>
+          {% endif %}
+          {% if world.icon %}
+          <img class="float-right" src="{{ world.icon | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ world.title }}" style="width: 24px; height: 24px; vertical-align: top;" />
+          {% endif %}
+        </h5>
+        <p class="card-text align-middle">{{ world.description }}</p>
+        {% if world.list %}
+      </div>
+        <ul id="live" class="list-group list-group-flush">
+          {% for item in world.list %}
+          <li class="list-group-item d-flex justify-content-between">{{ item.label }}<span id="{{ item.id }}" {% if item.popover %} data-toggle="popover" data-content="{{ item.popover }}" data-html="true" {% endif %}>{{ item.text }}</span></li>
+          {% endfor %}
+        </ul>
+        <div class="card-body">
+        {% endif %}
+        {% for button in world.buttons %}
+        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %} {% if button.disabled %}disabled{% endif %}">{{ button.label }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Connect</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-3">To connect to the server, log into Minecraft, select Multiplayer from the main menu, click the Add Server button, and enter the web address below.</p>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" style="min-width: 80px;">Server</span>
+            </div>
+            <input type="text" class="form-control" onclick="this.select();" oninput="this.value = 'kovuthehusky.com'; this.select();" value="kovuthehusky.com">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://www.google.com/jsapi?autoload=%7b'modules':%5b%7b'name':'visualization','version':'1','packages':%5b'timeline'%5d%7d%5d%7d"></script>
+<script>
+google.setOnLoadCallback(drawChart);
+var chart;
+var data;
+var options;
+
+function drawChart() {
+  var container = document.getElementById('timeline');
+  chart = new google.visualization.Timeline(container);
+  data = new google.visualization.DataTable();
+  data.addColumn({
+    type: 'string',
+    id: 'Order'
+  });
+  data.addColumn({
+    type: 'string',
+    id: 'Name'
+  });
+  data.addColumn({
+    type: 'date',
+    id: 'Start'
+  });
+  data.addColumn({
+    type: 'date',
+    id: 'End'
+  });
+  data.addRows([
+    ['Online', 'Survival 2011', new Date(2011, 1, 11), new Date(2011, 8, 15)],
+    ['Online', 'Survival 2012', new Date(2011, 8, 15), new Date(2012, 2, 1)],
+    ['Online', 'Creative 2012', new Date(2011, 8, 15), new Date(2012, 2, 1)],
+    ['Online', 'Survival 2013', new Date(2012, 2, 12), new Date(2013, 9, 12)],
+    ['Online', 'Survival 2014', new Date(2013, 11, 3), new Date()],
+    ['Online', 'Forge 2015', new Date(2015, 11, 29), new Date(2016, 5, 17)]
+  ]);
+  options = {
+    backgroundColor: '#000',
+    timeline: {
+      showRowLabels: false,
+      groupByRowLabel: false
+    }
+  };
+  chart.draw(data, options);
+}
+var previousWidth = $('#timeline').width();
+
+function checkOrientation() {
+  if ($('#timeline').width() !== previousWidth) {
+    previousWidth = $('#timeline').width();
+    chart.draw(data, options);
+  }
+}
+window.addEventListener("resize", checkOrientation, false);
+window.addEventListener("orientationchange", checkOrientation, false);
+</script>
+
+<script>
+
+var players = [];
+
+function refresh() {
+  console.log('fetching...');
+  $.getJSON('https://d.kovuthehusky.com/status/minecraft.json', function(data) {
+    console.log('fetched, success!');
+    $('#status').text('Online');
+    $('#status').addClass('badge-success');
+    $('#status').removeClass('badge-danger');
+    $('#version').text(data['Info']['Version']);
+    $('#tickrate').text(data.Tickrate[data.Tickrate.length - 1].toFixed(2));
+    $('#memory').text(data.Memory[data.Memory.length - 1].toFixed(2));
+    $('#players').text(data['Info']['Players'] + ' / ' + data['Info']['MaxPlayers']);
+    var join = $(data.Players).not(players).get();
+    var part = $(players).not(data.Players).get();
+    $.each(join, function(key, value) {
+      console.log(value + ' joined');
+      $('#tickrate').parent().before('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '"><img src="https://kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/' + value + '.png" class="rounded mr-1">' + value + '</li>');
+    });
+    $.each(part, function(key, value) {
+      console.log(value + ' left');
+      $('.player-' + value).remove();
+    });
+    players = data.Players;
+
+    var availabilityOptions = {
+      animation: {
+        duration: 0
+      },
+      elements: {
+        line: {
+          borderWidth: 2
+        },
+        point: {
+          radius: 0,
+          hitRadius: 0
+        }
+      },
+      legend: {
+        display: false
+      },
+      scales: {
+        xAxes: [{
+          display: false
+        }],
+        yAxes: [{
+          display: false,
+          ticks: {
+            min: -10,
+            max: 110,
+            stepSize: 10
+          }
+        }]
+      },
+      tooltips: {
+        enabled: true
+      }
+    };
+
+    var tickrateOptions = {
+      animation: {
+        duration: 0
+      },
+      elements: {
+        line: {
+          borderWidth: 2
+        },
+        point: {
+          radius: 0,
+          hitRadius: 0
+        }
+      },
+      legend: {
+        display: false
+      },
+      scales: {
+        xAxes: [{
+          display: false
+        }],
+        yAxes: [{
+          display: false,
+          ticks: {
+            min: -2,
+            max: 22,
+            stepSize: 2
+          }
+        }]
+      },
+      tooltips: {
+        enabled: true
+      }
+    };
+
+    var labels = [];
+    for (var i = 0; i < data.Memory.length; i++) {
+      labels[i] = i;
+    }
+
+    var charttickrate = new Chart(document.getElementById("tickrate-chart"), {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+            data: data.Tickrate,
+            borderColor: "#ffffff",
+            fill: false
+          }
+        ]
+      },
+      options: tickrateOptions
+    });
+
+    var chartmemory = new Chart(document.getElementById("memory-chart"), {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+            data: data.Memory,
+            borderColor: "#ffffff",
+            fill: false
+          }
+        ]
+      },
+      options: availabilityOptions
+    });
+  }).fail(function() {
+    console.log('fetched, FAILURE!');
+    $('#status').text('Offline');
+    $('#status').addClass('badge-danger');
+    $('#status').removeClass('badge-success');
+    $('#version').text('Offline');
+    $('#players').text('Offline');
+    $('.player-').remove();
+  });
+}
+
+refresh();
+setInterval(refresh, 1000);
+
+</script>

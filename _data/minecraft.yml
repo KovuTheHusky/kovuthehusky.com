@@ -1,0 +1,64 @@
+- title: "Forge 2015"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: "A world using the Biomes O' Plenty mod from version 1.8-1.9.4. No map is available due to compatibility issues."
+  buttons:
+  - label: "Download"
+    link: "#"
+    primary: true
+
+- title: "Survival 2013"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: "The second long lasting world started in version 1.2.3 and retired in version 1.6.4. Included many players."
+  buttons:
+  - label: "Download"
+    link: "#"
+    primary: true
+  - label: "Map"
+    link: "#"
+
+- title: "Creative 2012"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: "An experimental creative mode world used for versions 1.8β-1.1. Only substantial build is by <img src=\"https://kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/NightWolf1298.png\" class=\"rounded\"> NightWolf1298."
+  buttons:
+  - label: "Download"
+    link: "#"
+    primary: true
+  - label: "Map"
+    link: "#"
+
+- title: "Survival 2012"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: >-
+    An interim world used for versions 1.8β-1.1. Only builds are by
+    <img src="https://kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/KovuTheHusky.png" class="rounded">
+    KovuTheHusky,
+    <img src="https://kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/NightWolf1298.png" class="rounded">
+    NightWolf1298, and
+    <img src="https://kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/Cujo27.png" class="rounded">
+    Cujo27.
+  buttons:
+  - label: "Download"
+    link: "#"
+    primary: true
+  - label: "Map"
+    link: "#"
+
+- title: "Survival 2011"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: "The first world created in version 1.2_02β and retired in version 1.7.3β. Players consisted mostly of family."
+  buttons:
+  - label: "Download"
+    link: "#"
+    primary: true
+  - label: "Map"
+    link: "#"
