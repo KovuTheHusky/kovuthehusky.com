@@ -5,10 +5,10 @@
   description: "Another world created for version 1.2.x shortly after the previous one. It ran for a very short period of time."
   buttons:
   - label: "Download"
-    link: "#"
+    link: "https://d.kovuthehusky.com/terraria/survival-2014.zip"
     primary: true
   - label: "Map"
-    link: "#"
+    link: "https://d.kovuthehusky.com/terraria/survival-2014/"
 
 - title: "Survival 2013"
   badge:
@@ -17,10 +17,10 @@
   description: "A world created for version 1.2.x and retired after a short period of time. The first world with hard mode enabled."
   buttons:
   - label: "Download"
-    link: "#"
+    link: "https://d.kovuthehusky.com/terraria/survival-2013.zip"
     primary: true
   - label: "Map"
-    link: "#"
+    link: "https://d.kovuthehusky.com/terraria/survival-2013/"
 
 - title: "Survival 2011"
   badge:
@@ -29,7 +29,7 @@
   description: "The original world created in version 1.0.x and retired sometime afterward. Created around the release of Terraria."
   buttons:
   - label: "Download"
-    link: "#"
+    link: "https://d.kovuthehusky.com/terraria/survival-2011.zip"
     primary: true
   - label: "Map"
-    link: "#"
+    link: "https://d.kovuthehusky.com/terraria/survival-2011/"
