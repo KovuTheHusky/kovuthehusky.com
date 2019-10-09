@@ -9,6 +9,10 @@ html, body {
   height: 100%;
 }
 
+.container {
+  max-width: 1140px !important;
+}
+
 .btn-primary, .badge-primary {
   color: #fff !important;
 }
