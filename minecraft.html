@@ -176,9 +176,7 @@ window.addEventListener("orientationchange", checkOrientation, false);
 var players = [];
 
 function refresh() {
-  console.log('fetching...');
   $.getJSON('https://d.kovuthehusky.com/status/minecraft.json', function(data) {
-    console.log('fetched, success!');
     $('#status').text('Online');
     $('#status').addClass('badge-success');
     $('#status').removeClass('badge-danger');
@@ -299,7 +297,6 @@ function refresh() {
       options: availabilityOptions
     });
   }).fail(function() {
-    console.log('fetched, FAILURE!');
     $('#status').text('Offline');
     $('#status').addClass('badge-danger');
     $('#status').removeClass('badge-success');
