@@ -16,6 +16,7 @@ bundle exec jekyll build
 
 cd _site
 ruby places.rb ${FOURSQUARE_TOKEN}
+ruby pokemongo.rb
 git config user.email "kovuthehusky@gmail.com"
 git config user.name "KovuTheHusky"
 git add --all
