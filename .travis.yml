@@ -5,6 +5,7 @@ branches:
 rvm:
   - 2.6.2
 before_install:
+  - gem update bundler
   - gem update --system
 before_script:
   - chmod +x ./deploy
