@@ -3,9 +3,9 @@
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
     "jquery": "^3.4.1",
-    "mapbox-gl": "^1.5.1",
+    "mapbox-gl": "^1.6.1",
     "pokemon-icons": "https://github.com/TheArtificial/pokemon-icons",
     "popper.js": "^1.16.0",
-    "simple-icons": "^1.20.0"
+    "simple-icons": "^2.0.0"
   }
 }
