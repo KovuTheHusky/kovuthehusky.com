@@ -71,4 +71,8 @@ map.on('mouseleave', 'places', function() {
 });
 $('.dropdown-menu').css({ "maxHeight": $('body').height() - $('nav').height() - 18 + 'px' });
 $('.dropdown-menu').css({ "overflow": "auto" });
+$(window).resize(function(){
+  $('.dropdown-menu').css({ "maxHeight": $('body').height() - $('nav').height() - 18 + 'px' });
+  $('.dropdown-menu').css({ "overflow": "auto" });
+});
 </script>
