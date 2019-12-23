@@ -2879,7 +2879,7 @@
         "number": 416,
         "name": "Vespiquen",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "417-pachirisu.svg": {
         "number": 417,
@@ -3065,13 +3065,13 @@
         "number": 444,
         "name": "Gabite",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "445-garchomp.svg": {
         "number": 445,
         "name": "Garchomp",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "446-munchlax.svg": {
         "number": 446,
