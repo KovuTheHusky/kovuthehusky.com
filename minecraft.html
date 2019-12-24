@@ -63,7 +63,7 @@ permalink: /minecraft
         <h5 class="card-title">
           {{ world.title }}
           {% if world.badge %}
-          <span id="status" class="badge badge-{{ world.badge.color }}">{{ world.badge.label }}</span>
+          <span class="badge badge-{{ world.badge.color }}">{{ world.badge.label }}</span>
           {% endif %}
           {% if world.icon %}
           <img class="float-right" src="{{ world.icon | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ world.title }}" style="width: 24px; height: 24px; vertical-align: top;" />

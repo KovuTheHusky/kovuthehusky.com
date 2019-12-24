@@ -24,7 +24,7 @@ permalink: /terraria
             <li class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
           </ul>
           <div class="card-body">
-            <a href="steam://rungameid/105600//-j kovuthehusky.com" class="btn btn-primary">Connect</a>
+            <a href="steam://rungameid/105600//-j%20kovuthehusky.com" class="btn btn-primary">Connect</a>
             <a href="https://d.kovuthehusky.com/terraria/survival-2015/" class="btn btn-link">Map</a>
           </div>
         </div>
@@ -39,7 +39,7 @@ permalink: /terraria
         <h5 class="card-title">
           {{ world.title }}
           {% if world.badge %}
-          <span id="status" class="badge badge-{{ world.badge.color }}">{{ world.badge.label }}</span>
+          <span class="badge badge-{{ world.badge.color }}">{{ world.badge.label }}</span>
           {% endif %}
           {% if world.icon %}
           <img class="float-right" src="{{ world.icon | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ world.title }}" style="width: 24px; height: 24px; vertical-align: top;" />
