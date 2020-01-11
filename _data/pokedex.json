@@ -943,8 +943,8 @@
         "variant": 0,
         "caught": 1
       },
-      "141-kabuto.svg": {
-        "number": 141,
+      "140-kabuto.svg": {
+        "number": 140,
         "name": "Kabuto",
         "variant": 0,
         "caught": 1
@@ -1793,9 +1793,9 @@
         "variant": 0,
         "caught": 1
       },
-      "254-sceptille.svg": {
+      "254-sceptile.svg": {
         "number": 254,
-        "name": "Sceptille",
+        "name": "Sceptile",
         "variant": 0,
         "caught": 1
       },
@@ -2381,9 +2381,9 @@
         "variant": 0,
         "caught": 1
       },
-      "344-clavdol.svg": {
+      "344-claydol.svg": {
         "number": 344,
-        "name": "Clavdol",
+        "name": "Claydol",
         "variant": 0,
         "caught": 1
       },
@@ -2905,15 +2905,15 @@
         "variant": 0,
         "caught": 1
       },
-      "421-cherim-overcast.svg": {
+      "421-cherrim-overcast.svg": {
         "number": 421,
-        "name": "Cherim",
+        "name": "Cherrim",
         "variant": 0,
         "caught": 1
       },
-      "421-cherim-sunshine.svg": {
+      "421-cherrim-sunshine.svg": {
         "number": 421,
-        "name": "Cherim",
+        "name": "Cherrim",
         "variant": 0,
         "caught": 1
       },
@@ -3723,9 +3723,9 @@
         "variant": 0,
         "caught": 0
       },
-      "548-petili.svg": {
+      "548-petilil.svg": {
         "number": 548,
-        "name": "Petili",
+        "name": "Petilil",
         "variant": 0,
         "caught": 0
       },
@@ -4771,8 +4771,8 @@
         "variant": 0,
         "caught": 0
       },
-      "141-kabuto-shiny.svg": {
-        "number": 141,
+      "140-kabuto-shiny.svg": {
+        "number": 140,
         "name": "Kabuto",
         "variant": 0,
         "caught": 0
@@ -5621,9 +5621,9 @@
         "variant": 0,
         "caught": 1
       },
-      "254-sceptille-shiny.svg": {
+      "254-sceptile-shiny.svg": {
         "number": 254,
-        "name": "Sceptille",
+        "name": "Sceptile",
         "variant": 0,
         "caught": 1
       },
@@ -6209,9 +6209,9 @@
         "variant": 0,
         "caught": 0
       },
-      "344-clavdol-shiny.svg": {
+      "344-claydol-shiny.svg": {
         "number": 344,
-        "name": "Clavdol",
+        "name": "Claydol",
         "variant": 0,
         "caught": 0
       },
@@ -6715,15 +6715,15 @@
         "variant": 0,
         "caught": 0
       },
-      "421-cherim-overcast-shiny.svg": {
+      "421-cherrim-overcast-shiny.svg": {
         "number": 421,
-        "name": "Cherim",
+        "name": "Cherrim",
         "variant": 0,
         "caught": 0
       },
-      "421-cherim-sunshine-shiny.svg": {
+      "421-cherrim-sunshine-shiny.svg": {
         "number": 421,
-        "name": "Cherim",
+        "name": "Cherrim",
         "variant": 0,
         "caught": 0
       },
