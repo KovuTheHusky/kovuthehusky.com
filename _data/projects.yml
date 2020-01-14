@@ -21,10 +21,10 @@
   image: "csgoclarity2.png"
   buttons:
   - label: "Download"
-    link: "https://github.com/KovuTheHusky/CS:GO-Clarity/releases/latest"
+    link: "https://github.com/KovuTheHusky/CSGO-Clarity/releases/latest"
     primary: true
   - label: "Details"
-    link: "https://github.com/KovuTheHusky/CS:GO-Clarity"
+    link: "https://github.com/KovuTheHusky/CSGO-Clarity"
 
 - title: "Dynmap-Structures"
   badge:
