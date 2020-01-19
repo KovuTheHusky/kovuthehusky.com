@@ -3565,7 +3565,7 @@
         "number": 501,
         "name": "Oshawott",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "502-dewott.svg": {
         "number": 502,
@@ -6827,7 +6827,7 @@
         "number": 436,
         "name": "Bronzor",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "437-bronzong-shiny.svg": {
         "number": 437,
