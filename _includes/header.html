@@ -2,7 +2,7 @@
 <html lang="en" style="height: 100%;">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.subtitle %}{{ page.subtitle | strip_html }}{% else %}{{ site.description }}{% endif %}">
     <meta name="theme-color" content="#5dde95">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% if page.title %}{{ page.title }} - {% endif %}KovuTheHusky</title>
