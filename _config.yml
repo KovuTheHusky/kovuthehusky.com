@@ -1,4 +1,5 @@
 title: KovuTheHusky
+description: "A personal website for KovuTheHusky."
 permalink: /post/:year/:month/:day/:title
 baseurl: ""
 url: "https://kovuthehusky.com"
