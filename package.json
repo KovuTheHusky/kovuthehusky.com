@@ -7,6 +7,6 @@
     "mapbox-gl": "^1.7.0",
     "pokemon-icons": "https://github.com/TheArtificial/pokemon-icons",
     "popper.js": "^1.16.1",
-    "simple-icons": "^2.3.0"
+    "simple-icons": "^2.4.0"
   }
 }
