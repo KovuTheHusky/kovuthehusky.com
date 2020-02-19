@@ -5,6 +5,22 @@ $primary: #5dde95;
 $tooltip-color: #000;
 $popover-body-color: #000;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #343a40;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
 html, body {
   height: 100%;
 }
