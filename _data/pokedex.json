@@ -541,6 +541,12 @@
         "variant": 0,
         "caught": 1
       },
+      "076-golem-alola.svg": {
+        "number": 76,
+        "name": "Golem",
+        "variant": 1,
+        "caught": 0
+      },
       "077-ponyta.svg": {
         "number": 77,
         "name": "Ponyta",
@@ -762,6 +768,12 @@
         "name": "Koffing",
         "variant": 0,
         "caught": 1
+      },
+      "110-weezing-galar.svg": {
+        "number": 110,
+        "name": "Weezing",
+        "variant": 0,
+        "caught": 0
       },
       "110-weezing.svg": {
         "number": 110,
@@ -3903,6 +3915,12 @@
         "variant": 0,
         "caught": 0
       },
+      "555-darmanitan-zen.svg": {
+        "number": 555,
+        "name": "Darmanitan",
+        "variant": 0,
+        "caught": 0
+      },
       "555-darmanitan.svg": {
         "number": 555,
         "name": "Darmanitan",
@@ -4039,7 +4057,7 @@
         "number": 577,
         "name": "Solosis",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "578-duosion.svg": {
         "number": 578,
@@ -5113,6 +5131,12 @@
         "variant": 0,
         "caught": 0
       },
+      "076-golem-alola-shiny.svg": {
+        "number": 76,
+        "name": "Golem",
+        "variant": 1,
+        "caught": 0
+      },
       "077-ponyta-shiny.svg": {
         "number": 77,
         "name": "Ponyta",
@@ -5332,6 +5356,12 @@
       "109-koffing-shiny.svg": {
         "number": 109,
         "name": "Koffing",
+        "variant": 0,
+        "caught": 0
+      },
+      "110-weezing-galar-shinyv.svg": {
+        "number": 110,
+        "name": "Weezing",
         "variant": 0,
         "caught": 0
       },
@@ -8145,6 +8175,12 @@
         "variant": 0,
         "caught": 0
       },
+      "555-darmanitan-zen-shiny.svg": {
+        "number": 555,
+        "name": "Darmanitan",
+        "variant": 0,
+        "caught": 0
+      },
       "556-maractus-shiny.svg": {
         "number": 556,
         "name": "Maractus",
@@ -8598,6 +8634,12 @@
       "635-hydreigon-shiny.svg": {
         "number": 635,
         "name": "Hydreigon",
+        "variant": 0,
+        "caught": 0
+      },
+      "636-larvesta-shiny.svg": {
+        "number": 636,
+        "name": "Larvesta",
         "variant": 0,
         "caught": 0
       },
