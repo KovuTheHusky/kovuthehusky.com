@@ -3191,7 +3191,7 @@
         "number": 463,
         "name": "Lickilicky",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "464-rhyperior.svg": {
         "number": 464,
@@ -3529,7 +3529,7 @@
         "number": 495,
         "name": "Snivy",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "496-servine.svg": {
         "number": 496,
@@ -3739,7 +3739,7 @@
         "number": 529,
         "name": "Drilbur",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "530-excadrill.svg": {
         "number": 530,
@@ -3757,7 +3757,7 @@
         "number": 532,
         "name": "Timburr",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "533-gurdurr.svg": {
         "number": 533,
@@ -3775,7 +3775,7 @@
         "number": 535,
         "name": "Tympole",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "536-palpitoad.svg": {
         "number": 536,
@@ -3823,7 +3823,7 @@
         "number": 543,
         "name": "Venipede",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "544-whirlipede.svg": {
         "number": 544,
@@ -3919,7 +3919,7 @@
         "number": 557,
         "name": "Dwebble",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "558-crustle.svg": {
         "number": 558,
@@ -3985,7 +3985,7 @@
         "number": 568,
         "name": "Trubbish",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "569-garbodor.svg": {
         "number": 569,
@@ -4009,7 +4009,7 @@
         "number": 572,
         "name": "Minccino",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "573-cinccino.svg": {
         "number": 573,
@@ -4021,7 +4021,7 @@
         "number": 574,
         "name": "Gothita",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "575-gothorita.svg": {
         "number": 575,
@@ -4303,7 +4303,7 @@
         "number": 613,
         "name": "Cubchoo",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "614-beartic.svg": {
         "number": 614,
@@ -4321,7 +4321,7 @@
         "number": 616,
         "name": "Shelmet",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "617-accelgor.svg": {
         "number": 617,
@@ -4411,7 +4411,7 @@
         "number": 631,
         "name": "Heatmor",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "632-durant.svg": {
         "number": 632,
@@ -4453,7 +4453,7 @@
         "number": 638,
         "name": "Cobalion",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "639-terrakion.svg": {
         "number": 639,
@@ -4465,7 +4465,7 @@
         "number": 640,
         "name": "Virizion",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "641-tornadus-therian.svg": {
         "number": 641,
@@ -4477,7 +4477,7 @@
         "number": 641,
         "name": "Tornadus",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "642-thundurus-therian.svg": {
         "number": 642,
