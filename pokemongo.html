@@ -19,16 +19,16 @@ xp: 13814429
     <div class="dropdown" style="display: inline-block !important;">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="filter-caught" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> all </button>
       <div class="dropdown-menu" aria-labelledby="filter-caught">
-        <a class="dropdown-item" href="#" onclick="$('.have').show(); $('.need').show(); $('#filter-caught').html(' all '); return false;">all</a>
-        <a class="dropdown-item" href="#" onclick="$('.have').show(); $('.need').hide(); $('#filter-caught').html(' caught '); return false;">caught</a>
-        <a class="dropdown-item" href="#" onclick="$('.have').hide(); $('.need').show(); $('#filter-caught').html(' non-caught '); return false;">non-caught</a>
+        <a class="dropdown-item" href="#" onclick="filter_caught('all'); return false;">all</a>
+        <a class="dropdown-item" href="#" onclick="filter_caught('caught'); return false;">caught</a>
+        <a class="dropdown-item" href="#" onclick="filter_caught('non-caught'); return false;">non-caught</a>
       </div>
     </div>
     <div class="dropdown" style="display: inline-block !important;">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="filter-type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> normal </button>
       <div class="dropdown-menu" aria-labelledby="filter-type">
-        <a class="dropdown-item" href="#" onclick="$('.pokemon-normal').show(); $('.pokemon-shiny').hide(); $('#filter-type').html(' normal '); return false;">normal</a>
-        <a class="dropdown-item" href="#" onclick="$('.pokemon-normal').hide(); $('.pokemon-shiny').show(); $('#filter-type').html(' shiny '); return false;">shiny</a>
+        <a class="dropdown-item" href="#" onclick="filter_type('normal'); return false;">normal</a>
+        <a class="dropdown-item" href="#" onclick="filter_type('shiny'); return false;">shiny</a>
       </div>
     </div>
     <label style="height: 38px; line-height: 38px; vertical-align: middle; margin: 0;"> pokémon.</label>
@@ -49,3 +49,44 @@ xp: 13814429
 </div>
 {% endfor %}
 </div>
+<script>
+  //window.addEventListener('hashchange', fn, false);
+
+  window.onload = fn;
+
+  function fn() {
+    var args = window.location.hash.replace('#', '').split(',');
+    filter_caught(args[0]);
+    filter_type(args[1]);
+  }
+
+  function filter_caught(str) {
+    if (str == 'caught') {
+      $('#filter-caught').html(' caught ');
+      $('.have').show();
+      $('.need').hide();
+    } else if (str == 'non-caught') {
+      $('#filter-caught').html(' non-caught ');
+      $('.have').hide();
+      $('.need').show();
+    } else {
+      $('#filter-caught').html(' all ');
+      $('.have').show();
+      $('.need').show();
+    }
+    window.location.hash = $('#filter-caught').html().trim() + ',' + $('#filter-type').html().trim();
+  }
+
+  function filter_type(str) {
+    if (str == 'shiny') {
+      $('#filter-type').html(' shiny ');
+      $('.pokemon-normal').hide();
+      $('.pokemon-shiny').show();
+    } else {
+      $('#filter-type').html(' normal ');
+      $('.pokemon-normal').show();
+      $('.pokemon-shiny').hide();
+    }
+    window.location.hash = $('#filter-caught').html().trim() + ',' + $('#filter-type').html().trim();
+  }
+</script>
