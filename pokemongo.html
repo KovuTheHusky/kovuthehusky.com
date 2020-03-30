@@ -55,7 +55,7 @@ xp: 13814429
   window.onload = fn;
 
   function fn() {
-    var args = window.location.hash.replace('#', '').split(',');
+    var args = window.location.hash.replace('#', '').split('/');
     filter_caught(args[0]);
     filter_type(args[1]);
   }
@@ -74,7 +74,7 @@ xp: 13814429
       $('.have').show();
       $('.need').show();
     }
-    window.location.hash = $('#filter-caught').html().trim() + ',' + $('#filter-type').html().trim();
+    window.location.hash = $('#filter-caught').html().trim() + '/' + $('#filter-type').html().trim();
   }
 
   function filter_type(str) {
@@ -87,6 +87,6 @@ xp: 13814429
       $('.pokemon-normal').show();
       $('.pokemon-shiny').hide();
     }
-    window.location.hash = $('#filter-caught').html().trim() + ',' + $('#filter-type').html().trim();
+    window.location.hash = $('#filter-caught').html().trim() + '/' + $('#filter-type').html().trim();
   }
 </script>
