@@ -67,6 +67,10 @@ Dir.foreach(source) do |entry|
       variant = 1
       friendlyName.slice! '-alola'
     end
+    if (friendlyName.include? '-galar')
+      variant = 1
+      friendlyName.slice! '-galar'
+    end
     if (friendlyName.include? 'unown-')
       friendlyName.gsub!('-', ' ')
       if (friendlyName == 'unown exclamation')

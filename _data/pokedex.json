@@ -769,17 +769,17 @@
         "variant": 0,
         "caught": 1
       },
-      "110-weezing-galar.svg": {
-        "number": 110,
-        "name": "Weezing",
-        "variant": 0,
-        "caught": 0
-      },
       "110-weezing.svg": {
         "number": 110,
         "name": "Weezing",
         "variant": 0,
         "caught": 1
+      },
+      "110-weezing-galar.svg": {
+        "number": 110,
+        "name": "Weezing",
+        "variant": 1,
+        "caught": 0
       },
       "111-rhyhorn.svg": {
         "number": 111,
@@ -5359,16 +5359,16 @@
         "variant": 0,
         "caught": 0
       },
-      "110-weezing-galar-shinyv.svg": {
+      "110-weezing-shiny.svg": {
         "number": 110,
         "name": "Weezing",
         "variant": 0,
         "caught": 0
       },
-      "110-weezing-shiny.svg": {
+      "110-weezing-galar-shinyv.svg": {
         "number": 110,
-        "name": "Weezing",
-        "variant": 0,
+        "name": "Weezingv",
+        "variant": 1,
         "caught": 0
       },
       "111-rhyhorn-shiny.svg": {
