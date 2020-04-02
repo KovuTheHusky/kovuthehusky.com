@@ -18,7 +18,7 @@ permalink: /counterstrike
         <ul id="list-practice" class="list-group list-group-flush">
           <li class="list-group-item d-flex justify-content-between">Version<span id="version-practice">Offline</span></li>
           <li class="list-group-item d-flex justify-content-between">Map<span id="map-practice">Offline</span></li>
-          <li class="list-group-item d-flex justify-content-between">Players<span id="players-practice">Offline</span></li>
+          <li id="playercount-practice" class="list-group-item d-flex justify-content-between">Players<span id="players-practice">Offline</span></li>
         </ul>
         <div class="card-body">
         <a href="steam://connect/kovuthehusky.com:27015/derp" class="btn btn-primary">Connect</a>
@@ -35,7 +35,7 @@ permalink: /counterstrike
         <ul id="list-retake" class="list-group list-group-flush">
           <li class="list-group-item d-flex justify-content-between">Version<span id="version-retake">Offline</span></li>
           <li class="list-group-item d-flex justify-content-between">Map<span id="map-retake">Offline</span></li>
-          <li class="list-group-item d-flex justify-content-between">Players<span id="players-retake">Offline</span></li>
+          <li id="playercount-retake" class="list-group-item d-flex justify-content-between">Players<span id="players-retake">Offline</span></li>
         </ul>
         <div class="card-body">
         <a href="steam://connect/kovuthehusky.com:27025/derp" class="btn btn-primary">Connect</a>
@@ -73,6 +73,11 @@ permalink: /counterstrike
       $.each(part, function(key, value) {
         $('.player-' + value).remove();
       });
+      if (data['Info']['Players'] > 0) {
+        $('#playercount-practice').css('border-bottom', 'none');
+      } else {
+        $('#playercount-practice').css('border-bottom', '1px solid rgba(0,0,0,.125)');
+      }
       players = playernames;
     }).fail(function() {
       $('#status-practice').text('Offline');
@@ -116,6 +121,11 @@ permalink: /counterstrike
       $.each(part, function(key, value) {
         $('.player-' + value).remove();
       });
+      if (data['Info']['Players'] > 0) {
+        $('#playercount-retake').css('border-bottom', 'none');
+      } else {
+        $('#playercount-retake').css('border-bottom', '1px solid rgba(0,0,0,.125)');
+      }
       players2 = playernames;
     }).fail(function() {
       $('#status-retake').text('Offline');

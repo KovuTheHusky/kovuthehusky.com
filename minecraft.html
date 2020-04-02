@@ -29,7 +29,7 @@ permalink: /minecraft
               
               <li class="list-group-item d-flex justify-content-between">Version<span id="version">Offline</span></li>
               
-              <li class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
+              <li id="playercount" class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
 
               <li class="list-group-item d-flex justify-content-between" style="border-bottom: 0;">Tickrate<span id="tickrate">Offline</span></li>
               <li class="list-group-item" style="border-top: 0; padding-top: 0;">
@@ -192,6 +192,11 @@ function refresh() {
     $.each(part, function(key, value) {
       $('.player-' + value).remove();
     });
+    if (data['Info']['Players'] > 0) {
+      $('#playercount').css('border-bottom', 'none');
+    } else {
+      $('#playercount').css('border-bottom', '1px solid rgba(0,0,0,.125)');
+    }
     players = data.Players;
 
     var availabilityOptions = {

@@ -21,7 +21,7 @@ permalink: /terraria
           </div>
           <ul id="live" class="list-group list-group-flush">
             <li class="list-group-item d-flex justify-content-between">Version<span id="version">Offline</span></li>
-            <li class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
+            <li id="playercount" class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
           </ul>
           <div class="card-body">
             <a href="steam://rungameid/105600//-j%20kovuthehusky.com" class="btn btn-primary">Connect</a>
@@ -143,6 +143,11 @@ window.addEventListener("orientationchange", checkOrientation, false);
       $.each(part, function(key, value) {
         $('.player-' + value).remove();
       });
+      if (data['playercount'] > 0) {
+        $('#playercount').css('border-bottom', 'none');
+      } else {
+        $('#playercount').css('border-bottom', '1px solid rgba(0,0,0,.125)');
+      }
       players = playernames;
     }).fail(function() {
       $('#status').text('Offline');
