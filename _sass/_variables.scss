@@ -48,7 +48,7 @@ html, body {
   border-color: #808080 !important;
 }
 
-.list-group-item:first-child {
+.list-group-flush .list-group-item:first-child {
     border-top-width: 1 !important;
 }
 
