@@ -68,11 +68,9 @@ permalink: /counterstrike
       var join = $(playernames).not(players).get();
       var part = $(players).not(playernames).get();
       $.each(join, function(key, value) {
-        console.log(value + ' joined');
         $('#list-practice').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '">' + value + '</li>');
       });
       $.each(part, function(key, value) {
-        console.log(value + ' left');
         $('.player-' + value).remove();
       });
       players = playernames;
@@ -113,11 +111,9 @@ permalink: /counterstrike
       var join = $(playernames).not(players2).get();
       var part = $(players2).not(playernames).get();
       $.each(join, function(key, value) {
-        console.log(value + ' joined');
         $('#list-retake').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '">' + value + '</li>');
       });
       $.each(part, function(key, value) {
-        console.log(value + ' left');
         $('.player-' + value).remove();
       });
       players2 = playernames;

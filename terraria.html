@@ -138,11 +138,9 @@ window.addEventListener("orientationchange", checkOrientation, false);
       var join = $(playernames).not(players).get();
       var part = $(players).not(playernames).get();
       $.each(join, function(key, value) {
-        console.log(value + ' joined');
         $('#live').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '">' + value + '</li>');
       });
       $.each(part, function(key, value) {
-        console.log(value + ' left');
         $('.player-' + value).remove();
       });
       players = playernames;

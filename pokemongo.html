@@ -55,7 +55,6 @@ xp: 13969559
   window.onload = fn;
 
   function fn() {
-    console.log(window.location.hash);
     var args = window.location.hash.replace('#', '').split('/');
     if (args.length < 2) {
       window.location.hash = 'all/normal';
