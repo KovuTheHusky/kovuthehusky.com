@@ -48,8 +48,8 @@ html, body {
   border-color: #808080 !important;
 }
 
-.list-group-flush .list-group-item:first-child {
-    border-top-width: 1 !important;
+.list-group-flush {
+    border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
 .player {
