@@ -3125,7 +3125,7 @@
         "number": 450,
         "name": "Hippowdon",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "451-skorupi.svg": {
         "number": 451,
@@ -3613,7 +3613,7 @@
         "number": 507,
         "name": "Herdier",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "508-stoutland.svg": {
         "number": 508,
@@ -3691,7 +3691,7 @@
         "number": 520,
         "name": "Tranquill",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "521-unfezant-female.svg": {
         "number": 521,
@@ -3703,7 +3703,7 @@
         "number": 521,
         "name": "Unfezant",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "522-blitzle.svg": {
         "number": 522,
@@ -3841,7 +3841,7 @@
         "number": 544,
         "name": "Whirlipede",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "545-scolipede.svg": {
         "number": 545,
@@ -4045,13 +4045,13 @@
         "number": 575,
         "name": "Gothorita",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "576-gothitelle.svg": {
         "number": 576,
         "name": "Gothitelle",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "577-solosis.svg": {
         "number": 577,
@@ -4177,7 +4177,7 @@
         "number": 591,
         "name": "Amoonguss",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "592-frillish-f.svg": {
         "number": 592,
