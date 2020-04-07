@@ -12,11 +12,11 @@ mkdir _site
 git clone https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git --branch gh-pages _site
 
 yarn
+ruby pokemongo.rb
 bundle exec jekyll build
 
 cd _site
 ruby places.rb ${FOURSQUARE_TOKEN}
-ruby pokemongo.rb
 git config user.email "kovuthehusky@gmail.com"
 git config user.name "KovuTheHusky"
 git add --all
