@@ -517,12 +517,6 @@
         "variant": 1,
         "caught": 1
       },
-      "075-golem-alola.svg": {
-        "number": 75,
-        "name": "Golem",
-        "variant": 1,
-        "caught": 1
-      },
       "075-graveler.svg": {
         "number": 75,
         "name": "Graveler",
@@ -5107,12 +5101,6 @@
         "variant": 1,
         "caught": 1
       },
-      "075-golem-alola-shiny.svg": {
-        "number": 75,
-        "name": "Golem",
-        "variant": 1,
-        "caught": 0
-      },
       "075-graveler-shiny.svg": {
         "number": 75,
         "name": "Graveler",
@@ -5365,9 +5353,9 @@
         "variant": 0,
         "caught": 0
       },
-      "110-weezing-galar-shinyv.svg": {
+      "110-weezing-galar-shiny.svg": {
         "number": 110,
-        "name": "Weezingv",
+        "name": "Weezing",
         "variant": 1,
         "caught": 0
       },
@@ -5614,12 +5602,6 @@
       "151-mew-shiny.svg": {
         "number": 151,
         "name": "Mew",
-        "variant": 0,
-        "caught": 0
-      },
-      "-636-larvesta-shiny.svg": {
-        "number": -63,
-        "name": "",
         "variant": 0,
         "caught": 0
       }
