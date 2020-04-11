@@ -12,7 +12,6 @@ mkdir _site
 git clone https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git --branch gh-pages _site
 
 yarn
-ruby pokemongo.rb
 bundle exec jekyll build
 
 cd _site
