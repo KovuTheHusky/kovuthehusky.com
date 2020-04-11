@@ -8,7 +8,12 @@ permalink: /projects
   <div class="card-columns">
   {% for project in site.data.projects %}
     <div class="card">
-      {% if project.image %}
+      {% if project.video %}
+      <video class="card-img-top" autoplay loop muted>
+        <source src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.mp4" type="video/mp4">
+        <source src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.webm" type="video/webm">
+      </video>
+      {% elsif project.image %}
       <img src="{{ project.image | prepend: '/images/' | prepend: site.baseurl }}" class="card-img-top" alt="">
       {% endif %}
       <div class="card-body">
