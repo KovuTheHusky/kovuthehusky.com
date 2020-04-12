@@ -9,7 +9,7 @@ permalink: /projects
   {% for project in site.data.projects %}
     <div class="card">
       {% if project.video %}
-      <video class="card-img-top" autoplay loop muted>
+      <video class="card-img-top" autoplay loop muted playsinline>
         <source src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.mp4" type="video/mp4">
         <source src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.webm" type="video/webm">
         <img src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.gif" alt="" />
