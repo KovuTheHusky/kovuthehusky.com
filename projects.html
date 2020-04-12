@@ -12,6 +12,7 @@ permalink: /projects
       <video class="card-img-top" autoplay loop muted>
         <source src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.mp4" type="video/mp4">
         <source src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.webm" type="video/webm">
+        <img src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.gif" alt="" />
       </video>
       {% elsif project.image %}
       <img src="{{ project.image | prepend: '/images/' | prepend: site.baseurl }}" class="card-img-top" alt="">
