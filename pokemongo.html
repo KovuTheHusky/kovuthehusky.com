@@ -40,7 +40,7 @@ xp: 14143039
 <div class="grid grid-pokemon">
 {% for pokemon in region[1] %}
 <div class="{% if pokemon[1].caught == 0 %}need{% else %}have{% endif %}">
-  <img src="{{ site.baseurl }}/node_modules/pokemon-icons/_icons/SVG/{{ pokemon[0] }}" alt="" />
+  <img src="/node_modules/pokemon-icons/_icons/SVG/{{ pokemon[0] }}" alt="" />
   <span>{{ pokemon[1].name }}<br />#{{ pokemon[1].number }}</span>
 </div>
 {% endfor %}

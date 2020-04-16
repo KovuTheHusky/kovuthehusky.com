@@ -10,12 +10,12 @@ permalink: /projects
     <div class="card">
       {% if project.video %}
       <video class="card-img-top" autoplay loop muted playsinline>
-        <source src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.mp4" type="video/mp4">
-        <source src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.webm" type="video/webm">
-        <img src="{{ project.video | prepend: '/videos/' | prepend: site.baseurl }}.gif" alt="" />
+        <source src="/videos/{{ project.video }}.mp4" type="video/mp4">
+        <source src="/videos/{{ project.video }}.webm" type="video/webm">
+        <img src="/videos/{{ project.video }}.gif" alt="" />
       </video>
       {% elsif project.image %}
-      <img src="{{ project.image | prepend: '/images/' | prepend: site.baseurl }}" class="card-img-top" alt="">
+      <img src="/images/{{ project.image }}" class="card-img-top" alt="">
       {% endif %}
       <div class="card-body">
         <h5 class="card-title">
@@ -24,7 +24,7 @@ permalink: /projects
           <span class="badge" style="background-color: #{{ project.badge.color }};">{{ project.badge.label }}</span>
           {% endif %}
           {% if project.icon %}
-          <img class="float-right" src="{{ project.icon | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ project.title }}" style="width: 24px; height: 24px; vertical-align: top;" />
+          <img class="float-right" src="/images/{{ project.icon }}" alt="{{ project.title }}" style="width: 24px; height: 24px; vertical-align: top;" />
           {% endif %}
         </h5>
         <p class="card-text">{{ project.description }}</p>

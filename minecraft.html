@@ -57,7 +57,7 @@ permalink: /minecraft
   {% for world in site.data.minecraft %}
     <div class="card">
     {% if world.image %}
-      <img src="{{ world.image | prepend: '/images/' | prepend: site.baseurl }}" class="card-img-top" alt="">
+      <img src="/images/{{ world.image }}" class="card-img-top" alt="">
     {% endif %}
       <div class="card-body">
         <h5 class="card-title">
@@ -66,7 +66,7 @@ permalink: /minecraft
           <span class="badge badge-{{ world.badge.color }}">{{ world.badge.label }}</span>
           {% endif %}
           {% if world.icon %}
-          <img class="float-right" src="{{ world.icon | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ world.title }}" style="width: 24px; height: 24px; vertical-align: top;" />
+          <img class="float-right" src="/images/{{ world.icon }}" alt="{{ world.title }}" style="width: 24px; height: 24px; vertical-align: top;" />
           {% endif %}
         </h5>
         <p class="card-text align-middle">{{ world.description }}</p>
