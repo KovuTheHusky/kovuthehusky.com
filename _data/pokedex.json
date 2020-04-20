@@ -2655,7 +2655,7 @@
         "number": 385,
         "name": "Jirachi",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "386-deoxys-attack.svg": {
         "number": 386,
@@ -3961,7 +3961,7 @@
         "number": 562,
         "name": "Yamask",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "563-cofagrigus.svg": {
         "number": 563,
@@ -4219,7 +4219,7 @@
         "number": 597,
         "name": "Ferroseed",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "598-ferrothorn.svg": {
         "number": 598,
