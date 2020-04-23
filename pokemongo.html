@@ -33,21 +33,38 @@ xp: 14300000
     </div>
     <label style="height: 38px; line-height: 38px; vertical-align: middle; margin: 0;"> pokémon.</label>
   </div>
-{% for type in site.data.pokedex %}
-<div class="pokemon pokemon-{{ type[0] }}">
-{% for region in type[1] %}
-<h3>{{ region[0] | capitalize }}</h3>
-<div class="grid grid-pokemon">
-{% for pokemon in region[1] %}
-<div class="{% if pokemon[1].caught == 0 %}need{% else %}have{% endif %}">
-  <img src="/node_modules/pokemon-icons/_icons/SVG/{{ pokemon[0] }}" alt="" />
-  <span>{{ pokemon[1].name }}<br />#{{ pokemon[1].number }}</span>
-</div>
-{% endfor %}
-</div>
-{% endfor %}
-</div>
-{% endfor %}
+  {% for type in site.data.pokedex %}
+  <div class="pokemon pokemon-{{ type[0] }}">
+    {% for region in type[1] %}
+    <h3>{{ region[0] | capitalize }}</h3>
+    <div class="grid grid-pokemon">
+      {% for pokemon in region[1] %}
+      <div class="{% if pokemon[1].caught == 0 %}need{% else %}have{% endif %}">
+        <img src="/node_modules/pokemon-icons/_icons/SVG/{{ pokemon[0] }}" alt="" />
+        <span>{{ pokemon[1].name }}<br />#{{ pokemon[1].number }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  <div class="pokemon pokemon-medals" style="margin-top: 76px;">
+    <h3>Medals</h3>
+    <div class="grid grid-pokemon">
+      {% for medals in site.data.medals %}
+      {% for medal in medals[1] %}
+      <div>
+        {% if medal[1].rank %}
+        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[1].rank }}/{{ medal[0] }}" alt="" />
+        {% else %}
+        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[0] }}" alt="" />
+        {% endif %}
+        <span>{{ medal[1].title }}<br /></span>
+      </div>
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
 <script>
   window.addEventListener('hashchange', fn, false);

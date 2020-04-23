@@ -219,6 +219,9 @@ a.disabled {
   display: block;
   font-size: 60%;
   line-height: 1;
+  white-space: nowrap;
+  margin-left: -100%;
+  margin-right: -100%;
 }
 
 .colors button {

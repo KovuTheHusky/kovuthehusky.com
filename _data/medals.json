@@ -1,0 +1,220 @@
+{
+  "special": {
+    "pokemon-go-fest-2017.png": {
+      "title": "GO Fest 2017",
+      "subtitle": "Chicago, July 22, 2017"
+    },
+    "pokemon-go-fest-2018.png": {
+      "title": "GO Fest 2018",
+      "subtitle": "Chicago, July 14, 2018 - South"
+    },
+    "generic.png": {
+      "title": "A Drive to Investigate",
+      "subtitle": "March 20, 2020 - March 26, 2020"
+    }
+  },
+  "standard": {
+    "jogger.png": {
+      "title": "Jogger",
+      "rank": "gold"
+    },
+    "kanto.png": {
+      "title": "Kanto",
+      "rank": "gold"
+    },
+    "collector.png": {
+      "title": "Collector",
+      "rank": "gold"
+    },
+    "scientist.png": {
+      "title": "Scientist",
+      "rank": "gold"
+    },
+    "breeder.png": {
+      "title": "Breeder",
+      "rank": "gold"
+    },
+    "backpacker.png": {
+      "title": "Backpacker",
+      "rank": "gold"
+    },
+    "fisher.png": {
+      "title": "Fisher",
+      "rank": "silver"
+    },
+    "battle-girl.png": {
+      "title": "Battle Girl",
+      "rank": "gold"
+    },
+    "ace-trainer.png": {
+      "title": "Ace Trainer",
+      "rank": "bronze"
+    },
+    "youngster.png": {
+      "title": "Youngster",
+      "rank": "silver"
+    },
+    "pikachu-fan.png": {
+      "title": "Pikachu Fan",
+      "rank": "silver"
+    },
+    "unown.png": {
+      "title": "Unown",
+      "rank": "silver"
+    },
+    "johto.png": {
+      "title": "Johto",
+      "rank": "gold"
+    },
+    "champion.png": {
+      "title": "Champion",
+      "rank": "silver"
+    },
+    "battle-legend.png": {
+      "title": "Battle Legend",
+      "rank": "silver"
+    },
+    "berry-master.png": {
+      "title": "Berry Master",
+      "rank": "gold"
+    },
+    "gym-leader.png": {
+      "title": "Gym Leader",
+      "rank": "gold"
+    },
+    "hoenn.png": {
+      "title": "Hoenn",
+      "rank": "gold"
+    },
+    "pokemon-ranger.png": {
+      "title": "Pokémon Ranger",
+      "rank": "silver"
+    },
+    "idol.png": {
+      "title": "Idol",
+      "rank": "gold"
+    },
+    "gentleman.png": {
+      "title": "Gentleman",
+      "rank": "bronze"
+    },
+    "pilot.png": {
+      "title": "Pilot",
+      "rank": "bronze"
+    },
+    "sinnoh.png": {
+      "title": "Sinnoh",
+      "rank": "gold"
+    },
+    "great-league-veteran.png": {
+      "title": "Great League Veteran",
+      "rank": "bronze"
+    },
+    "ultra-league-veteran.png": {
+      "title": "Ultra League Veteran",
+      "rank": "bronze"
+    },
+    "master-league-veteran.png": {
+      "title": "Master League Veteran",
+      "rank": "bronze"
+    },
+    "cameraman.png": {
+      "title": "Cameraman",
+      "rank": "bronze"
+    },
+    "unova.png": {
+      "title": "Unova",
+      "rank": "silver"
+    },
+    "purifier.png": {
+      "title": "Purifier",
+      "rank": "bronze"
+    },
+    "hero.png": {
+      "title": "Hero",
+      "rank": "bronze"
+    },
+    "ultra-hero.png": {
+      "title": "Ultra Hero",
+      "rank": "shadow"
+    },
+    "best-buddy.png": {
+      "title": "Best Buddy",
+      "rank": "shadow"
+    }
+  },
+  "type": {
+    "schoolkid.png": {
+      "title": "Schoolkid",
+      "rank": "gold"
+    },
+    "black-belt.png": {
+      "title": "Black Belt",
+      "rank": "gold"
+    },
+    "bird-keeper.png": {
+      "title": "Bird Keeper",
+      "rank": "gold"
+    },
+    "punk-girl.png": {
+      "title": "Punk Girl",
+      "rank": "gold"
+    },
+    "ruin-maniac.png": {
+      "title": "Ruin Maniac",
+      "rank": "gold"
+    },
+    "hiker.png": {
+      "title": "Hiker",
+      "rank": "gold"
+    },
+    "bug-catcher.png": {
+      "title": "Bug Catcher",
+      "rank": "gold"
+    },
+    "hex-maniac.png": {
+      "title": "Hex Maniac",
+      "rank": "gold"
+    },
+    "rail-staff.png": {
+      "title": "Rail Staff",
+      "rank": "gold"
+    },
+    "kindler.png": {
+      "title": "Kindler",
+      "rank": "gold"
+    },
+    "swimmer.png": {
+      "title": "Swimmer",
+      "rank": "gold"
+    },
+    "gardener.png": {
+      "title": "Gardener",
+      "rank": "gold"
+    },
+    "rocker.png": {
+      "title": "Rocker",
+      "rank": "gold"
+    },
+    "psychic.png": {
+      "title": "Psychic",
+      "rank": "gold"
+    },
+    "skier.png": {
+      "title": "Skier",
+      "rank": "gold"
+    },
+    "dragon-tamer.png": {
+      "title": "Dragon Tamer",
+      "rank": "gold"
+    },
+    "delinquent.png": {
+      "title": "Delinquent",
+      "rank": "gold"
+    },
+    "fairy-tale-girl.png": {
+      "title": "Fairy Tale Girl",
+      "rank": "gold"
+    }
+  }
+}
