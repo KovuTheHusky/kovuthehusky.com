@@ -11,8 +11,6 @@ permalink: /projects
       {% if project.video %}
       <video class="card-img-top" autoplay loop muted playsinline>
         <source src="/videos/{{ project.video }}.mp4" type="video/mp4">
-        <source src="/videos/{{ project.video }}.webm" type="video/webm">
-        <img src="/videos/{{ project.video }}.gif" alt="" />
       </video>
       {% elsif project.image %}
       <img src="/images/{{ project.image }}" class="card-img-top" alt="">
