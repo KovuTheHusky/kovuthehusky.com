@@ -40,7 +40,7 @@ xp: 14300000
     <div class="grid grid-pokemon">
       {% for pokemon in region[1] %}
       <div class="{% if pokemon[1].caught == 0 %}need{% else %}have{% endif %}">
-        <img src="/node_modules/pokemon-icons/_icons/SVG/{{ pokemon[0] }}" alt="" />
+        <img src="/node_modules/pokemon-icons/_icons/SVG/{{ pokemon[0] }}" alt="{{ pokemon[1].name }}" />
         <span>{{ pokemon[1].name }}<br />#{{ pokemon[1].number }}</span>
       </div>
       {% endfor %}
@@ -55,11 +55,11 @@ xp: 14300000
       {% for medal in medals[1] %}
       <div>
         {% if medal[1].rank %}
-        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[1].rank }}/{{ medal[0] }}" alt="" />
+        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[1].rank }}/{{ medal[0] }}" alt="{{ medal[1].title }}" />
         {% else %}
-        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[0] }}" alt="" />
+        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[0] }}" alt="{{ medal[1].title }}" />
         {% endif %}
-        <span>{{ medal[1].title }}<br /></span>
+        <span>{{ medal[1].title }}</span>
       </div>
       {% endfor %}
       {% endfor %}
