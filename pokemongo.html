@@ -39,7 +39,7 @@ xp: 14300000
     <h3>{{ region[0] | capitalize }}</h3>
     <div class="grid grid-pokemon">
       {% for pokemon in region[1] %}
-      <div class="{% if pokemon[1].caught == 0 %}need{% else %}have{% endif %}">
+      <div class="{% if pokemon[1].caught == 0 %}n{% else %}c{% endif %}">
         <img src="/node_modules/pokemon-icons/_icons/SVG/{{ pokemon[0] }}" alt="{{ pokemon[1].name }}" />
         <span>{{ pokemon[1].name }}<br />#{{ pokemon[1].number }}</span>
       </div>
@@ -84,16 +84,16 @@ xp: 14300000
   function filter_caught(str) {
     if (str == 'all') {
       $('#filter-caught').html(' all ');
-      $('.have').show();
-      $('.need').show();
+      $('.c').show();
+      $('.n').show();
     } else if (str == 'caught') {
       $('#filter-caught').html(' caught ');
-      $('.have').show();
-      $('.need').hide();
+      $('.c').show();
+      $('.n').hide();
     } else if (str == 'non-caught') {
       $('#filter-caught').html(' non-caught ');
-      $('.have').hide();
-      $('.need').show();
+      $('.c').hide();
+      $('.n').show();
     } else {
       window.location.hash = 'all/normal';
     }
