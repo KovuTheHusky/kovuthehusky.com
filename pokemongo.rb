@@ -37,6 +37,7 @@ Dir.foreach(source) do |entry|
   if (entry[0] != '.')
     filename = entry
     name = filename + ''
+    external = name[0..-5]
     type = 'normal'
     if (name.include? '-shiny')
       type = 'shiny'
@@ -93,10 +94,10 @@ Dir.foreach(source) do |entry|
     end
     friendlyName = friendlyName.gsub(/(\w+)/) {|s| s.capitalize}
     caught = 0
-    if (oldJson != nil && oldJson[type][region][entry] && oldJson[type][region][entry]['caught'] == 1)
+    if (oldJson != nil && oldJson[type][region][external] && oldJson[type][region][external]['caught'] == 1)
       caught = 1
     end
-    json[type][region][entry] = {
+    json[type][region][external] = {
       'number' => number,
       'name' => friendlyName,
       'variant' => variant,

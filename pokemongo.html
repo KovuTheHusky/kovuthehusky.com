@@ -40,7 +40,7 @@ xp: 14300000
     <div class="grid grid-pokemon">
       {% for pokemon in region[1] %}
       <div class="{% if pokemon[1].caught == 0 %}n{% else %}c{% endif %}">
-        <img src="/node_modules/pokemon-icons/_icons/SVG/{{ pokemon[0] }}" alt="{{ pokemon[1].name }}" />
+        <svg viewBox="0 0 32 32"><use xlink:href="/images/pokemon.svg#{{ pokemon[0] }}"></use></svg>
         <span>{{ pokemon[1].name }}<br />#{{ pokemon[1].number }}</span>
       </div>
       {% endfor %}
