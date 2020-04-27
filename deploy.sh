@@ -12,8 +12,8 @@ mkdir _site
 git clone https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git --branch gh-pages _site
 
 yarn
-node_modules/svgo/bin/svgo --multipass node_modules/simple-icons/icons/
-node_modules/svgo/bin/svgo --multipass node_modules/pokemon-icons/_icons/SVG/
+node_modules/svgo/bin/svgo --multipass -q node_modules/simple-icons/icons/
+node_modules/svgo/bin/svgo --multipass -q node_modules/pokemon-icons/_icons/SVG/
 bundle exec jekyll build
 
 cd _site
