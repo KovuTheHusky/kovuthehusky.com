@@ -3,7 +3,7 @@ require 'nokogiri'
 
 source = []
 
-doc = Nokogiri::HTML(File.open("images/pokemon.svg"))
+doc = Nokogiri::HTML(File.open("node_modules/pokemon-icons/assets/icon-symbols.svg"))
 
 doc.xpath('//symbol').each do |symbol|
   source << symbol.at_xpath('@id').value
