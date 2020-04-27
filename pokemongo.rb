@@ -1,6 +1,13 @@
 require 'json'
+require 'nokogiri'
 
-source = 'node_modules/pokemon-icons/_icons/SVG'
+source = []
+
+doc = Nokogiri::HTML(File.open("images/pokemon.svg"))
+
+doc.xpath('//symbol').each do |symbol|
+  source << symbol.at_xpath('@id').value
+end
 
 oldJson = nil
 if (File.exist?('_data/pokedex.json'))
@@ -33,11 +40,9 @@ json = {
 totalCaught = 0
 totalPokedex = 0
 
-Dir.foreach(source) do |entry|
+source.each do |entry|
   if (entry[0] != '.')
-    filename = entry
-    name = filename + ''
-    external = name[0..-5]
+    name = entry + ''
     type = 'normal'
     if (name.include? '-shiny')
       type = 'shiny'
@@ -61,7 +66,7 @@ Dir.foreach(source) do |entry|
     else
       region = 'unknown'
     end
-    name = name[4..-5]
+    name = name[4..]
     variant = 0
     friendlyName = name
     if (friendlyName.include? '-alola')
@@ -94,10 +99,10 @@ Dir.foreach(source) do |entry|
     end
     friendlyName = friendlyName.gsub(/(\w+)/) {|s| s.capitalize}
     caught = 0
-    if (oldJson != nil && oldJson[type][region][external] && oldJson[type][region][external]['caught'] == 1)
+    if (oldJson != nil && oldJson[type][region][entry] && oldJson[type][region][entry]['caught'] == 1)
       caught = 1
     end
-    json[type][region][external] = {
+    json[type][region][entry] = {
       'number' => number,
       'name' => friendlyName,
       'variant' => variant,
