@@ -19,6 +19,5 @@ ruby places.rb ${FOURSQUARE_TOKEN}
 git config user.email "kovuthehusky@gmail.com"
 git config user.name "KovuTheHusky"
 git add --all
-git rm -rf *.exe
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --force origin gh-pages
