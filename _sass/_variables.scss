@@ -199,7 +199,6 @@ a.disabled {
 .grid-pokemon div {
   font-size: 1rem;
   padding: 16px;
-  border-radius: 1px;
   text-decoration: none;
 }
 
@@ -220,8 +219,8 @@ a.disabled {
   font-size: 60%;
   line-height: 1;
   white-space: nowrap;
-  margin-left: -100%;
-  margin-right: -100%;
+  margin-left: -28px;
+  margin-right: -28px;
 }
 
 .colors button {
