@@ -103,7 +103,7 @@ layout: default
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body p-0" style="min-height: 150px;">
-        <iframe src="https://d.kovuthehusky.com/email" class="rounded d-block w-100 h-100 border-0"></iframe>
+        <iframe id="gmail-iframe" src="" class="rounded d-block w-100 h-100 border-0"></iframe>
       </div>
     </div>
   </div>
@@ -136,16 +136,7 @@ layout: default
   </div>
 </div>
 <script>
-  function PopupCenter(url, title, w, h) {
-    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
-    var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
-    var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-    var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
-    var left = ((width / 2) - (w / 2)) + dualScreenLeft;
-    var top = ((height / 2) - (h / 2)) + dualScreenTop;
-    var newWindow = window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
-    if (window.focus) {
-      newWindow.focus();
-    }
-  }
+$(document).ready(function () {
+  $('#gmail-iframe').src = 'https://d.kovuthehusky.com/email';
+});
 </script>
