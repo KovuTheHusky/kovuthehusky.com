@@ -26,7 +26,7 @@
     label: "Archived"
   description: >-
     An experimental creative mode world used for versions 1.8β-1.1. Only substantial build is by
-    <img src="https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/NightWolf1298.png" alt="NightWolf1298" class="rounded">
+    <img src="/images/heads/NightWolf1298.png" alt="NightWolf1298" class="rounded">
     NightWolf1298.
   buttons:
   - label: "Download"
@@ -41,11 +41,11 @@
     label: "Archived"
   description: >-
     An interim world used for versions 1.8β-1.1. Only builds are by
-    <img src="https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/KovuTheHusky.png" alt="KovuTheHusky" class="rounded">
+    <img src="/images/heads/KovuTheHusky.png" alt="KovuTheHusky" class="rounded">
     KovuTheHusky,
-    <img src="https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/NightWolf1298.png" alt="NightWolf1298" class="rounded">
+    <img src="/images/heads/NightWolf1298.png" alt="NightWolf1298" class="rounded">
     NightWolf1298, and
-    <img src="https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/Cujo27.png" alt="Cujo27" class="rounded">
+    <img src="/images/heads/Cujo27.png" alt="Cujo27" class="rounded">
     Cujo27.
   buttons:
   - label: "Download"

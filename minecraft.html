@@ -313,3 +313,23 @@ refresh();
 setInterval(refresh, 1000);
 
 </script>
+
+<script>
+  $(document).ready(function () {
+    var image_url='https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/Cujo27.png';
+    $.get(image_url).done(function() { 
+      $("img[alt|='Cujo27']").attr('src', 'https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/Cujo27.png');
+    }).fail(function() {
+    })
+    var image_url='https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/KovuTheHusky.png';
+    $.get(image_url).done(function() { 
+      $("img[alt|='KovuTheHusky']").attr('src', 'https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/KovuTheHusky.png');
+    }).fail(function() {
+    })
+    var image_url='https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/NightWolf1298.png';
+    $.get(image_url).done(function() { 
+      $("img[alt|='NightWolf1298']").attr('src', 'https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/NightWolf1298.png');
+    }).fail(function() {
+    })
+  });
+</script>
