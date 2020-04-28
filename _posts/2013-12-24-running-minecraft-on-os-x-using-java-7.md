@@ -15,7 +15,7 @@ Why does this happen? Mojang is currently packaging their application using Appl
 
 How do I fix it? First of all, please go to the [bug report](https://bugs.mojang.com/browse/MCL-1049) on the bug tracker and vote for the issue and add any helpful comments you may have. Now, we can move on to the temporary fix:
 
-1. Install [ant](http://ant.apache.org/) using [Homebrew](http://brew.sh/), [Macports](http://www.macports.org/), or whatever else you prefer.
+1. Install [ant](https://ant.apache.org) using [Homebrew](https://brew.sh), [Macports](https://macports.org), or whatever else you prefer.
 
 2. Download the [Java Application Bundler](https://java.net/projects/appbundler) from Oracle's Java website.
 
