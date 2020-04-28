@@ -145,7 +145,16 @@ a.disabled {
   display: none;
 }
 
+#about {
+  width: 75%;
+  margin-bottom: 76px !important;
+}
 
+@media only screen and (max-width: 576px) {
+  #about {
+    width: 100%;
+  }
+}
 
 .grid {
   text-align: center;
