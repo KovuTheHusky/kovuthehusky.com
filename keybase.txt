@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/kovuthehusky
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kovuthehusky.com
+  * I am kovuthehusky (https://keybase.io/kovuthehusky) on keybase.
+  * I have a public key ASBXthhrF_-NYc9uONOjoSKKeeRg9hHICgidlgnZgYexswo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012057b6186b17ff8d61cf6e38d3a3a1228a79e460f611c80a089d9609d98187b1b30a",
+      "host": "keybase.io",
+      "kid": "012057b6186b17ff8d61cf6e38d3a3a1228a79e460f611c80a089d9609d98187b1b30a",
+      "uid": "7bdf4960e76a5c675a54a556d493cf19",
+      "username": "kovuthehusky"
+    },
+    "merkle_root": {
+      "ctime": 1588194168,
+      "hash": "9e0f3456dd786f55cb5a8e4df97530a38f8d82f0feeef965d09a9fa6787f032baca0ee1a30bb5eeda8b67e73f84c6d8c662c5e7fdfbe521b298522d01bebece4",
+      "hash_meta": "56948e12cfb0a33cb26bc54fc88a7416aa476b81203c4b7c13402c38f30b4eaf",
+      "seqno": 16101092
+    },
+    "service": {
+      "entropy": "2+whOpdfyQSu4Lfw7cAICxFO",
+      "hostname": "kovuthehusky.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.2"
+  },
+  "ctime": 1588194187,
+  "expire_in": 504576000,
+  "prev": "016e426dfc0e6ec16902e8063fa4057407f94f6eef7dc1cd2dd2d4ebe76ca955",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgV7YYaxf/jWHPbjjTo6EiinnkYPYRyAoInZYJ2YGHsbMKp3BheWxvYWTESpcCCcQgAW5CbfwObsFpAugGP6QFdAf5T27vfcHNLdLU6+dsqVXEICxjo7TXeyWQj0pFjbSbZp1s+ZdUC1O3+qXBDbsdJgSaAgHCo3NpZ8RAZlVgqKIalw5ZEpQX6obBHqnoRai7qeXToxfLrrM1zUxyW28cx3yg5qhBypyPnwcJzhctspJQIbxAcq+dWORtC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIA5QBlnZHVbCC1vQwEk1aLzq3Nd+uVTjY8AKS1yasa8Lo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kovuthehusky
+
+==================================================================
