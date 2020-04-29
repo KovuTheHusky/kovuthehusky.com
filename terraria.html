@@ -66,8 +66,9 @@ permalink: /terraria
 </div>
 
 
-<script src="https://www.google.com/jsapi?autoload=%7b'modules':%5b%7b'name':'visualization','version':'1','packages':%5b'timeline'%5d%7d%5d%7d"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
+google.charts.load('current', {'packages':['timeline']});
 google.setOnLoadCallback(drawChart);
 var chart;
 var data;
