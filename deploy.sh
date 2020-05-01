@@ -13,7 +13,7 @@ yarn
 if [ $TRAVIS_EVENT_TYPE == "cron" ]; then
     ruby places.rb ${FOURSQUARE_TOKEN}
     ruby pokemongo.rb
-    ruby projects.rb
+    ruby projects.rb ${GITHUB_TOKEN}
     git add --all
     git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
     git push origin master
