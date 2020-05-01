@@ -8,6 +8,8 @@ set -e
 git config user.email "kovuthehusky@gmail.com"
 git config user.name "KovuTheHusky"
 
+yarn
+
 if [ $TRAVIS_EVENT_TYPE == "cron" ]; then
     ruby places.rb ${FOURSQUARE_TOKEN}
     ruby pokemongo.rb
@@ -19,7 +21,6 @@ else
     rm -rf _site
     mkdir _site
     git clone https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git --branch gh-pages _site
-    yarn
     bundle exec jekyll build
     cd _site
     git add --all
