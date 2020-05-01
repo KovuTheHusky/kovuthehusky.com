@@ -5,32 +5,128 @@ subtitle: "Applications, extensions, websites &amp; more."
 permalink: /projects
 ---
 <div class="container">
-  <div class="card-columns">
-  {% for project in site.data.projects %}
-    <div class="card">
-      {% if project.video %}
-      <video class="card-img-top" autoplay loop muted playsinline>
-        <source src="/videos/{{ project.video }}.mp4" type="video/mp4">
-      </video>
-      {% elsif project.image %}
-      <img src="/images/{{ project.image }}" class="card-img-top" alt="">
-      {% endif %}
-      <div class="card-body">
-        <h5 class="card-title">
-          {{ project.title }}
-          {% if project.badge %}
-          <span class="badge" style="background-color: #{{ project.badge.color }};">{{ project.badge.label }}</span>
-          {% endif %}
-          {% if project.icon %}
-          <img class="float-right" src="/images/{{ project.icon }}" alt="{{ project.title }}" style="width: 24px; height: 24px; vertical-align: top;" />
-          {% endif %}
-        </h5>
-        <p class="card-text">{{ project.description }}</p>
-        {% for button in project.buttons %}
-        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %} {% if button.disabled %}disabled{% endif %}">{{ button.label }}</a>
-        {% endfor %}
-      </div>
+  <div class="text-center" style="margin-bottom: 12px;">
+    
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="active" value="active" onchange="hash();">
+      <label class="form-check-label" for="active">Active</label>
     </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inactive" value="inactive" onchange="hash();">
+      <label class="form-check-label" for="inactive">Inactive</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="unsupported" value="unsupported" onchange="hash();">
+      <label class="form-check-label" for="unsupported">Unsupported</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="suspended" value="suspended" onchange="hash();">
+      <label class="form-check-label" for="suspended">Suspended</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="abandoned" value="abandoned" onchange="hash();">
+      <label class="form-check-label" for="abandoned">Abandoned</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="wip" value="wip" onchange="hash();">
+      <label class="form-check-label" for="wip">WIP</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="concept" value="concept" onchange="hash();">
+      <label class="form-check-label" for="concept">Concept</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="unknown" value="unknown" onchange="hash();">
+      <label class="form-check-label" for="unknown">Unknown</label>
+    </div>
+
+  </div>
+
+  
+  
+  
+  <div class="card-columns">
+  {% for status in site.data.projects.owned %}
+
+    {% for project in status[1] %}
+      <div class="card {{ status[0] }}">
+        {% if project.preview_video %}
+        <video class="card-img-top" autoplay loop muted playsinline>
+          <source src="{{ project.preview_video }}" type="video/mp4">
+        </video>
+        {% elsif project.preview_image %}
+        <img src="{{ project.preview_image }}" class="card-img-top" alt="">
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">
+            {{ project.name }}
+            {% if project.status %}
+            <span class="badge {{ project.status | downcase }}">{{ project.status }}</span>
+            {% endif %}
+            {% if project.icon %}
+            <img class="float-right" src="{{ project.icon }}" alt="{{ project.name }}" style="width: 24px; height: 24px; vertical-align: top;" />
+            {% endif %}
+          </h5>
+          <p class="card-text">{{ project.description }}</p>
+          {% if project.button %}
+          <a href="{{ project.button.href }}" class="btn btn-primary">{{ project.button.text }}</a>
+          {% endif %}
+          {% if project.source %}
+          <a href="{{ project.source }}" class="btn btn-secondary">Source</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  
   {% endfor %}
   </div>
+
 </div>
+<script>
+  window.addEventListener('hashchange', fn, false);
+
+  window.onload = fn;
+
+  const statuses = [
+    'active',
+    'inactive',
+    'unsupported',
+    'suspended',
+    'abandoned',
+    'concept',
+    'wip',
+    'unknown'
+  ];
+
+  function fn() {
+    var args = window.location.hash.replace('#', '');
+    if (args == '') {
+      window.location.hash = 'active/inactive/wip';
+    }
+    filter(args);
+  }
+
+  function filter(args) {
+    args = args.split('/');
+    statuses.forEach(e => {
+      if (args.includes(e)) {
+        $('#' + e).prop('checked', true);
+        $('.' + e).show();
+      } else {
+        $('#' + e).prop('checked', false);
+        $('.' + e).hide();
+      }
+    });
+  }
+
+  function hash() {
+    var arr = [];
+    statuses.forEach(e => {
+      if ($('#' + e).prop('checked')) {
+        arr.push(e);
+      }
+    });
+    var hash = arr.join('/');
+    window.location.hash = hash;
+  }
+</script>

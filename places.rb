@@ -69,6 +69,6 @@ file = File.open("places.geojson", "w")
 file.puts(JSON[geojson])
 file.close
 
-file = File.open("bounds.js", "w")
+file = File.open("places.js", "w")
 file.puts('var bounds = ' + JSON[bounds] + ';')
 file.close

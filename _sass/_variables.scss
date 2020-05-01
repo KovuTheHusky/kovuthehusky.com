@@ -246,3 +246,35 @@ a.disabled {
   background: url('/images/fursuit.png') no-repeat center center fixed; 
   background-size: cover;
 }
+
+.concept {
+  background-color: #fff;
+}
+
+.wip {
+  background-color: #dfb317;
+}
+
+.suspended {
+  background-color: #fe7d37;
+}
+
+.abandoned {
+  background-color: #e05d44;
+}
+
+.active {
+  background-color: #4c1;
+}
+
+.inactive {
+  background-color: #a4a61d;
+}
+
+.unsupported {
+  background-color: #9f9f9f;
+}
+
+.moved {
+  background-color: #e05d44;
+}
