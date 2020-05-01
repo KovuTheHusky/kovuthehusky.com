@@ -11,6 +11,7 @@ git config user.name "KovuTheHusky"
 yarn
 
 if [ $TRAVIS_EVENT_TYPE == "cron" ]; then
+    git remote set-url origin https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git
     ruby places.rb ${FOURSQUARE_TOKEN}
     ruby pokemongo.rb
     ruby projects.rb ${GITHUB_TOKEN}
