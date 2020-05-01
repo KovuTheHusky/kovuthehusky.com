@@ -92,7 +92,7 @@
           "href": "https://github.com/KovuTheHusky/dynmap-structures/releases/latest"
         },
         "source": "https://github.com/KovuTheHusky/dynmap-structures",
-        "icon": "/images/projects/icons/dynmapstructures.png",
+        "icon": "/images/projects/icons/dynmapstructures.svg",
         "preview_image": "/images/projects/previews/dynmapstructures.png",
         "status": "Active"
       },
@@ -145,7 +145,7 @@
           "href": "https://github.com/KovuTheHusky/FixChat/releases/latest"
         },
         "source": "https://github.com/KovuTheHusky/FixChat",
-        "icon": "/images/projects/icons/fixchat.png",
+        "icon": "/images/projects/icons/fixchat.svg",
         "status": "Inactive"
       },
       {
@@ -157,7 +157,7 @@
           "href": "https://github.com/KovuTheHusky/NBT/releases/latest"
         },
         "source": "https://github.com/KovuTheHusky/NBT",
-        "icon": "/images/projects/icons/nbt.png",
+        "icon": "/images/projects/icons/nbt.svg",
         "status": "Inactive"
       },
       {
@@ -169,7 +169,7 @@
           "href": "https://github.com/KovuTheHusky/SimplyUHC/releases/latest"
         },
         "source": "https://github.com/KovuTheHusky/SimplyUHC",
-        "icon": "/images/projects/icons/simplyuhc.png",
+        "icon": "/images/projects/icons/simplyuhc.svg",
         "status": "Inactive"
       }
     ],
@@ -256,7 +256,7 @@
         "owner": "KovuTheHusky",
         "description": "Collects statistics about players and blocks and shows them on the web.",
         "source": "https://github.com/KovuTheHusky/Webstats",
-        "icon": "/images/projects/icons/webstats.png",
+        "icon": "/images/projects/icons/webstats.svg",
         "preview_image": "/images/projects/previews/webstats.png",
         "status": "Abandoned"
       },
