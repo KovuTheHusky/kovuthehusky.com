@@ -66,61 +66,67 @@ permalink: /terraria
 </div>
 
 
-<script src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="/node_modules/chart.js/dist/Chart.js"></script>
 
 <script>
-google.charts.load('current', {'packages':['timeline']});
-google.setOnLoadCallback(drawChart);
-var chart;
-var data;
-var options;
+let script = document.createElement('script');
 
-function drawChart() {
-  var container = document.getElementById('timeline');
-  chart = new google.visualization.Timeline(container);
-  data = new google.visualization.DataTable();
-  data.addColumn({
-    type: 'string',
-    id: 'Order'
-  });
-  data.addColumn({
-    type: 'string',
-    id: 'Name'
-  });
-  data.addColumn({
-    type: 'date',
-    id: 'Start'
-  });
-  data.addColumn({
-    type: 'date',
-    id: 'End'
-  });
-  data.addRows([
-    ['Online', 'Survival 2011', new Date(2011, 4, 16), new Date(2013, 8, 30)],
-    ['Online', 'Survival 2013', new Date(2013, 8, 30), new Date(2013, 11, 30)],
-    ['Online', 'Survival 2014', new Date(2013, 11, 30), new Date(2014, 2, 30)],
-    ['Online', 'Survival 2015', new Date(2015, 5, 30), new Date()]
-  ]);
-  options = {
-    backgroundColor: '#000',
-    timeline: {
-      showRowLabels: false,
-      groupByRowLabel: false
-    }
-  };
-  chart.draw(data, options);
-}
-var previousWidth = $('#timeline').width();
+script.src = "https://www.gstatic.com/charts/loader.js"
+document.head.append(script);
 
-function checkOrientation() {
-  if ($('#timeline').width() !== previousWidth) {
-    previousWidth = $('#timeline').width();
+script.onload = function() {
+  google.charts.load('current', {'packages':['timeline']});
+  google.setOnLoadCallback(drawChart);
+  var chart;
+  var data;
+  var options;
+
+  function drawChart() {
+    var container = document.getElementById('timeline');
+    chart = new google.visualization.Timeline(container);
+    data = new google.visualization.DataTable();
+    data.addColumn({
+      type: 'string',
+      id: 'Order'
+    });
+    data.addColumn({
+      type: 'string',
+      id: 'Name'
+    });
+    data.addColumn({
+      type: 'date',
+      id: 'Start'
+    });
+    data.addColumn({
+      type: 'date',
+      id: 'End'
+    });
+    data.addRows([
+      ['Online', 'Survival 2011', new Date(2011, 4, 16), new Date(2013, 8, 30)],
+      ['Online', 'Survival 2013', new Date(2013, 8, 30), new Date(2013, 11, 30)],
+      ['Online', 'Survival 2014', new Date(2013, 11, 30), new Date(2014, 2, 30)],
+      ['Online', 'Survival 2015', new Date(2015, 5, 30), new Date()]
+    ]);
+    options = {
+      backgroundColor: '#000',
+      timeline: {
+        showRowLabels: false,
+        groupByRowLabel: false
+      }
+    };
     chart.draw(data, options);
   }
-}
-window.addEventListener("resize", checkOrientation, false);
-window.addEventListener("orientationchange", checkOrientation, false);
+  var previousWidth = $('#timeline').width();
+
+  function checkOrientation() {
+    if ($('#timeline').width() !== previousWidth) {
+      previousWidth = $('#timeline').width();
+      chart.draw(data, options);
+    }
+  }
+  window.addEventListener("resize", checkOrientation, false);
+  window.addEventListener("orientationchange", checkOrientation, false);
+};
 </script>
 
 <script>

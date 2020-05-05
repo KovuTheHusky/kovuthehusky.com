@@ -115,63 +115,69 @@ permalink: /minecraft
   </div>
 
 
-<script src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="/node_modules/chart.js/dist/Chart.js"></script>
 
 <script>
-google.charts.load('current', {'packages':['timeline']});
-google.setOnLoadCallback(drawChart);
-var chart;
-var data;
-var options;
+let script = document.createElement('script');
 
-function drawChart() {
-  var container = document.getElementById('timeline');
-  chart = new google.visualization.Timeline(container);
-  data = new google.visualization.DataTable();
-  data.addColumn({
-    type: 'string',
-    id: 'Order'
-  });
-  data.addColumn({
-    type: 'string',
-    id: 'Name'
-  });
-  data.addColumn({
-    type: 'date',
-    id: 'Start'
-  });
-  data.addColumn({
-    type: 'date',
-    id: 'End'
-  });
-  data.addRows([
-    ['Online', 'Survival 2011', new Date(2011, 1, 11), new Date(2011, 8, 15)],
-    ['Online', 'Survival 2012', new Date(2011, 8, 15), new Date(2012, 2, 1)],
-    ['Online', 'Creative 2012', new Date(2011, 8, 15), new Date(2012, 2, 1)],
-    ['Online', 'Survival 2013', new Date(2012, 2, 12), new Date(2013, 9, 12)],
-    ['Online', 'Survival 2014', new Date(2013, 11, 3), new Date()],
-    ['Online', 'Forge 2015', new Date(2015, 11, 29), new Date(2016, 5, 17)]
-  ]);
-  options = {
-    backgroundColor: '#000',
-    timeline: {
-      showRowLabels: false,
-      groupByRowLabel: false
-    }
-  };
-  chart.draw(data, options);
-}
-var previousWidth = $('#timeline').width();
+script.src = "https://www.gstatic.com/charts/loader.js"
+document.head.append(script);
 
-function checkOrientation() {
-  if ($('#timeline').width() !== previousWidth) {
-    previousWidth = $('#timeline').width();
+script.onload = function() {
+  google.charts.load('current', {'packages':['timeline']});
+  google.setOnLoadCallback(drawChart);
+  var chart;
+  var data;
+  var options;
+
+  function drawChart() {
+    var container = document.getElementById('timeline');
+    chart = new google.visualization.Timeline(container);
+    data = new google.visualization.DataTable();
+    data.addColumn({
+      type: 'string',
+      id: 'Order'
+    });
+    data.addColumn({
+      type: 'string',
+      id: 'Name'
+    });
+    data.addColumn({
+      type: 'date',
+      id: 'Start'
+    });
+    data.addColumn({
+      type: 'date',
+      id: 'End'
+    });
+    data.addRows([
+      ['Online', 'Survival 2011', new Date(2011, 1, 11), new Date(2011, 8, 15)],
+      ['Online', 'Survival 2012', new Date(2011, 8, 15), new Date(2012, 2, 1)],
+      ['Online', 'Creative 2012', new Date(2011, 8, 15), new Date(2012, 2, 1)],
+      ['Online', 'Survival 2013', new Date(2012, 2, 12), new Date(2013, 9, 12)],
+      ['Online', 'Survival 2014', new Date(2013, 11, 3), new Date()],
+      ['Online', 'Forge 2015', new Date(2015, 11, 29), new Date(2016, 5, 17)]
+    ]);
+    options = {
+      backgroundColor: '#000',
+      timeline: {
+        showRowLabels: false,
+        groupByRowLabel: false
+      }
+    };
     chart.draw(data, options);
   }
-}
-window.addEventListener("resize", checkOrientation, false);
-window.addEventListener("orientationchange", checkOrientation, false);
+  var previousWidth = $('#timeline').width();
+
+  function checkOrientation() {
+    if ($('#timeline').width() !== previousWidth) {
+      previousWidth = $('#timeline').width();
+      chart.draw(data, options);
+    }
+  }
+  window.addEventListener("resize", checkOrientation, false);
+  window.addEventListener("orientationchange", checkOrientation, false);
+};
 </script>
 
 <script>
