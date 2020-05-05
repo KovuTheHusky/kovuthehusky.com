@@ -71,7 +71,9 @@ permalink: /projects
           {% if project.button %}
           <a href="{{ project.button.href }}" class="btn btn-primary">{{ project.button.text }}</a>
           {% endif %}
-          {% if project.source %}
+          {% if project.button and project.source %}
+          <a href="{{ project.source }}" class="btn btn-link">Source</a>
+          {% elsif project.source %}
           <a href="{{ project.source }}" class="btn btn-secondary">Source</a>
           {% endif %}
         </div>
