@@ -130,6 +130,7 @@
           "href": "https://kovuthehusky.github.io/pokemon-medals"
         },
         "source": "https://github.com/KovuTheHusky/pokemon-medals",
+        "icon": "/images/projects/icons/pokemonmedals.png",
         "preview_image": "/images/projects/previews/pokemonmedals.png",
         "status": "Active"
       }
