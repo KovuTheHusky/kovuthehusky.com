@@ -1,5 +1,5 @@
 {
-  "since": "2020-05-01",
+  "since": "2020-05-05",
   "contributions": [
     "arnemart/SafariKeywordSearch",
     "chylex/Better-Sprinting",
@@ -19,7 +19,6 @@
     "KovuTheHusky/dynmap-structures",
     "KovuTheHusky/FindFile",
     "KovuTheHusky/FixChat",
-    "KovuTheHusky/furgeddaboudit.org",
     "KovuTheHusky/Huskish",
     "KovuTheHusky/incarceratedwombats.com",
     "KovuTheHusky/Justify",
@@ -278,17 +277,6 @@
           "href": "https://developer.myfursona.com"
         },
         "source": "https://github.com/KovuTheHusky/developer.myfursona.com",
-        "status": "WIP"
-      },
-      {
-        "name": "furgeddaboudit.org",
-        "owner": "KovuTheHusky",
-        "description": "A website for the Furgeddaboudit furry convention.",
-        "button": {
-          "text": "Visit",
-          "href": "https://furgeddaboudit.org"
-        },
-        "source": "https://github.com/KovuTheHusky/furgeddaboudit.org",
         "status": "WIP"
       },
       {
