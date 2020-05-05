@@ -179,6 +179,17 @@
         "description": "Allows you to place the elite, rare elite, rare, or normal graphic around your character portrait in World of Warcraft.",
         "source": "https://github.com/KovuTheHusky/1337Player",
         "status": "Unsupported"
+      },
+      {
+        "name": "ShareTube",
+        "owner": "KovuTheHusky",
+        "description": "Adds a download button beneath videos on YouTube pages.",
+        "button": {
+          "text": "Download",
+          "href": "https://github.com/KovuTheHusky/ShareTube/releases/latest"
+        },
+        "source": "https://github.com/KovuTheHusky/ShareTube",
+        "status": "Unsupported"
       }
     ],
     "suspended": [
@@ -230,17 +241,6 @@
         "owner": "KovuTheHusky",
         "description": "Adds an AirPlay button beneath videos on YouTube pages.",
         "source": "https://github.com/KovuTheHusky/AirPlay-Chrome",
-        "status": "Abandoned"
-      },
-      {
-        "name": "ShareTube",
-        "owner": "KovuTheHusky",
-        "description": "Adds a download button beneath videos on YouTube pages.",
-        "button": {
-          "text": "Download",
-          "href": "https://github.com/KovuTheHusky/ShareTube/releases/latest"
-        },
-        "source": "https://github.com/KovuTheHusky/ShareTube",
         "status": "Abandoned"
       },
       {
