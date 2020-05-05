@@ -28,7 +28,7 @@ layout: default
       <img src="/node_modules/simple-icons/icons/github.svg" alt="GitHub" style="filter: invert(1);" />
       <span>GitHub</span>
     </a>
-    <a href="#" style="background-color: #D14836;" data-toggle="modal" data-target="#gmail">
+    <a href="#" style="background-color: #D14836;" data-toggle="modal" data-target="#gmail" onclick="$('#gmail-iframe').attr('src', 'https://d.kovuthehusky.com/email');">
       <img src="/node_modules/simple-icons/icons/gmail.svg" alt="Gmail" style="filter: invert(1);" />
       <span>Gmail</span>
     </a>
@@ -135,8 +135,3 @@ layout: default
     </div>
   </div>
 </div>
-<script>
-$(document).ready(function () {
-  $('#gmail-iframe').attr('src', 'https://d.kovuthehusky.com/email');
-});
-</script>
