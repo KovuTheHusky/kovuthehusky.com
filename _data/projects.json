@@ -63,6 +63,7 @@
           "href": "https://buttfumble.org"
         },
         "source": "https://github.com/KovuTheHusky/buttfumble.org",
+        "icon": "/images/projects/icons/buttfumbleorg.svg",
         "preview_image": "/images/projects/previews/buttfumbleorg.png",
         "status": "Active"
       },
