@@ -1,56 +1,57 @@
 {
-  "since": "2020-05-05",
+  "since": "2020-05-07",
   "contributions": [
-    "arnemart/SafariKeywordSearch",
-    "chylex/Better-Sprinting",
-    "elevatorguy/TDSM_map",
-    "Homebrew/homebrew-core",
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
+    "os0x/AutoPatchWork",
     "KovuTheHusky/BaseTime",
+    "chylex/Better-Sprinting",
     "KovuTheHusky/buttfumble.org",
     "KovuTheHusky/Challenge",
     "KovuTheHusky/Countdown",
     "KovuTheHusky/CountLetters",
     "KovuTheHusky/CSGO-Clarity",
     "KovuTheHusky/d.kovuthehusky.com",
+    "NightWolf1298/d.nightwolf1298.com",
     "KovuTheHusky/developer.myfursona.com",
+    "MyFursona/developer.myfursona.com",
     "KovuTheHusky/DiskQueue",
+    "webbukkit/dynmap",
+    "webbukkit/dynmap-api",
+    "webbukkit/dynmap-mobs",
     "KovuTheHusky/dynmap-structures",
+    "webbukkit/DynmapCore",
+    "webbukkit/DynmapCoreAPI",
+    "webbukkit/DynmapForge",
     "KovuTheHusky/FindFile",
     "KovuTheHusky/FixChat",
+    "Homebrew/homebrew-core",
     "KovuTheHusky/Huskish",
     "KovuTheHusky/incarceratedwombats.com",
     "KovuTheHusky/Justify",
     "KovuTheHusky/kovuthehusky.com",
     "KovuTheHusky/Longwood-Robotics",
     "KovuTheHusky/Longwood-Webmasters",
+    "martok/MCStatus-php",
     "KovuTheHusky/modusawperandi.com",
     "KovuTheHusky/Morse",
     "KovuTheHusky/myfursona.com",
     "KovuTheHusky/NBT",
+    "NightWolf1298/nightwolf1298.com",
     "KovuTheHusky/P1ngP0ng",
+    "TheArtificial/pokemon-icons",
     "KovuTheHusky/pokemon-medals",
+    "arnemart/SafariKeywordSearch",
     "KovuTheHusky/ShareTube",
+    "simple-icons/simple-icons",
     "KovuTheHusky/SimplyUHC",
     "KovuTheHusky/SortVisualization",
     "KovuTheHusky/Speedtest",
     "KovuTheHusky/Spiral",
     "KovuTheHusky/Steam-Link-Fixer",
+    "elevatorguy/TDSM_map",
     "KovuTheHusky/Webstats",
-    "KovuTheHusky/Wifimote",
-    "martok/MCStatus-php",
-    "NightWolf1298/d.nightwolf1298.com",
-    "NightWolf1298/nightwolf1298.com",
-    "os0x/AutoPatchWork",
-    "simple-icons/simple-icons",
-    "TheArtificial/pokemon-icons",
-    "webbukkit/dynmap",
-    "webbukkit/dynmap-api",
-    "webbukkit/dynmap-mobs",
-    "webbukkit/DynmapCore",
-    "webbukkit/DynmapCoreAPI",
-    "webbukkit/DynmapForge"
+    "KovuTheHusky/Wifimote"
   ],
   "owned": {
     "active": [
@@ -272,13 +273,13 @@
     "wip": [
       {
         "name": "developer.myfursona.com",
-        "owner": "KovuTheHusky",
+        "owner": "MyFursona",
         "description": "Documentation for the MyFursona API.",
         "button": {
           "text": "Visit",
           "href": "https://developer.myfursona.com"
         },
-        "source": "https://github.com/KovuTheHusky/developer.myfursona.com",
+        "source": "https://github.com/MyFursona/developer.myfursona.com",
         "icon": "/images/projects/icons/developermyfursonacom.svg",
         "status": "WIP"
       },
@@ -389,9 +390,9 @@
   },
   "contributed": [
     {
-      "name": "SafariKeywordSearch",
-      "owner": "arnemart",
-      "description": "A simple Safari extension to enable keyword search from the address bar"
+      "name": "AutoPatchWork",
+      "owner": "os0x",
+      "description": null
     },
     {
       "name": "Better-Sprinting",
@@ -399,44 +400,9 @@
       "description": "Minecraft mod that improves and expands sprinting, sneaking, and flying mechanics."
     },
     {
-      "name": "TDSM_map",
-      "owner": "elevatorguy",
-      "description": "TDSM Plugin that can save current world to .png on command   (there is now a tshock branch aswell)"
-    },
-    {
-      "name": "homebrew-core",
-      "owner": "Homebrew",
-      "description": "🍻 Default formulae for the missing package manager for macOS"
-    },
-    {
-      "name": "MCStatus-php",
-      "owner": "martok",
-      "description": "PHP Class for querying minecraft (beta 1.9+) servers"
-    },
-    {
       "name": "d.nightwolf1298.com",
       "owner": "NightWolf1298",
       "description": "Dynamic components for NightWolf1298's personal website."
-    },
-    {
-      "name": "nightwolf1298.com",
-      "owner": "NightWolf1298",
-      "description": "A personal website for NightWolf1298."
-    },
-    {
-      "name": "AutoPatchWork",
-      "owner": "os0x",
-      "description": null
-    },
-    {
-      "name": "simple-icons",
-      "owner": "simple-icons",
-      "description": "SVG icons for popular brands"
-    },
-    {
-      "name": "pokemon-icons",
-      "owner": "TheArtificial",
-      "description": "Fan art inspired by Pokémon"
     },
     {
       "name": "dynmap",
@@ -467,6 +433,41 @@
       "name": "DynmapForge",
       "owner": "webbukkit",
       "description": "Dynmap port to vanilla Minecraft + Minecraft Forge"
+    },
+    {
+      "name": "homebrew-core",
+      "owner": "Homebrew",
+      "description": "🍻 Default formulae for the missing package manager for macOS"
+    },
+    {
+      "name": "MCStatus-php",
+      "owner": "martok",
+      "description": "PHP Class for querying minecraft (beta 1.9+) servers"
+    },
+    {
+      "name": "nightwolf1298.com",
+      "owner": "NightWolf1298",
+      "description": "A personal website for NightWolf1298."
+    },
+    {
+      "name": "pokemon-icons",
+      "owner": "TheArtificial",
+      "description": "Fan art inspired by Pokémon"
+    },
+    {
+      "name": "SafariKeywordSearch",
+      "owner": "arnemart",
+      "description": "A simple Safari extension to enable keyword search from the address bar"
+    },
+    {
+      "name": "simple-icons",
+      "owner": "simple-icons",
+      "description": "SVG icons for popular brands"
+    },
+    {
+      "name": "TDSM_map",
+      "owner": "elevatorguy",
+      "description": "TDSM Plugin that can save current world to .png on command   (there is now a tshock branch aswell)"
     }
   ]
 }
