@@ -5,12 +5,11 @@ if [ $TRAVIS_PULL_REQUEST == "true" ]; then
 fi
 
 set -e
-git config user.email "kovuthehusky@gmail.com"
-git config user.name "KovuTheHusky"
 
 yarn
 
-if [ $TRAVIS_EVENT_TYPE == "cron" ]; then
+if [ $TRAVIS_EVENT_TYPE == "api" ] || [ $TRAVIS_EVENT_TYPE == "cron" ]; then
+    git checkout master
     git remote set-url origin https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git
     ruby places.rb ${FOURSQUARE_TOKEN}
     ruby pokemongo.rb
