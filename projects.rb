@@ -15,7 +15,7 @@ if (since != today)
       json['contributions'] << line
     end
   end
-  json['contributions'] = json['contributions'].sort_by(&:downcase)
+  json['contributions'] = json['contributions'].sort_by { |s| s.downcase.split('/').last }
 end
 
 json['owned'] = {}
