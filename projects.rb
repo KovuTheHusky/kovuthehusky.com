@@ -18,6 +18,21 @@ if (since != today)
   json['contributions'] = json['contributions'].sort_by { |s| s.downcase.split('/').last }
 end
 
+uri = URI.parse('https://api.github.com/user/orgs')
+  request = Net::HTTP::Get.new(uri)
+  request["Authorization"] = "token " + ARGV[0]
+  req_options = {
+    use_ssl: uri.scheme == "https",
+  }
+  response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
+    http.request(request)
+end
+
+orgs = []
+JSON.parse(response.body).each do |org|
+  orgs << org['login']
+end
+
 json['owned'] = {}
 ['active', 'inactive', 'unsupported', 'suspended', 'abandoned', 'wip', 'concept', 'moved', 'unknown'].each do |status|
   json['owned'][status] = []
@@ -43,7 +58,7 @@ json['contributions'].each do |repo|
       "owner": owner,
       "description": response['description']
     }
-    if (owner == 'KovuTheHusky')
+    if (owner == 'KovuTheHusky' || orgs.include?(owner))
       homepage = response['homepage']
       homepage_text = "Visit"
       if homepage.nil? || homepage.empty? || homepage.start_with?('https://kovuthehusky.com/projects')
