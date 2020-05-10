@@ -52,13 +52,13 @@ html, body {
     border-top: 1px solid #808080 !important;
 }
 
-li.player {
-  border-top: none !important;
+#playercount {
   border-bottom: none !important;
 }
 
-li.player:last-of-type {
-  border-bottom: 1px solid #808080 !important;
+.player {
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
 .modal-content {
