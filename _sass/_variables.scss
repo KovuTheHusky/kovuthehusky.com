@@ -54,7 +54,11 @@ html, body {
 
 .player {
   border-top: none !important;
+  border-bottom: none !important;
 }
+
+.card-body {
+  border-top: 1px solid #808080 !important;
 
 .modal-content {
   background-color: #343a40 !important;
