@@ -52,12 +52,12 @@ html, body {
     border-top: 1px solid #808080 !important;
 }
 
-.player {
+li.player {
   border-top: none !important;
   border-bottom: none !important;
 }
 
-.player:last-of-type {
+li.player:last-of-type {
   border-bottom: 1px solid #808080 !important;
 }
 
