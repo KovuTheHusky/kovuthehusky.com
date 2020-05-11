@@ -17,7 +17,7 @@ ruby pokemongo.rb
 echo "Updating projects..."
 ruby projects.rb ${GITHUB_TOKEN}
 chmod -x deploy.sh
-if [ -n "$(git diff --quiet)" ]; then
+if [ -n "$(git status --porcelain)" ]; then
     git add --all
     git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
     git push origin master
@@ -28,7 +28,7 @@ mkdir _site
 git clone https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git --branch gh-pages _site
 bundle exec jekyll build
 cd _site
-if [ -n "$(git diff --quiet)" ]; then
+if [ -n "$(git status --porcelain)" ]; then
     git add --all
     git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
     git push --force origin gh-pages
