@@ -10,8 +10,11 @@ git config --global user.name "Travis CI"
 
 git checkout master
 git remote set-url origin https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git
+echo "Updating places..."
 ruby places.rb ${FOURSQUARE_TOKEN}
+echo "Updating pokédex..."
 ruby pokemongo.rb
+echo "Updating projects..."
 ruby projects.rb ${GITHUB_TOKEN}
 chmod -x deploy.sh
 if [ -n "$(git diff --quiet)" ]; then
