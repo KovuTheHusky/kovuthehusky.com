@@ -4,6 +4,9 @@ branches:
     - master
 rvm:
   - 2.7.1
+cache:
+  - bundler
+  - yarn
 before_install:
   - gem install bundler
 before_script:
