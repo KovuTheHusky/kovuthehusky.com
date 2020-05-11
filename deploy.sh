@@ -6,8 +6,6 @@ fi
 
 set -e
 
-yarn
-
 if [ $TRAVIS_EVENT_TYPE == "api" ] || [ $TRAVIS_EVENT_TYPE == "cron" ]; then
     git checkout master
     git remote set-url origin https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git
