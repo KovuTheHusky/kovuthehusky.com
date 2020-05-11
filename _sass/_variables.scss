@@ -6,7 +6,7 @@ $tooltip-color: #000;
 $popover-body-color: #000;
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -86,7 +86,7 @@ html, body {
 }
 
 .mapboxgl-popup-content {
-  padding: 10px !important;
+  padding: 12px !important;
 }
 
 .mapboxgl-ctrl-logo {
@@ -240,7 +240,7 @@ a.disabled {
 }
 
 .colors button {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 #fursuit {
