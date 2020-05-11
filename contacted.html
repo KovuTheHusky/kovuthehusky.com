@@ -1,0 +1,23 @@
+---
+layout: page
+title: Contacted
+subtitle: "Thanks for your message!"
+permalink: /contacted
+---
+<div class="container">
+  <p class="text-center">Returning home in <span id="counter">5</span> seconds...</p>
+</div>
+<script>
+  var count = 5;
+  function redirect() {
+    $('#counter').html(--count);
+    if (count > 0) {
+      setTimeout(redirect, 1000);
+    } else {
+      window.location.href = '/';
+    }
+  }
+  $(document).ready(function () {
+    setTimeout(redirect, 1000);
+  });
+</script>
