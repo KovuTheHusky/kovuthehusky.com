@@ -5,25 +5,27 @@ if [ $TRAVIS_PULL_REQUEST == "true" ]; then
 fi
 
 set -e
+git config --global user.email "travis@travis-ci.org"
+git config --global user.name "Travis CI"
 
-if [ $TRAVIS_EVENT_TYPE == "api" ] || [ $TRAVIS_EVENT_TYPE == "cron" ]; then
-    git checkout master
-    git remote set-url origin https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git
-    ruby places.rb ${FOURSQUARE_TOKEN}
-    ruby pokemongo.rb
-    ruby projects.rb ${GITHUB_TOKEN}
-    chmod 644 deploy.sh
-    if [ -n "$(git diff --quiet)" ]; then
-        git add --all
-        git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-        git push origin master
-    fi
-else
-    rm -rf _site
-    mkdir _site
-    git clone https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git --branch gh-pages _site
-    bundle exec jekyll build
-    cd _site
+git checkout master
+git remote set-url origin https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git
+ruby places.rb ${FOURSQUARE_TOKEN}
+ruby pokemongo.rb
+ruby projects.rb ${GITHUB_TOKEN}
+chmod -x deploy.sh
+if [ -n "$(git diff --quiet)" ]; then
+    git add --all
+    git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
+    git push origin master
+fi
+
+rm -rf _site
+mkdir _site
+git clone https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git --branch gh-pages _site
+bundle exec jekyll build
+cd _site
+if [ -n "$(git diff --quiet)" ]; then
     git add --all
     git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
     git push --force origin gh-pages
