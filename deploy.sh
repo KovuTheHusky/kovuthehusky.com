@@ -12,6 +12,7 @@ if [ $TRAVIS_EVENT_TYPE == "api" ] || [ $TRAVIS_EVENT_TYPE == "cron" ]; then
     ruby places.rb ${FOURSQUARE_TOKEN}
     ruby pokemongo.rb
     ruby projects.rb ${GITHUB_TOKEN}
+    chmod 644 deploy.sh
     if [ -n "$(git diff --quiet)" ]; then
         git add --all
         git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
