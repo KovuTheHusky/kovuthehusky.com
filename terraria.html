@@ -24,8 +24,8 @@ permalink: /terraria
             <li id="playercount" class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
           </ul>
           <div class="card-body" style="border-top: 1px solid #808080;">
-            <a href="steam://rungameid/105600//-j%20kovuthehusky.com" class="btn btn-primary">Connect</a>
-            <a href="https://d.kovuthehusky.com/terraria/survival-2015/" class="btn btn-link">Map</a>
+            <a href="steam://rungameid/105600//-j%20kovuthehusky.com" class="btn btn-primary disabled remote">Connect</a>
+            <a href="https://d.kovuthehusky.com/terraria/survival-2015/" class="btn btn-link disabled remote">Map</a>
           </div>
         </div>
 
@@ -56,7 +56,7 @@ permalink: /terraria
         <div class="card-body">
         {% endif %}
         {% for button in world.buttons %}
-        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %} {% if button.disabled %}disabled{% endif %}">{{ button.label }}</a>
+        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %} disabled remote">{{ button.label }}</a>
         {% endfor %}
       </div>
     </div>
@@ -139,6 +139,7 @@ script.onload = function() {
   function refresh() {
     $.getJSON('https://d.kovuthehusky.com/status/terraria.json', function(data) {
       $('#status').text('Online');
+      $('.remote').removeClass('disabled');
       $('#status').addClass('badge-success');
       $('#status').removeClass('badge-danger');
       $('#version').text(data['serverversion'].substring(1));
@@ -163,6 +164,7 @@ script.onload = function() {
       players = playernames;
     }).fail(function() {
       $('#status').text('Offline');
+      $('.remote').addClass('disabled');
       $('#status').addClass('badge-danger');
       $('#status').removeClass('badge-success');
       $('#version').text('Offline');

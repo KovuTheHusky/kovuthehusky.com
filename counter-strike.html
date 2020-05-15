@@ -2,7 +2,7 @@
 layout: page
 title: Counter-Strike
 subtitle: "Connection details for servers."
-permalink: /counterstrike
+permalink: /counter-strike
 ---
 <div class="container">
 
@@ -21,7 +21,7 @@ permalink: /counterstrike
           <li id="playercount-practice" class="list-group-item d-flex justify-content-between">Players<span id="players-practice">Offline</span></li>
         </ul>
         <div class="card-body" style="border-top: 1px solid #808080;">
-        <a href="steam://connect/kovuthehusky.com:27015/derp" class="btn btn-primary">Connect</a>
+        <a href="steam://connect/kovuthehusky.com:27015/derp" class="btn btn-primary remote disabled">Connect</a>
       </div>
     </div>
     <div class="card">
@@ -38,7 +38,7 @@ permalink: /counterstrike
           <li id="playercount-retake" class="list-group-item d-flex justify-content-between">Players<span id="players-retake">Offline</span></li>
         </ul>
         <div class="card-body" style="border-top: 1px solid #808080;">
-        <a href="steam://connect/kovuthehusky.com:27025/derp" class="btn btn-primary">Connect</a>
+        <a href="steam://connect/kovuthehusky.com:27025/derp" class="btn btn-primary remote disabled">Connect</a>
       </div>
     </div>
   </div>
@@ -106,6 +106,7 @@ permalink: /counterstrike
   function refresh() {
     $.getJSON('https://d.kovuthehusky.com/status/counterstrike-retake.json', function(data) {
       $('#status-retake').text('Online');
+      $('.remote').removeClass('disabled');
       $('#status-retake').addClass('badge-success');
       $('#status-retake').removeClass('badge-danger');
       $('#version-retake').text(data['Info']['Version']);
@@ -133,6 +134,7 @@ permalink: /counterstrike
       players2 = playernames;
     }).fail(function() {
       $('#status-retake').text('Offline');
+      $('.remote').addClass('disabled');
       $('#status-retake').addClass('badge-danger');
       $('#status-retake').removeClass('badge-success');
       $('#version2').text('Offline');

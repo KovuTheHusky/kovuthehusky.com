@@ -43,12 +43,8 @@ permalink: /minecraft
               
             </ul>
             <div class="card-body">
-            
-            
-            <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-primary ">Connect</a>
-            
-            <a href="https://d.kovuthehusky.com/minecraft/survival-2014/" class="btn btn-link ">Map</a>
-            
+            <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-primary disabled remote">Connect</a>
+            <a href="https://d.kovuthehusky.com/minecraft/survival-2014/" class="btn btn-link disabled remote">Map</a>
           </div>
         </div>
 
@@ -80,7 +76,7 @@ permalink: /minecraft
         <div class="card-body">
         {% endif %}
         {% for button in world.buttons %}
-        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %} {% if button.disabled %}disabled{% endif %}">{{ button.label }}</a>
+        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %} disabled remote">{{ button.label }}</a>
         {% endfor %}
       </div>
     </div>
@@ -193,6 +189,7 @@ var players = [];
 function refresh() {
   $.getJSON('https://d.kovuthehusky.com/status/minecraft.json', function(data) {
     $('#status').text('Online');
+    $('.remote').removeClass('disabled');
     $('#status').addClass('badge-success');
     $('#status').removeClass('badge-danger');
     $('#version').text(data['Info']['Version']);
@@ -316,6 +313,7 @@ function refresh() {
     });
   }).fail(function() {
     $('#status').text('Offline');
+    $('.remote').addClass('disabled');
     $('#status').addClass('badge-danger');
     $('#status').removeClass('badge-success');
     $('#version').text('Offline');
