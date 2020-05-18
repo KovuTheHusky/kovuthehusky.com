@@ -2843,7 +2843,7 @@
         "number": 412,
         "name": "Burmy",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "412-burmy-trash": {
         "number": 412,
@@ -3943,7 +3943,7 @@
         "number": 559,
         "name": "Scraggy",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "560-scrafty": {
         "number": 560,
@@ -4429,7 +4429,7 @@
         "number": 632,
         "name": "Durant",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "633-deino": {
         "number": 633,
@@ -4561,7 +4561,7 @@
         "number": 649,
         "name": "Genesect",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       }
     },
     "kalos": {
