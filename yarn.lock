@@ -413,10 +413,10 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
   integrity sha1-2TPOuSBdgr3PSIb2dCvcK03qFG0=
 
-mapbox-gl@^1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/mapbox-gl/-/mapbox-gl-1.10.0.tgz#c33e74d1f328e820e245ff8ed7b5dbbbc4be204f"
-  integrity sha512-SrJXcR9s5yEsPuW2kKKumA1KqYW9RrL8j7ZcIh6glRQ/x3lwNMfwz/UEJAJcVNgeX+fiwzuBoDIdeGB/vSkZLQ==
+mapbox-gl@^1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/mapbox-gl/-/mapbox-gl-1.10.1.tgz#7dbd53bdf2f78e45e125c1115e94dea286ef663c"
+  integrity sha512-0aHt+lFUpYfvh0kMIqXqNXqoYMuhuAsMlw87TbhWrw78Tx2zfuPI0Lx31/YPUgJ+Ire0tzQ4JnuBL7acDNXmMg==
   dependencies:
     "@mapbox/geojson-rewind" "^0.5.0"
     "@mapbox/geojson-types" "^1.0.2"
@@ -694,10 +694,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-simple-icons@^2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-2.12.0.tgz#7e57e2d884cdca32939e5b8b54d907280465c86b"
-  integrity sha512-ijuCfYr+6mCgj796n4f4c4auUC+Re5pt6FsVWoDM1lStCm422bF2pqbZIB8xxstCMba7KQqHJ6qWYWW/qZMoPA==
+simple-icons@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-2.13.0.tgz#52823988b2d03af4d6b65ee271b277530615699a"
+  integrity sha512-/48gqMEHf5dcCLERB56IlIEKY19u3TSPlj7KH9vyefE4FGcM1stsV3BH5Lpv1JRBFfdnkYuWxC0OuPEFLdtQpg==
 
 spdx-correct@^3.0.0:
   version "3.1.0"
