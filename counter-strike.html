@@ -21,7 +21,7 @@ permalink: /counter-strike
           <li id="playercount-practice" class="list-group-item d-flex justify-content-between">Players<span id="players-practice">Offline</span></li>
         </ul>
         <div class="card-body" style="border-top: 1px solid #808080;">
-        <a href="steam://connect/kovuthehusky.com:27015/derp" class="btn btn-primary remote disabled">Connect</a>
+        <a href="steam://connect/kovuthehusky.com:27015/derp" class="btn btn-primary remote-practice disabled">Connect</a>
       </div>
     </div>
     <div class="card">
@@ -38,7 +38,7 @@ permalink: /counter-strike
           <li id="playercount-retake" class="list-group-item d-flex justify-content-between">Players<span id="players-retake">Offline</span></li>
         </ul>
         <div class="card-body" style="border-top: 1px solid #808080;">
-        <a href="steam://connect/kovuthehusky.com:27025/derp" class="btn btn-primary remote disabled">Connect</a>
+        <a href="steam://connect/kovuthehusky.com:27025/derp" class="btn btn-primary remote-retake disabled">Connect</a>
       </div>
     </div>
   </div>
@@ -58,6 +58,7 @@ permalink: /counter-strike
   function refresh() {
     $.getJSON('https://d.kovuthehusky.com/status/counterstrike-practice.json', function(data) {
       $('#status-practice').text('Online');
+      $('.remote-practice').removeClass('disabled');
       $('#status-practice').addClass('badge-success');
       $('#status-practice').removeClass('badge-danger');
       $('#version-practice').text(data['Info']['Version']);
@@ -85,6 +86,7 @@ permalink: /counter-strike
       players = playernames;
     }).fail(function() {
       $('#status-practice').text('Offline');
+      $('.remote-practice').addClass('disabled');
       $('#status-practice').addClass('badge-danger');
       $('#status-practice').removeClass('badge-success');
       $('#version').text('Offline');
@@ -106,7 +108,7 @@ permalink: /counter-strike
   function refresh() {
     $.getJSON('https://d.kovuthehusky.com/status/counterstrike-retake.json', function(data) {
       $('#status-retake').text('Online');
-      $('.remote').removeClass('disabled');
+      $('.remote-retake').removeClass('disabled');
       $('#status-retake').addClass('badge-success');
       $('#status-retake').removeClass('badge-danger');
       $('#version-retake').text(data['Info']['Version']);
@@ -134,7 +136,7 @@ permalink: /counter-strike
       players2 = playernames;
     }).fail(function() {
       $('#status-retake').text('Offline');
-      $('.remote').addClass('disabled');
+      $('.remote-retake').addClass('disabled');
       $('#status-retake').addClass('badge-danger');
       $('#status-retake').removeClass('badge-success');
       $('#version2').text('Offline');
