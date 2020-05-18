@@ -148,6 +148,10 @@ a.disabled {
   fill: #fff;
 }
 
+#timeline svg g:first-of-type rect:not(:last-child) {
+  fill: #121212;
+}
+
 .pokemon-shiny {
   display: none;
 }
