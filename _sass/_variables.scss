@@ -5,6 +5,14 @@ $primary: #5dde95;
 $tooltip-color: #000;
 $popover-body-color: #000;
 
+.gutter-top {
+  margin-top: 76px;
+}
+
+.gutter-bottom {
+  margin-bottom: 76px;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -33,6 +41,10 @@ body {
 
 .navbar > * {
   pointer-events: auto;
+}
+
+.navbar .navbar-toggler {
+  outline: none;
 }
 
 .container {
@@ -257,6 +269,10 @@ a.disabled {
 
 .colors button {
   margin-bottom: 12px;
+}
+
+.reference img {
+  width: 100%;
 }
 
 #fursuit {

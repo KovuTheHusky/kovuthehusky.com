@@ -11,7 +11,7 @@ xp: 14924989
   <div class="progress" style="height: 38px; margin-bottom: 12px;">
     <div class="progress-bar" role="progressbar" style="width: {{ xp }}%;" aria-valuenow="{{ xp }}" aria-valuemin="0" aria-valuemax="100">XP - {{ xp }}% (38/40)</div>
   </div>
-  <div class="progress" style="height: 38px; margin-bottom: 76px;">
+  <div class="progress gutter-bottom" style="height: 38px;">
     <div class="progress-bar" role="progressbar" style="width: {{ dex }}%;" aria-valuenow="{{ dex }}" aria-valuemin="0" aria-valuemax="100">Pokédex - {{ dex }}% ({{ site.data.pokemongo.caught }}/{{ site.data.pokemongo.total }})</div>
   </div>
   <div class="text-center" style="margin-bottom: 12px;">
@@ -48,7 +48,7 @@ xp: 14924989
     {% endfor %}
   </div>
   {% endfor %}
-  <div class="pokemon pokemon-medals" style="margin-top: 76px;">
+  <div class="pokemon pokemon-medals gutter-top">
     <h3>Medals</h3>
     <div class="grid grid-pokemon">
       {% for medals in site.data.medals %}

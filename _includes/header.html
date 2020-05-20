@@ -28,29 +28,29 @@
       <a class="navbar-brand" href="/">
         <img src="/images/avatar.svg" alt="{{ site.title }}" class="rounded-circle" width="50" height="50">
       </a>
-      <div class="dropdown" style="pointer-events: auto;">
-        <button class="navbar-toggler bg-dark" style="outline: none;" type="button" data-toggle="dropdown" aria-label="Navigation">
+      <div class="dropdown">
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="dropdown" aria-label="Navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item {% if page.url == '/' %}active{% endif %}" href="/">About</a>
-          <a class="dropdown-item {% if page.url == '/places' %}active{% endif %}" href="/places">Places</a>
-          <a class="dropdown-item {% if page.url == '/posts' or page.layout == 'post' %}active{% endif %}" href="/posts">Posts</a>
-          <a class="dropdown-item {% if page.url == '/projects' %}active{% endif %}" href="/projects">Projects</a>
+          <a class="dropdown-item{% if page.url == '/' %} active{% endif %}" href="/">About</a>
+          <a class="dropdown-item{% if page.url == '/places' %} active{% endif %}" href="/places">Places</a>
+          <a class="dropdown-item{% if page.url == '/posts' or page.layout == 'post' %} active{% endif %}" href="/posts">Posts</a>
+          <a class="dropdown-item{% if page.url == '/projects' %} active{% endif %}" href="/projects">Projects</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Furry</h6>
-          <a class="dropdown-item {% if page.url == '/fursona' %}active{% endif %}" href="/fursona">Fursona</a>
-          <a class="dropdown-item {% if page.url == '/fursuit' %}active{% endif %}" href="/fursuit">Fursuit</a>
-          <a class="dropdown-item {% if page.url == '/conventions' %}active{% endif %}" href="/conventions">Conventions</a>
+          <a class="dropdown-item{% if page.url == '/fursona' %} active{% endif %}" href="/fursona">Fursona</a>
+          <a class="dropdown-item{% if page.url == '/fursuit' %} active{% endif %}" href="/fursuit">Fursuit</a>
+          <a class="dropdown-item{% if page.url == '/conventions' %} active{% endif %}" href="/conventions">Conventions</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Gamer</h6>
-          <a class="dropdown-item {% if page.url == '/minecraft' %}active{% endif %}" href="/minecraft">Minecraft</a>
-          <a class="dropdown-item {% if page.url == '/terraria' %}active{% endif %}" href="/terraria">Terraria</a>
-          <a class="dropdown-item {% if page.url == '/counter-strike' %}active{% endif %}" href="/counter-strike">Counter-Strike</a>
-          <a class="dropdown-item {% if page.url == '/pokemon-go' %}active{% endif %}" href="/pokemon-go">Pokémon GO</a>
+          <a class="dropdown-item{% if page.url == '/minecraft' %} active{% endif %}" href="/minecraft">Minecraft</a>
+          <a class="dropdown-item{% if page.url == '/terraria' %} active{% endif %}" href="/terraria">Terraria</a>
+          <a class="dropdown-item{% if page.url == '/counter-strike' %} active{% endif %}" href="/counter-strike">Counter-Strike</a>
+          <a class="dropdown-item{% if page.url == '/pokemon-go' %} active{% endif %}" href="/pokemon-go">Pokémon GO</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">Other</h6>
-          <a class="dropdown-item {% if page.url == '/credits' %}active{% endif %}" href="/credits">Credits</a>
+          <a class="dropdown-item{% if page.url == '/credits' %} active{% endif %}" href="/credits">Credits</a>
         </div>
       </div>
     </nav>
