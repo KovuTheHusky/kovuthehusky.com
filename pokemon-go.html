@@ -41,7 +41,7 @@ xp: 14924989
       {% for pokemon in region[1] %}
       <div class="{% if pokemon[1].caught == 0 %}n{% else %}c{% endif %}">
         <svg viewBox="0 0 32 32"><use xlink:href="/node_modules/pokemon-icons/assets/icon-symbols.svg#{{ pokemon[0] }}"></use></svg>
-        <span>{{ pokemon[1].name }}<br />#{{ pokemon[1].number }}</span>
+        <span>{{ pokemon[1].name }}<br>#{{ pokemon[1].number }}</span>
       </div>
       {% endfor %}
     </div>
@@ -55,9 +55,9 @@ xp: 14924989
       {% for medal in medals[1] %}
       <div>
         {% if medal[1].rank %}
-        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[1].rank }}/{{ medal[0] }}" alt="{{ medal[1].title }}" />
+        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[1].rank }}/{{ medal[0] }}" alt="{{ medal[1].title }}">
         {% else %}
-        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[0] }}" alt="{{ medal[1].title }}" />
+        <img src="/node_modules/pokemon-medals/{{ medals[0] }}/{{ medal[0] }}" alt="{{ medal[1].title }}">
         {% endif %}
         <span>{{ medal[1].title }}</span>
       </div>
