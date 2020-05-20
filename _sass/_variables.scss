@@ -25,6 +25,15 @@ html, body {
   height: 100%;
 }
 
+.navbar {
+  pointer-events: none;
+  z-index: 999;
+}
+
+.navbar > * {
+  pointer-events: auto;
+}
+
 .container {
   max-width: 1140px !important;
 }
@@ -174,6 +183,7 @@ a.disabled {
 
 .grid-about {
   grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  margin-bottom: 76px;
 }
 
 .grid-about a:any-link {

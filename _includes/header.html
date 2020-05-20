@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" style="height: 100%;">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="{% if page.subtitle %}{{ page.subtitle | strip_html }}{% else %}{{ site.description }}{% endif %}">
@@ -23,9 +23,9 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
     <script src="/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer></script>
   </head>
-  <body style="height: 100%">
-    <nav class="navbar navbar-dark bg-transparent" style="z-index: 999; pointer-events: none;">
-      <a class="navbar-brand" href="/" style="pointer-events: auto;">
+  <body>
+    <nav class="navbar navbar-dark bg-transparent">
+      <a class="navbar-brand" href="/">
         <img src="/images/avatar.svg" alt="{{ site.title }}" class="rounded-circle" width="50" height="50">
       </a>
       <div class="dropdown" style="pointer-events: auto;">
