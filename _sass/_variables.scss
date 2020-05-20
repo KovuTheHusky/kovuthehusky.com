@@ -21,7 +21,8 @@ $popover-body-color: #000;
   background: #fff;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -38,7 +39,9 @@ html, body {
   max-width: 1140px !important;
 }
 
-.btn-primary, .badge-primary, .progress-bar {
+.btn-primary,
+.badge-primary,
+.progress-bar {
   color: #343a40 !important;
 }
 
@@ -52,13 +55,14 @@ html, body {
   }
 }
 
-.card, .list-group-item {
+.card,
+.list-group-item {
   background-color: #343a40 !important;
   border-color: #808080 !important;
 }
 
 .list-group-flush {
-    border-top: 1px solid #808080 !important;
+  border-top: 1px solid #808080 !important;
 }
 
 #playercount,
@@ -258,7 +262,7 @@ a.disabled {
   width: 100%;
   height: 100%;
   z-index: -999;
-  background: url('/images/fursuit.jpg') no-repeat top center fixed; 
+  background: url("/images/fursuit.jpg") no-repeat top center fixed;
   background-size: cover;
 }
 
