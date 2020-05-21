@@ -3,13 +3,13 @@ layout: page
 title: Pokémon GO
 subtitle: "Pokédex, medals &amp; more."
 permalink: /pokemon-go
-xp: 14924989
+xp: 15000000
 ---
 {% assign xp = page.xp | times: 100 | divided_by: 20000000 | round %}
 {% assign dex = site.data.pokemongo.caught | times: 100 | divided_by: site.data.pokemongo.total | round %}
 <div class="container">
   <div class="progress" style="height: 38px; margin-bottom: 12px;">
-    <div class="progress-bar" role="progressbar" style="width: {{ xp }}%;" aria-valuenow="{{ xp }}" aria-valuemin="0" aria-valuemax="100">XP - {{ xp }}% (38/40)</div>
+    <div class="progress-bar" role="progressbar" style="width: {{ xp }}%;" aria-valuenow="{{ xp }}" aria-valuemin="0" aria-valuemax="100">XP - {{ xp }}% (39/40)</div>
   </div>
   <div class="progress gutter-bottom" style="height: 38px;">
     <div class="progress-bar" role="progressbar" style="width: {{ dex }}%;" aria-valuenow="{{ dex }}" aria-valuemin="0" aria-valuemax="100">Pokédex - {{ dex }}% ({{ site.data.pokemongo.caught }}/{{ site.data.pokemongo.total }})</div>
