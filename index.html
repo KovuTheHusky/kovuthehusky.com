@@ -2,6 +2,7 @@
 layout: default
 ---
 <div class="container">
+  <div id="restream"></div>
   <h1 id="about" class="text-justify m-auto">29, male, new yorker, furry, climber, coder, gamer, queer. <a href="https://nightwolf1298.com">NightWolf1298</a>'s husband. <a href="https://morefurless.com">More Fur Less</a> fursuiter. <a href="https://furpocalypse.org">Furpocalypse</a> assistant director of charity.</h1>
   <div class="grid grid-about">
     <a href="https://discord.gg/fUgZGwY" style="background-color: #7289DA;">
@@ -118,3 +119,24 @@ layout: default
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function() {
+    $.ajaxSetup({ cache: false });
+  });
+  $(window).on('resize', function(){
+    $('#restream > iframe').height($('#restream > iframe').width() * 9 / 16);
+  });
+
+  function refresh() {
+    $.getJSON('https://d.kovuthehusky.com/status/restream.json', function(data) {
+      if (data['live']) {
+        $('#restream').append('<iframe src="https://player.twitch.tv/?channel=kovuthehusky&parent=kovuthehusky.com" height="624" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>');
+        $('#restream').css('margin-bottom', '76px');
+        $('#restream > iframe').height($('#restream > iframe').width() * 9 / 16);
+      }
+    });
+  }
+
+  refresh();
+  setInterval(refresh, 1000);
+  </script>

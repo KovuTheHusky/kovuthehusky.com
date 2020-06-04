@@ -291,6 +291,11 @@ a.disabled {
   background-size: cover;
 }
 
+#restream iframe {
+  width: 100%;
+  border: none;
+}
+
 .conventions h5 {
   margin-top: 32px;
 }
