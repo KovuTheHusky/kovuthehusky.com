@@ -127,16 +127,23 @@ layout: default
     $('#restream > iframe').height($('#restream > iframe').width() * 9 / 16);
   });
 
+  var shown = false;
+
   function refresh() {
-    $.getJSON('https://d.kovuthehusky.com/status/restream.json', function(data) {
-      if (data['live']) {
-        $('#restream').append('<iframe src="https://player.twitch.tv/?channel=kovuthehusky&parent=kovuthehusky.com" height="624" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>');
-        $('#restream').css('margin-bottom', '76px');
-        $('#restream > iframe').height($('#restream > iframe').width() * 9 / 16);
-      }
-    });
+    if (!shown) {
+      $.getJSON('https://d.kovuthehusky.com/status/restream.json', function(data) {
+        if (data['live']) {
+          shown = true;
+          $('#restream').append('<iframe src="https://player.twitch.tv/?channel=kovuthehusky&parent=kovuthehusky.com" height="624" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>');
+          $('#restream').css('margin-bottom', '76px');
+          $('#restream > iframe').height($('#restream > iframe').width() * 9 / 16);
+        }
+      });
+    } else {
+      clearInterval(interval);
+    }
   }
 
   refresh();
-  setInterval(refresh, 1000);
+  var interval = setInterval(refresh, 1000);
   </script>
