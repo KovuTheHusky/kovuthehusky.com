@@ -2873,7 +2873,7 @@
         "number": 414,
         "name": "Mothim",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "415-combee": {
         "number": 415,
@@ -3577,7 +3577,7 @@
         "number": 502,
         "name": "Dewott",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "503-samurott": {
         "number": 503,
@@ -3625,7 +3625,7 @@
         "number": 510,
         "name": "Liepard",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "511-pansage": {
         "number": 511,
@@ -3691,7 +3691,7 @@
         "number": 521,
         "name": "Unfezant",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "521-unfezant-male": {
         "number": 521,
@@ -3721,7 +3721,7 @@
         "number": 525,
         "name": "Boldore",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "526-gigalith": {
         "number": 526,
@@ -3751,7 +3751,7 @@
         "number": 530,
         "name": "Excadrill",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "531-audino": {
         "number": 531,
@@ -4507,7 +4507,7 @@
         "number": 643,
         "name": "Reshiram",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "644-zekrom": {
         "number": 644,
