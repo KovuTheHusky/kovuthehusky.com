@@ -5441,7 +5441,7 @@
         "number": 124,
         "name": "Jynx",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "125-electabuzz-shiny": {
         "number": 125,
@@ -6951,7 +6951,7 @@
         "number": 340,
         "name": "Whiscash",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "341-corphish-shiny": {
         "number": 341,
@@ -7271,19 +7271,19 @@
         "number": 390,
         "name": "Chimchar",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "391-monferno-shiny": {
         "number": 391,
         "name": "Monferno",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "392-infernape-shiny": {
         "number": 392,
         "name": "Infernape",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "393-piplup-shiny": {
         "number": 393,
@@ -7373,7 +7373,7 @@
         "number": 407,
         "name": "Roserade",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "408-cranidos-shiny": {
         "number": 408,
@@ -7541,7 +7541,7 @@
         "number": 428,
         "name": "Lopunny",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "429-mismagius-shiny": {
         "number": 429,
@@ -7595,7 +7595,7 @@
         "number": 437,
         "name": "Bronzong",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "438-bonsly-shiny": {
         "number": 438,
@@ -7745,7 +7745,7 @@
         "number": 460,
         "name": "Abomasnow",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "461-weavile-shiny": {
         "number": 461,
