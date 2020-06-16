@@ -13,13 +13,23 @@ geojson = {
 
 offset = 0
 unique = []
+sequentialErrors = 0
+totalErrors = 0
 
 loop do
 
   res = JSON.parse(Net::HTTP.get(URI('https://api.foursquare.com/v2/users/self/checkins?oauth_token=' + ARGV[0] + '&v=20200303&limit=250&offset=' + offset.to_s)))
 
   if (res['meta']['code'] != 200)
-    exit
+    sequentialErrors += 1
+    totalErrors += 1
+    if (sequentialErrors < 10 && totalErrors < 100)
+      next
+    else
+      exit
+    end
+  else
+    sequentialErrors = 0
   end
 
   res['response']['checkins']['items'].each do |child|
@@ -41,16 +51,16 @@ loop do
       }
     }
     if child['venue']['location']['lng'] > maxlng
-      maxlng = child['venue']['location']['lng'];
+      maxlng = child['venue']['location']['lng']
     end
     if child['venue']['location']['lat'] > maxlat
-      maxlat = child['venue']['location']['lat'];
+      maxlat = child['venue']['location']['lat']
     end
     if child['venue']['location']['lng'] < minlng
-      minlng = child['venue']['location']['lng'];
+      minlng = child['venue']['location']['lng']
     end
     if child['venue']['location']['lat'] < minlat
-      minlat = child['venue']['location']['lat'];
+      minlat = child['venue']['location']['lat']
     end
   end
 
