@@ -579,8 +579,8 @@ pokemon-icons@TheArtificial/pokemon-icons#gh-pages:
 
 pokemon-medals@KovuTheHusky/pokemon-medals#gh-pages:
   version "0.0.0"
-  uid "167e67a5836812a26c672a63aadb146f08ee3494"
-  resolved "https://codeload.github.com/KovuTheHusky/pokemon-medals/tar.gz/167e67a5836812a26c672a63aadb146f08ee3494"
+  uid ed4da8cf548a2506cf90d38caaecf0f35c22782a
+  resolved "https://codeload.github.com/KovuTheHusky/pokemon-medals/tar.gz/ed4da8cf548a2506cf90d38caaecf0f35c22782a"
 
 popper.js@^1.16.1:
   version "1.16.1"
