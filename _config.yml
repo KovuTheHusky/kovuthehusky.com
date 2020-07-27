@@ -9,6 +9,7 @@ github_username: kovuthehusky
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-file-size
 
 sass:
   load_paths:

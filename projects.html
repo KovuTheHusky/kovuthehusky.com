@@ -44,7 +44,7 @@ permalink: /projects
   {% for status in site.data.projects.owned %}
 
     {% for project in status[1] %}
-      <div class="card {{ status[0] }}">
+      <div class="card repo-status-{{ status[0] }}">
         {% if project.preview_video %}
         <video class="card-img-top" autoplay loop muted playsinline>
           <source src="{{ project.preview_video }}" type="video/mp4">
@@ -56,7 +56,7 @@ permalink: /projects
           <h5 class="card-title">
             {{ project.name }}
             {% if project.status %}
-            <span class="badge {{ project.status | downcase }}">{{ project.status }}</span>
+            <span class="badge repo-status-{{ project.status | downcase }}">{{ project.status }}</span>
             {% endif %}
             {% if project.icon %}
             <img class="float-right" src="{{ project.icon }}" alt="{{ project.name }}" style="width: 24px; height: 24px; vertical-align: top;">
@@ -108,10 +108,10 @@ permalink: /projects
     statuses.forEach(e => {
       if (args.includes(e)) {
         $('#' + e).prop('checked', true);
-        $('.' + e).show();
+        $('.repo-status-' + e).show();
       } else {
         $('#' + e).prop('checked', false);
-        $('.' + e).hide();
+        $('.repo-status-' + e).hide();
       }
     });
   }
