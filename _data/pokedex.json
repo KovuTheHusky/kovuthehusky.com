@@ -2855,13 +2855,13 @@
         "number": 413,
         "name": "Wormadam",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "413-wormadam-sandy": {
         "number": 413,
         "name": "Wormadam",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "413-wormadam-trash": {
         "number": 413,
@@ -2945,7 +2945,7 @@
         "number": 423,
         "name": "Gastrodon",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "424-ambipom": {
         "number": 424,
@@ -3529,7 +3529,7 @@
         "number": 494,
         "name": "Victini",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "495-snivy": {
         "number": 495,
@@ -3559,7 +3559,7 @@
         "number": 499,
         "name": "Pignite",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "500-emboar": {
         "number": 500,
@@ -3661,7 +3661,7 @@
         "number": 516,
         "name": "Simipour",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "517-munna": {
         "number": 517,
@@ -3769,7 +3769,7 @@
         "number": 533,
         "name": "Gurdurr",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "534-conkeldurr": {
         "number": 534,
@@ -3841,7 +3841,7 @@
         "number": 545,
         "name": "Scolipede",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "546-cottonee": {
         "number": 546,
@@ -3937,7 +3937,7 @@
         "number": 558,
         "name": "Crustle",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "559-scraggy": {
         "number": 559,
@@ -4075,7 +4075,7 @@
         "number": 581,
         "name": "Swanna",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "582-vanillite": {
         "number": 582,
@@ -4285,7 +4285,7 @@
         "number": 608,
         "name": "Lampent",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "609-chandelure": {
         "number": 609,
@@ -4435,13 +4435,13 @@
         "number": 633,
         "name": "Deino",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "634-zweilous": {
         "number": 634,
         "name": "Zweilous",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "635-hydreigon": {
         "number": 635,
