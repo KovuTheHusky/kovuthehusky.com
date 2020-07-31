@@ -70,6 +70,8 @@ loop do
 
 end
 
+geojson['features'] = geojson['features'].sort_by { | feature | feature['properties']['id'] }
+
 bounds = [
   [minlng - (maxlng - minlng) * 0.05, minlat - (maxlat - minlat) * 0.05],
   [maxlng + (maxlng - minlng) * 0.05, maxlat + (maxlat - minlat) * 0.05]
