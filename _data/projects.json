@@ -218,6 +218,19 @@
         "status": "Suspended"
       },
       {
+        "name": "SortVisualization",
+        "owner": "KovuTheHusky",
+        "description": "An application that lets you watch, listen to, and learn about computer sciences' complex sorting algorithms.",
+        "button": {
+          "text": "Download",
+          "href": "https://github.com/KovuTheHusky/SortVisualization/releases/latest"
+        },
+        "source": "https://github.com/KovuTheHusky/SortVisualization",
+        "icon": "/images/projects/icons/sortvisualization.png",
+        "preview_video": "/videos/projects/previews/sortvisualization.mp4",
+        "status": "Suspended"
+      },
+      {
         "name": "Speedtest",
         "owner": "KovuTheHusky",
         "description": "Collects speed test data and displays graphs of that data.",
@@ -311,10 +324,31 @@
         "status": "Unknown"
       },
       {
+        "name": "Challenge",
+        "owner": "KovuTheHusky",
+        "description": "College project that converts input to different bases.",
+        "source": "https://github.com/KovuTheHusky/Challenge",
+        "status": "Unknown"
+      },
+      {
         "name": "CountLetters",
         "owner": "KovuTheHusky",
         "description": "College project that counts letters in a text file.",
         "source": "https://github.com/KovuTheHusky/CountLetters",
+        "status": "Unknown"
+      },
+      {
+        "name": "DiskQueue",
+        "owner": "KovuTheHusky",
+        "description": "College project that explores a disk request queue algorithm.",
+        "source": "https://github.com/KovuTheHusky/DiskQueue",
+        "status": "Unknown"
+      },
+      {
+        "name": "FindFile",
+        "owner": "KovuTheHusky",
+        "description": "College project that finds a file in a directory.",
+        "source": "https://github.com/KovuTheHusky/FindFile",
         "status": "Unknown"
       },
       {
@@ -356,11 +390,6 @@
   },
   "contributed": [
     {
-      "name": "AutoPatchWork",
-      "owner": "os0x",
-      "description": null
-    },
-    {
       "name": "Better-Sprinting",
       "owner": "chylex",
       "description": "Minecraft mod that improves and expands sprinting, sneaking, and flying mechanics."
@@ -374,6 +403,11 @@
       "name": "dynmap",
       "owner": "webbukkit",
       "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations."
+    },
+    {
+      "name": "dynmap-api",
+      "owner": "webbukkit",
+      "description": "Published API for Dynmap on Spigot/Bukkit"
     },
     {
       "name": "dynmap-mobs",
@@ -424,6 +458,11 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands"
+    },
+    {
+      "name": "TDSM_map",
+      "owner": "elevatorguy",
+      "description": "TDSM Plugin that can save current world to .png on command   (there is now a tshock branch aswell)"
     }
   ]
 }
