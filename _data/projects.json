@@ -1,5 +1,5 @@
 {
-  "since": "2020-08-04",
+  "since": "2020-08-05",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -260,13 +260,6 @@
         "source": "https://github.com/KovuTheHusky/Webstats",
         "icon": "/images/projects/icons/webstats.svg",
         "preview_image": "/images/projects/previews/webstats.png",
-        "status": "Abandoned"
-      },
-      {
-        "name": "Wifimote",
-        "owner": "KovuTheHusky",
-        "description": "Wifi connected remote control software.",
-        "source": "https://github.com/KovuTheHusky/Wifimote",
         "status": "Abandoned"
       }
     ],
