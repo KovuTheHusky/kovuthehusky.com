@@ -1,5 +1,5 @@
 {
-  "since": "2020-08-11",
+  "since": "2020-08-13",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -390,7 +390,7 @@
       {
         "name": "telegram-gifv",
         "owner": "KovuTheHusky",
-        "description": null,
+        "description": "Creates videos that will appear as GIFs in Telegram.",
         "source": "https://github.com/KovuTheHusky/telegram-gifv",
         "status": "Unknown"
       }
