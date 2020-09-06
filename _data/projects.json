@@ -1,5 +1,5 @@
 {
-  "since": "2020-09-04",
+  "since": "2020-09-06",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -8,6 +8,7 @@
     "chylex/Better-Sprinting",
     "KovuTheHusky/buttfumble.org",
     "KovuTheHusky/Challenge",
+    "KovuTheHusky/cliffs-tracker",
     "KovuTheHusky/Countdown",
     "KovuTheHusky/CountLetters",
     "KovuTheHusky/CSGO-Clarity",
@@ -329,6 +330,13 @@
         "owner": "KovuTheHusky",
         "description": "College project that converts input to different bases.",
         "source": "https://github.com/KovuTheHusky/Challenge",
+        "status": "Unknown"
+      },
+      {
+        "name": "cliffs-tracker",
+        "owner": "KovuTheHusky",
+        "description": "Track climber occupancy at The Cliffs locations.",
+        "source": "https://github.com/KovuTheHusky/cliffs-tracker",
         "status": "Unknown"
       },
       {
