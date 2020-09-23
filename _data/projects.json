@@ -1,5 +1,5 @@
 {
-  "since": "2020-09-22",
+  "since": "2020-09-23",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -274,6 +274,17 @@
     ],
     "wip": [
       {
+        "name": "Cliffs-Tracker",
+        "owner": "KovuTheHusky",
+        "description": "Occupancy tracker script and website for The Cliffs (DUMBO, LIC, Valhalla, and Callowhill).",
+        "button": {
+          "text": "Visit",
+          "href": "https://aws.kovuthehusky.com/cliffs-tracker"
+        },
+        "source": "https://github.com/KovuTheHusky/cliffs-tracker",
+        "status": "WIP"
+      },
+      {
         "name": "developer.myfursona.com",
         "owner": "MyFursona",
         "description": "Documentation for the MyFursona API.",
@@ -309,6 +320,13 @@
         "source": "https://github.com/KovuTheHusky/myfursona.com",
         "icon": "/images/projects/icons/myfursonacom.svg",
         "status": "WIP"
+      },
+      {
+        "name": "telegram-gifv",
+        "owner": "KovuTheHusky",
+        "description": "Creates videos that will appear as GIFs in Telegram.",
+        "source": "https://github.com/KovuTheHusky/telegram-gifv",
+        "status": "WIP"
       }
     ],
     "concept": [
@@ -330,13 +348,6 @@
         "owner": "KovuTheHusky",
         "description": "College project that converts input to different bases.",
         "source": "https://github.com/KovuTheHusky/Challenge",
-        "status": "Unknown"
-      },
-      {
-        "name": "cliffs-tracker",
-        "owner": "KovuTheHusky",
-        "description": "Track climber occupancy at The Cliffs locations.",
-        "source": "https://github.com/KovuTheHusky/cliffs-tracker",
         "status": "Unknown"
       },
       {
@@ -393,13 +404,6 @@
         "owner": "KovuTheHusky",
         "description": "College project that draws a spiral.",
         "source": "https://github.com/KovuTheHusky/Spiral",
-        "status": "Unknown"
-      },
-      {
-        "name": "telegram-gifv",
-        "owner": "KovuTheHusky",
-        "description": "Creates videos that will appear as GIFs in Telegram.",
-        "source": "https://github.com/KovuTheHusky/telegram-gifv",
         "status": "Unknown"
       }
     ]
