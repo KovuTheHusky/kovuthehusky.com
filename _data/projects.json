@@ -1,5 +1,5 @@
 {
-  "since": "2020-09-29",
+  "since": "2020-10-01",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -9,6 +9,7 @@
     "KovuTheHusky/buttfumble.org",
     "KovuTheHusky/Challenge",
     "KovuTheHusky/cliffs-tracker",
+    "KovuTheHusky/Cliffs-Tracker",
     "KovuTheHusky/Countdown",
     "KovuTheHusky/CountLetters",
     "KovuTheHusky/CSGO-Clarity",
@@ -282,6 +283,17 @@
           "href": "https://aws.kovuthehusky.com/cliffs-tracker"
         },
         "source": "https://github.com/KovuTheHusky/cliffs-tracker",
+        "status": "WIP"
+      },
+      {
+        "name": "Cliffs-Tracker",
+        "owner": "KovuTheHusky",
+        "description": "Occupancy tracker script and website for The Cliffs (DUMBO, LIC, Valhalla, and Callowhill).",
+        "button": {
+          "text": "Visit",
+          "href": "https://aws.kovuthehusky.com/cliffs-tracker"
+        },
+        "source": "https://github.com/KovuTheHusky/Cliffs-Tracker",
         "status": "WIP"
       },
       {
