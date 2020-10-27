@@ -1,8 +1,9 @@
 {
-  "since": "2020-10-26",
+  "since": "2020-10-27",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
+    "KovuTheHusky/assetto-corsa-server",
     "os0x/AutoPatchWork",
     "KovuTheHusky/BaseTime",
     "chylex/Better-Sprinting",
@@ -336,6 +337,13 @@
 
     ],
     "unknown": [
+      {
+        "name": "assetto-corsa-server",
+        "owner": "KovuTheHusky",
+        "description": null,
+        "source": "https://github.com/KovuTheHusky/assetto-corsa-server",
+        "status": "Unknown"
+      },
       {
         "name": "BaseTime",
         "owner": "KovuTheHusky",
