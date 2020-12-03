@@ -56,7 +56,9 @@ json['contributions'].each do |repo|
     project = {
       "name": name,
       "owner": owner,
-      "description": response['description']
+      "description": response['description'],
+      "forks": response['forks'],
+      "stars": response['stargazers_count']
     }
     if (owner == 'KovuTheHusky' || orgs.include?(owner))
       homepage = response['homepage']

@@ -338,3 +338,24 @@ a.disabled {
 .repo-status-moved {
   background-color: #e05d44;
 }
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.badge a:any-link {
+  display: inline-block;
+  height: 15px !important;
+  padding: 0;
+  margin: 0;
+}
+
+.badge a:any-link img {
+  display: inline-block;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  filter: invert(1);
+}

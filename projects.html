@@ -58,6 +58,12 @@ permalink: /projects
             {% if project.status %}
             <span class="badge repo-status-{{ project.status | downcase }}">{{ project.status }}</span>
             {% endif %}
+            {% if project.stars != 0 %}
+            <span class="badge badge-secondary"><a href="{{ project.source }}/stargazers" class="link-unstyled"><img src="/node_modules/@primer/octicons/build/svg/star-24.svg" style="height: 15px;" /> {{ project.stars }}</a></span>
+            {% endif %}
+            {% if project.forks != 0 %}
+            <span class="badge badge-secondary"><a href="{{ project.source }}/network/members" class="link-unstyled"><img src="/node_modules/@primer/octicons/build/svg/git-fork-24.svg" style="height: 15px;" /> {{ project.forks }}</a></span>
+            {% endif %}
             {% if project.icon %}
             <img class="float-right" src="{{ project.icon }}" alt="{{ project.name }}" style="width: 24px; height: 24px; vertical-align: top;">
             {% endif %}

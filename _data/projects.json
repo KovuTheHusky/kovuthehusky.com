@@ -1,5 +1,5 @@
 {
-  "since": "2020-12-01",
+  "since": "2020-12-02",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -63,6 +63,8 @@
         "name": "buttfumble.org",
         "owner": "KovuTheHusky",
         "description": "A website for the Buttfumble fantasy football league.",
+        "forks": 0,
+        "stars": 0,
         "button": {
           "text": "Visit",
           "href": "https://buttfumble.org"
@@ -76,6 +78,8 @@
         "name": "CSGO-Clarity",
         "owner": "KovuTheHusky",
         "description": "Simplifies chat text and friends list statuses for Counter-Strike: Global Offensive.",
+        "forks": 0,
+        "stars": 4,
         "source": "https://github.com/KovuTheHusky/CSGO-Clarity",
         "icon": "/images/projects/icons/csgoclarity.png",
         "preview_image": "/images/projects/previews/csgoclarity.png",
@@ -85,6 +89,8 @@
         "name": "d.kovuthehusky.com",
         "owner": "KovuTheHusky",
         "description": "Dynamic components for KovuTheHusky's personal website.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/d.kovuthehusky.com",
         "status": "Active"
       },
@@ -92,6 +98,8 @@
         "name": "dynmap-structures",
         "owner": "KovuTheHusky",
         "description": "A Bukkit plugin that shows your world's structures (such as Villages, Strongholds, and Pyramids) on Dynmap.",
+        "forks": 8,
+        "stars": 7,
         "button": {
           "text": "Download",
           "href": "https://github.com/KovuTheHusky/dynmap-structures/releases/latest"
@@ -105,6 +113,8 @@
         "name": "incarceratedwombats.com",
         "owner": "KovuTheHusky",
         "description": "A website for the Incarcerated Wombats band.",
+        "forks": 0,
+        "stars": 0,
         "button": {
           "text": "Visit",
           "href": "https://incarceratedwombats.com"
@@ -118,6 +128,8 @@
         "name": "kovuthehusky.com",
         "owner": "KovuTheHusky",
         "description": "A personal website for KovuTheHusky.",
+        "forks": 0,
+        "stars": 0,
         "button": {
           "text": "Visit",
           "href": "https://kovuthehusky.com"
@@ -131,6 +143,8 @@
         "name": "pokemon-medals",
         "owner": "KovuTheHusky",
         "description": "Generates icons for Pokémon GO medals from official assets.",
+        "forks": 0,
+        "stars": 0,
         "button": {
           "text": "Visit",
           "href": "https://kovuthehusky.github.io/pokemon-medals"
@@ -146,6 +160,8 @@
         "name": "FixChat",
         "owner": "KovuTheHusky",
         "description": "Simple plugin for Bukkit that makes chatting with your friends in game, and on Dynmap much easier.",
+        "forks": 1,
+        "stars": 0,
         "button": {
           "text": "Download",
           "href": "https://github.com/KovuTheHusky/FixChat/releases/latest"
@@ -158,6 +174,8 @@
         "name": "NBT",
         "owner": "KovuTheHusky",
         "description": "An easy to use and easy to build upon library for reading and writing NBT files used by Minecraft.",
+        "forks": 0,
+        "stars": 3,
         "button": {
           "text": "Download",
           "href": "https://github.com/KovuTheHusky/NBT/releases/latest"
@@ -170,6 +188,8 @@
         "name": "SimplyUHC",
         "owner": "KovuTheHusky",
         "description": "A plugin for Bukkit servers that is a lightweight, easy way to play Minecraft Ultra Hardcore with friends.",
+        "forks": 1,
+        "stars": 1,
         "button": {
           "text": "Download",
           "href": "https://github.com/KovuTheHusky/SimplyUHC/releases/latest"
@@ -184,6 +204,8 @@
         "name": "1337Player",
         "owner": "KovuTheHusky",
         "description": "Allows you to place the elite, rare elite, rare, or normal graphic around your character portrait in World of Warcraft.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/1337Player",
         "status": "Unsupported"
       },
@@ -191,6 +213,8 @@
         "name": "ShareTube",
         "owner": "KovuTheHusky",
         "description": "Adds a download button beneath videos on YouTube pages.",
+        "forks": 0,
+        "stars": 0,
         "button": {
           "text": "Download",
           "href": "https://github.com/KovuTheHusky/ShareTube/releases/latest"
@@ -204,6 +228,8 @@
         "name": "Countdown",
         "owner": "KovuTheHusky",
         "description": "Counts down to a list of user-specified events.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Countdown",
         "status": "Suspended"
       },
@@ -211,6 +237,8 @@
         "name": "Huskish",
         "owner": "KovuTheHusky",
         "description": "Jokey encoder with options for cipher and adding garbage.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Huskish",
         "status": "Suspended"
       },
@@ -218,6 +246,8 @@
         "name": "P1ngP0ng",
         "owner": "KovuTheHusky",
         "description": "Pings the specified address repeatedly.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/P1ngP0ng",
         "status": "Suspended"
       },
@@ -225,6 +255,8 @@
         "name": "SortVisualization",
         "owner": "KovuTheHusky",
         "description": "An application that lets you watch, listen to, and learn about computer sciences' complex sorting algorithms.",
+        "forks": 0,
+        "stars": 1,
         "button": {
           "text": "Download",
           "href": "https://github.com/KovuTheHusky/SortVisualization/releases/latest"
@@ -238,6 +270,8 @@
         "name": "Speedtest",
         "owner": "KovuTheHusky",
         "description": "Collects speed test data and displays graphs of that data.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Speedtest",
         "status": "Suspended"
       }
@@ -247,6 +281,8 @@
         "name": "AirPlay-Chrome",
         "owner": "KovuTheHusky",
         "description": "Adds an AirPlay button beneath videos on YouTube pages.",
+        "forks": 1,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/AirPlay-Chrome",
         "status": "Abandoned"
       },
@@ -254,6 +290,8 @@
         "name": "Steam-Link-Fixer",
         "owner": "KovuTheHusky",
         "description": "Replace onclick attributes with actual links on Steam pages.",
+        "forks": 0,
+        "stars": 1,
         "source": "https://github.com/KovuTheHusky/Steam-Link-Fixer",
         "status": "Abandoned"
       },
@@ -261,6 +299,8 @@
         "name": "Webstats",
         "owner": "KovuTheHusky",
         "description": "Collects statistics about players and blocks and shows them on the web.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Webstats",
         "icon": "/images/projects/icons/webstats.svg",
         "preview_image": "/images/projects/previews/webstats.png",
@@ -270,6 +310,8 @@
         "name": "Wifimote",
         "owner": "KovuTheHusky",
         "description": "Wifi connected remote control software.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Wifimote",
         "status": "Abandoned"
       }
@@ -279,6 +321,8 @@
         "name": "Cliffs-Tracker",
         "owner": "KovuTheHusky",
         "description": "Occupancy tracker script and website for The Cliffs (DUMBO, LIC, Valhalla, and Callowhill).",
+        "forks": 0,
+        "stars": 0,
         "button": {
           "text": "Visit",
           "href": "https://aws.kovuthehusky.com/cliffs-tracker"
@@ -290,6 +334,8 @@
         "name": "developer.myfursona.com",
         "owner": "MyFursona",
         "description": "Documentation for the MyFursona API.",
+        "forks": 0,
+        "stars": 0,
         "button": {
           "text": "Visit",
           "href": "https://developer.myfursona.com"
@@ -302,6 +348,8 @@
         "name": "modusawperandi.com",
         "owner": "KovuTheHusky",
         "description": "A website for the Modus Awperandi esports team.",
+        "forks": 0,
+        "stars": 0,
         "button": {
           "text": "Visit",
           "href": "https://modusawperandi.com"
@@ -315,6 +363,8 @@
         "name": "myfursona.com",
         "owner": "KovuTheHusky",
         "description": "A social networking website for furries. Go furpile!",
+        "forks": 0,
+        "stars": 0,
         "button": {
           "text": "Visit",
           "href": "https://myfursona.com"
@@ -327,6 +377,8 @@
         "name": "telegram-gifv",
         "owner": "KovuTheHusky",
         "description": "Creates videos that will appear as GIFs in Telegram.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/telegram-gifv",
         "status": "WIP"
       }
@@ -342,6 +394,8 @@
         "name": "assetto-corsa-server",
         "owner": "KovuTheHusky",
         "description": null,
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/assetto-corsa-server",
         "status": "Unknown"
       },
@@ -349,6 +403,8 @@
         "name": "BaseTime",
         "owner": "KovuTheHusky",
         "description": "College project that explores class inheritance.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/BaseTime",
         "status": "Unknown"
       },
@@ -356,6 +412,8 @@
         "name": "Challenge",
         "owner": "KovuTheHusky",
         "description": "College project that converts input to different bases.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Challenge",
         "status": "Unknown"
       },
@@ -363,6 +421,8 @@
         "name": "CountLetters",
         "owner": "KovuTheHusky",
         "description": "College project that counts letters in a text file.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/CountLetters",
         "status": "Unknown"
       },
@@ -370,6 +430,8 @@
         "name": "DiskQueue",
         "owner": "KovuTheHusky",
         "description": "College project that explores a disk request queue algorithm.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/DiskQueue",
         "status": "Unknown"
       },
@@ -377,6 +439,8 @@
         "name": "FindFile",
         "owner": "KovuTheHusky",
         "description": "College project that finds a file in a directory.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/FindFile",
         "status": "Unknown"
       },
@@ -384,6 +448,8 @@
         "name": "Justify",
         "owner": "KovuTheHusky",
         "description": "College project that wraps text from a text file on the command line.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Justify",
         "status": "Unknown"
       },
@@ -391,6 +457,8 @@
         "name": "KovuTheHusky",
         "owner": "KovuTheHusky",
         "description": null,
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/KovuTheHusky",
         "status": "Unknown"
       },
@@ -398,6 +466,8 @@
         "name": "Longwood-Robotics",
         "owner": "KovuTheHusky",
         "description": "High school project that was a website for the FIRST robotics team.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Longwood-Robotics",
         "status": "Unknown"
       },
@@ -405,6 +475,8 @@
         "name": "Longwood-Webmasters",
         "owner": "KovuTheHusky",
         "description": "High school project that was a website for extracurricular activities.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Longwood-Webmasters",
         "status": "Unknown"
       },
@@ -412,6 +484,8 @@
         "name": "Morse",
         "owner": "KovuTheHusky",
         "description": "College project that converts input to morse code.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Morse",
         "status": "Unknown"
       },
@@ -419,6 +493,8 @@
         "name": "Spiral",
         "owner": "KovuTheHusky",
         "description": "College project that draws a spiral.",
+        "forks": 0,
+        "stars": 0,
         "source": "https://github.com/KovuTheHusky/Spiral",
         "status": "Unknown"
       }
@@ -428,82 +504,114 @@
     {
       "name": "AutoPatchWork",
       "owner": "os0x",
-      "description": null
+      "description": null,
+      "forks": 18,
+      "stars": 32
     },
     {
       "name": "Better-Sprinting",
       "owner": "chylex",
-      "description": "Minecraft mod that improves and expands sprinting, sneaking, and flying mechanics."
+      "description": "Minecraft mod that improves and expands sprinting, sneaking, and flying mechanics.",
+      "forks": 10,
+      "stars": 16
     },
     {
       "name": "d.nightwolf1298.com",
       "owner": "NightWolf1298",
-      "description": "Dynamic components for NightWolf1298's personal website."
+      "description": "Dynamic components for NightWolf1298's personal website.",
+      "forks": 0,
+      "stars": 0
     },
     {
       "name": "dynmap",
       "owner": "webbukkit",
-      "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations."
+      "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations.",
+      "forks": 312,
+      "stars": 1111
     },
     {
       "name": "dynmap-api",
       "owner": "webbukkit",
-      "description": "Published API for Dynmap on Spigot/Bukkit"
+      "description": "Published API for Dynmap on Spigot/Bukkit",
+      "forks": 16,
+      "stars": 17
     },
     {
       "name": "dynmap-mobs",
       "owner": "webbukkit",
-      "description": "Show mobs in Dynmap (Dynmap Add-On)"
+      "description": "Show mobs in Dynmap (Dynmap Add-On)",
+      "forks": 25,
+      "stars": 9
     },
     {
       "name": "DynmapCore",
       "owner": "webbukkit",
-      "description": "Common, server-neutral core component for Dynmap"
+      "description": "Common, server-neutral core component for Dynmap",
+      "forks": 55,
+      "stars": 38
     },
     {
       "name": "DynmapCoreAPI",
       "owner": "webbukkit",
-      "description": "Common-core API for Dynmap (available on all Dynmap versions)"
+      "description": "Common-core API for Dynmap (available on all Dynmap versions)",
+      "forks": 21,
+      "stars": 11
     },
     {
       "name": "DynmapForge",
       "owner": "webbukkit",
-      "description": "Dynmap port to vanilla Minecraft + Minecraft Forge"
+      "description": "Dynmap port to vanilla Minecraft + Minecraft Forge",
+      "forks": 25,
+      "stars": 37
     },
     {
       "name": "homebrew-core",
       "owner": "Homebrew",
-      "description": "🍻 Default formulae for the missing package manager for macOS"
+      "description": "🍻 Default formulae for the missing package manager for macOS",
+      "forks": 8654,
+      "stars": 8397
     },
     {
       "name": "MCStatus-php",
       "owner": "martok",
-      "description": "PHP Class for querying minecraft (beta 1.9+) servers"
+      "description": "PHP Class for querying minecraft (beta 1.9+) servers",
+      "forks": 1,
+      "stars": 5
     },
     {
       "name": "nightwolf1298.com",
       "owner": "NightWolf1298",
-      "description": "A personal website for NightWolf1298."
+      "description": "A personal website for NightWolf1298.",
+      "forks": 0,
+      "stars": 0
     },
     {
       "name": "pokemon-icons",
       "owner": "TheArtificial",
-      "description": "Fan art inspired by Pokémon"
+      "description": "Fan art inspired by Pokémon",
+      "forks": 4,
+      "stars": 55
     },
     {
       "name": "SafariKeywordSearch",
       "owner": "arnemart",
-      "description": "A simple Safari extension to enable keyword search from the address bar"
+      "description": "A simple Safari extension to enable keyword search from the address bar",
+      "forks": 15,
+      "stars": 118
     },
     {
       "name": "simple-icons",
       "owner": "simple-icons",
-      "description": "SVG icons for popular brands"
+      "description": "SVG icons for popular brands",
+      "forks": 1267,
+      "stars": 9636
     },
     {
       "name": "TDSM_map",
       "owner": "elevatorguy",
-      "description": "TDSM Plugin that can save current world to .png on command   (there is now a tshock branch aswell)"
+      "description": "TDSM Plugin that can save current world to .png on command   (there is now a tshock branch aswell)",
+      "forks": 9,
+      "stars": 6
     }
   ]
 }
