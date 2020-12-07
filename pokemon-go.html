@@ -11,10 +11,10 @@ xp: 17000000
   <div class="progress" style="height: 38px; margin-bottom: 12px;">
     <div class="progress-bar" role="progressbar" style="width: {{ xp }}%;" aria-valuenow="{{ xp }}" aria-valuemin="0" aria-valuemax="100">XP - {{ xp }}% (39/40)</div>
   </div>
-  <div class="progress gutter-bottom" style="height: 38px;">
+  <div class="progress" style="height: 38px;">
     <div class="progress-bar" role="progressbar" style="width: {{ dex }}%;" aria-valuenow="{{ dex }}" aria-valuemin="0" aria-valuemax="100">Pokédex - {{ dex }}% ({{ site.data.pokemongo.caught }}/{{ site.data.pokemongo.total }})</div>
   </div>
-  <div class="text-center" style="margin-bottom: 12px;">
+  <div class="text-center gutter-top" style="margin-bottom: 12px;">
     <label style="height: 38px; line-height: 38px; vertical-align: middle; margin: 0;">Show </label>
     <div class="dropdown" style="display: inline-block !important;">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="filter-caught" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> all </button>
