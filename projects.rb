@@ -95,14 +95,14 @@ json['contributions'].each do |repo|
 
       if File.exists?("images/projects/icons/#{slug}.svg")
         project['icon'] = "/images/projects/icons/#{slug}.svg"
-      elsif File.exists?("images/projects/icons/#{slug}.png")
-        project['icon'] = "/images/projects/icons/#{slug}.png"
+      elsif File.exists?("images/projects/icons/#{slug}.webp")
+        project['icon'] = "/images/projects/icons/#{slug}.webp"
       end
 
       if File.exists?("videos/projects/previews/#{slug}.mp4")
         project['preview_video'] = "/videos/projects/previews/#{slug}.mp4"
-      elsif File.exists?("images/projects/previews/#{slug}.png")
-        project['preview_image'] = "/images/projects/previews/#{slug}.png"
+      elsif File.exists?("images/projects/previews/#{slug}.webp")
+        project['preview_image'] = "/images/projects/previews/#{slug}.webp"
       end
 
       status = Net::HTTP.get(URI("https://raw.githubusercontent.com/#{repo}/master/README.md")).lines.first.match /http[s]?:\/\/.*repostatus\.org\/badges\/.+?\/(.+?)\.svg/

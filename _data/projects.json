@@ -71,7 +71,7 @@
         },
         "source": "https://github.com/KovuTheHusky/buttfumble.org",
         "icon": "/images/projects/icons/buttfumbleorg.svg",
-        "preview_image": "/images/projects/previews/buttfumbleorg.png",
+        "preview_image": "/images/projects/previews/buttfumbleorg.webp",
         "status": "Active"
       },
       {
@@ -81,8 +81,8 @@
         "forks": 0,
         "stars": 4,
         "source": "https://github.com/KovuTheHusky/CSGO-Clarity",
-        "icon": "/images/projects/icons/csgoclarity.png",
-        "preview_image": "/images/projects/previews/csgoclarity.png",
+        "icon": "/images/projects/icons/csgoclarity.webp",
+        "preview_image": "/images/projects/previews/csgoclarity.webp",
         "status": "Active"
       },
       {
@@ -106,7 +106,7 @@
         },
         "source": "https://github.com/KovuTheHusky/dynmap-structures",
         "icon": "/images/projects/icons/dynmapstructures.svg",
-        "preview_image": "/images/projects/previews/dynmapstructures.png",
+        "preview_image": "/images/projects/previews/dynmapstructures.webp",
         "status": "Active"
       },
       {
@@ -121,7 +121,7 @@
         },
         "source": "https://github.com/KovuTheHusky/incarceratedwombats.com",
         "icon": "/images/projects/icons/incarceratedwombatscom.svg",
-        "preview_image": "/images/projects/previews/incarceratedwombatscom.png",
+        "preview_image": "/images/projects/previews/incarceratedwombatscom.webp",
         "status": "Active"
       },
       {
@@ -136,7 +136,7 @@
         },
         "source": "https://github.com/KovuTheHusky/kovuthehusky.com",
         "icon": "/images/projects/icons/kovuthehuskycom.svg",
-        "preview_image": "/images/projects/previews/kovuthehuskycom.png",
+        "preview_image": "/images/projects/previews/kovuthehuskycom.webp",
         "status": "Active"
       },
       {
@@ -150,8 +150,8 @@
           "href": "https://kovuthehusky.github.io/pokemon-medals"
         },
         "source": "https://github.com/KovuTheHusky/pokemon-medals",
-        "icon": "/images/projects/icons/pokemonmedals.png",
-        "preview_image": "/images/projects/previews/pokemonmedals.png",
+        "icon": "/images/projects/icons/pokemonmedals.webp",
+        "preview_image": "/images/projects/previews/pokemonmedals.webp",
         "status": "Active"
       }
     ],
@@ -262,7 +262,7 @@
           "href": "https://github.com/KovuTheHusky/SortVisualization/releases/latest"
         },
         "source": "https://github.com/KovuTheHusky/SortVisualization",
-        "icon": "/images/projects/icons/sortvisualization.png",
+        "icon": "/images/projects/icons/sortvisualization.webp",
         "preview_video": "/videos/projects/previews/sortvisualization.mp4",
         "status": "Suspended"
       },
@@ -303,7 +303,7 @@
         "stars": 0,
         "source": "https://github.com/KovuTheHusky/Webstats",
         "icon": "/images/projects/icons/webstats.svg",
-        "preview_image": "/images/projects/previews/webstats.png",
+        "preview_image": "/images/projects/previews/webstats.webp",
         "status": "Abandoned"
       },
       {
@@ -356,7 +356,7 @@
         },
         "source": "https://github.com/KovuTheHusky/modusawperandi.com",
         "icon": "/images/projects/icons/modusawperandicom.svg",
-        "preview_image": "/images/projects/previews/modusawperandicom.png",
+        "preview_image": "/images/projects/previews/modusawperandicom.webp",
         "status": "WIP"
       },
       {
