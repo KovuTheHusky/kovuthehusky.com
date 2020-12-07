@@ -9,7 +9,7 @@ date:   2013-12-24 02:32:00 -0000
 
 If you made your way to this page it is probably because you are trying to run Minecraft on OS X and have Java 7+ installed instead of the older, deprecated Java 6. You have probably seen this dialog:
 
-<a href="/images/Screen%20Shot%202017-10-13%20at%207.36.28%20PM.png" data-fancybox><img src="/images/Screen%20Shot%202017-10-13%20at%207.36.28%20PM.png" alt="Screen Shot 2017-10-13 at 7.36.28 PM"></a>
+<a href="/images/Screen%20Shot%202017-10-13%20at%207.36.28%20PM.webp" data-fancybox><img src="/images/Screen%20Shot%202017-10-13%20at%207.36.28%20PM.webp" alt="Screen Shot 2017-10-13 at 7.36.28 PM"></a>
 
 Why does this happen? Mojang is currently packaging their application using Apple's packager which only supports Apple published versions of Java. Apple stopped publishing their own versions of Java when Oracle released Java 7. Mojang should be using Oracle's packager now, but they are not.
 
@@ -25,7 +25,7 @@ How do I fix it? First of all, please go to the [bug report](https://bugs.mojang
 
 5. Create a folder named "dist" as well. Thanks to somebody in the comments that pointed this out! Originally it wasn't necessary.
 
-6. Organize all your files like this: <a href="/images/Screen%20Shot%202017-10-13%20at%208.13.32%20PM.png" data-fancybox><img src="/images/Screen%20Shot%202017-10-13%20at%208.13.32%20PM.png" alt="Screen Shot 2017-10-13 at 8.13.32 PM"></a>
+6. Organize all your files like this: <a href="/images/Screen%20Shot%202017-10-13%20at%208.13.32%20PM.webp" data-fancybox><img src="/images/Screen%20Shot%202017-10-13%20at%208.13.32%20PM.webp" alt="Screen Shot 2017-10-13 at 8.13.32 PM"></a>
 
 7. Open Terminal and change directory to the one with all of your files in it then run "ant bundle-Minecraft" and wait.
 
