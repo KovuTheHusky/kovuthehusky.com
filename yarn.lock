@@ -69,10 +69,10 @@
   resolved "https://registry.yarnpkg.com/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz#497c67a1cef50d1a2459ba60f315e448d2ad87fe"
   integrity sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q==
 
-"@primer/octicons@^11.1.0":
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-11.1.0.tgz#a95dd14e4956365a09a2d8b80bf2fe655c307fea"
-  integrity sha512-qeW4Hu82V0eTKza54nIqud572lrZicy2R6PBX2SVfWlrfRUotpsRi6m/Dvxz/YKL/8xdwBSWgJl8hJXM4V5woA==
+"@primer/octicons@^11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-11.2.0.tgz#2caaa3a6e56f549be53b4d4004d383fd1120288b"
+  integrity sha512-a9ORJaeu7Kt0LCaawQy8S+ZVPDe1qXJvKZraX0b6R0KXkXjL519rpGUDRiGUlskuxEpVf2kmbVYfqGDDlMGLMg==
   dependencies:
     object-assign "^4.1.1"
 
