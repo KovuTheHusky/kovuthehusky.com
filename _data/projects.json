@@ -527,7 +527,7 @@
       "owner": "webbukkit",
       "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations.",
       "forks": 317,
-      "stars": 1119
+      "stars": 1121
     },
     {
       "name": "dynmap-api",
@@ -568,8 +568,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8737,
-      "stars": 8492
+      "forks": 8738,
+      "stars": 8496
     },
     {
       "name": "MCStatus-php",
@@ -597,14 +597,14 @@
       "owner": "arnemart",
       "description": "A simple Safari extension to enable keyword search from the address bar",
       "forks": 15,
-      "stars": 118
+      "stars": 117
     },
     {
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1274,
-      "stars": 9768
+      "forks": 1275,
+      "stars": 9770
     },
     {
       "name": "TDSM_map",
