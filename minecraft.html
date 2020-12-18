@@ -43,7 +43,7 @@ permalink: /minecraft
             </ul>
             <div class="card-body">
             <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-primary disabled remote">Connect</a>
-            <a href="https://d.kovuthehusky.com/minecraft/survival-2014/" class="btn btn-link disabled remote">Map</a>
+            <a href="https://minecraft.kovuthehusky.com" class="btn btn-link disabled remote">Map</a>
           </div>
         </div>
 
@@ -186,7 +186,7 @@ script.onload = function() {
 var players = [];
 
 function refresh() {
-  $.getJSON('https://d.kovuthehusky.com/status/minecraft.json', function(data) {
+  $.getJSON('https://aws.kovuthehusky.com/status/minecraft.json', function(data) {
     $('#status').text('Online');
     $('.remote').removeClass('disabled');
     $('#status').addClass('badge-success');
@@ -198,7 +198,7 @@ function refresh() {
     var join = $(data.Players).not(players).get();
     var part = $(players).not(data.Players).get();
     $.each(join, function(key, value) {
-      $('#tickrate').parent().before('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '"><img src="https://d.kovuthehusky.com/minecraft/survival-2014/standalone/markers.php?marker=faces/16x16/' + value + '.png" class="rounded mr-1">' + value + '</li>');
+      $('#tickrate').parent().before('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '"><img src="https://minecraft.kovuthehusky.com/standalone/markers.php?marker=faces/16x16/' + value + '.png" class="rounded mr-1">' + value + '</li>');
     });
     $.each(part, function(key, value) {
       $('.player-' + value).remove();
