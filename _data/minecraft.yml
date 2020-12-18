@@ -5,7 +5,7 @@
   description: "A world using the Biomes O' Plenty mod from version 1.8-1.9.4. No map is available due to compatibility issues."
   buttons:
   - label: "Download"
-    link: "https://d.kovuthehusky.com/minecraft/forge-2015.zip"
+    link: "https://archive.kovuthehusky.com/minecraft/forge-2015.zip"
     primary: true
 
 - title: "Survival 2013"
@@ -15,10 +15,10 @@
   description: "The second long lasting world started in version 1.2.3 and retired in version 1.6.4. Included many players."
   buttons:
   - label: "Download"
-    link: "https://d.kovuthehusky.com/minecraft/survival-2013.zip"
+    link: "https://archive.kovuthehusky.com/minecraft/survival-2013.zip"
     primary: true
   - label: "Map"
-    link: "https://d.kovuthehusky.com/minecraft/survival-2013/"
+    link: "https://archive.kovuthehusky.com/minecraft/survival-2013/"
 
 - title: "Creative 2012"
   badge:
@@ -30,10 +30,10 @@
     NightWolf1298.
   buttons:
   - label: "Download"
-    link: "https://d.kovuthehusky.com/minecraft/creative-2012.zip"
+    link: "https://archive.kovuthehusky.com/minecraft/creative-2012.zip"
     primary: true
   - label: "Map"
-    link: "https://d.kovuthehusky.com/minecraft/creative-2012/"
+    link: "https://archive.kovuthehusky.com/minecraft/creative-2012/"
 
 - title: "Survival 2012"
   badge:
@@ -49,10 +49,10 @@
     Cujo27.
   buttons:
   - label: "Download"
-    link: "https://d.kovuthehusky.com/minecraft/survival-2012.zip"
+    link: "https://archive.kovuthehusky.com/minecraft/survival-2012.zip"
     primary: true
   - label: "Map"
-    link: "https://d.kovuthehusky.com/minecraft/survival-2012/"
+    link: "https://archive.kovuthehusky.com/minecraft/survival-2012/"
 
 - title: "Survival 2011"
   badge:
@@ -61,7 +61,7 @@
   description: "The first world created in version 1.2_02β and retired in version 1.7.3β. Players consisted mostly of family."
   buttons:
   - label: "Download"
-    link: "https://d.kovuthehusky.com/minecraft/survival-2011.zip"
+    link: "https://archive.kovuthehusky.com/minecraft/survival-2011.zip"
     primary: true
   - label: "Map"
-    link: "https://d.kovuthehusky.com/minecraft/survival-2011/"
+    link: "https://archive.kovuthehusky.com/minecraft/survival-2011/"
