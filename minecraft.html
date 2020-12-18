@@ -186,7 +186,7 @@ script.onload = function() {
 var players = [];
 
 function refresh() {
-  $.getJSON('https://aws.kovuthehusky.com/status/minecraft.json', function(data) {
+  $.getJSON('https://status.kovuthehusky.com/minecraft.json', function(data) {
     $('#status').text('Online');
     $('.remote').removeClass('disabled');
     $('#status').addClass('badge-success');
