@@ -43,7 +43,7 @@ permalink: /minecraft
             </ul>
             <div class="card-body">
             <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-primary disabled remote">Connect</a>
-            <a href="https://minecraft.kovuthehusky.com" class="btn btn-link disabled">Map</a>
+            <a href="https://minecraft.kovuthehusky.com" class="btn btn-link">Map</a>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ permalink: /minecraft
         <div class="card-body">
         {% endif %}
         {% for button in world.buttons %}
-        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %} disabled">{{ button.label }}</a>
+        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %}">{{ button.label }}</a>
         {% endfor %}
       </div>
     </div>
