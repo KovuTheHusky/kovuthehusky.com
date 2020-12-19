@@ -1,5 +1,5 @@
 {
-  "since": "2020-12-18",
+  "since": "2020-12-19",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -51,6 +51,7 @@
     "KovuTheHusky/SortVisualization",
     "KovuTheHusky/Speedtest",
     "KovuTheHusky/Spiral",
+    "KovuTheHusky/status.kovuthehusky.com",
     "KovuTheHusky/Steam-Link-Fixer",
     "elevatorguy/TDSM_map",
     "KovuTheHusky/telegram-gifv",
@@ -152,6 +153,19 @@
         "source": "https://github.com/KovuTheHusky/pokemon-medals",
         "icon": "/images/projects/icons/pokemonmedals.webp",
         "preview_image": "/images/projects/previews/pokemonmedals.webp",
+        "status": "Active"
+      },
+      {
+        "name": "status.kovuthehusky.com",
+        "owner": "KovuTheHusky",
+        "description": null,
+        "forks": 0,
+        "stars": 0,
+        "button": {
+          "text": "Visit",
+          "href": "https://status.kovuthehusky.com"
+        },
+        "source": "https://github.com/KovuTheHusky/status.kovuthehusky.com",
         "status": "Active"
       }
     ],
@@ -569,7 +583,7 @@
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
       "forks": 8750,
-      "stars": 8512
+      "stars": 8519
     },
     {
       "name": "MCStatus-php",
@@ -603,8 +617,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1277,
-      "stars": 9800
+      "forks": 1279,
+      "stars": 9808
     },
     {
       "name": "TDSM_map",
