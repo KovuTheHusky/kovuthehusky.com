@@ -1,5 +1,5 @@
 {
-  "since": "2020-12-19",
+  "since": "2020-12-20",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -618,7 +618,7 @@
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
       "forks": 1279,
-      "stars": 9808
+      "stars": 9809
     },
     {
       "name": "TDSM_map",
