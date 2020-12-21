@@ -1,5 +1,5 @@
 {
-  "since": "2020-12-20",
+  "since": "2020-12-21",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -583,7 +583,7 @@
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
       "forks": 8750,
-      "stars": 8519
+      "stars": 8523
     },
     {
       "name": "MCStatus-php",
@@ -617,8 +617,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1279,
-      "stars": 9809
+      "forks": 1281,
+      "stars": 9816
     },
     {
       "name": "TDSM_map",
