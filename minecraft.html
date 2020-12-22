@@ -4,51 +4,46 @@ title: Minecraft
 subtitle: "Timeline, connection details, world downloads, maps."
 permalink: /minecraft
 ---
-<div id="timeline" style="height:296px;">
-</div>
-
 <div class="container">
-
+  <div class="card" style="margin-bottom: 76px;">
+    <div class="card-body">
+      <h5 class="card-title">
+        Survival
+        <span id="status" class="badge badge-danger">Offline</span>
+      </h5>
+      <p class="card-text align-middle">The current world started in version 1.7.2. No world download is available at this time, but a live map is.</p>
+    </div>
+    <div class="row">
+      <div class="col pr-0">
+        <ul id="live" class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between">Version<span id="version">Offline</span></li>
+          <li class="list-group-item d-flex justify-content-between" style="border-bottom: 0;">Tickrate<span id="tickrate">Offline</span></li>
+          <li class="list-group-item" style="border-top: 0; padding-top: 0;">
+            <canvas id="tickrate-chart" height="30"></canvas>
+          </li>
+          <li class="list-group-item d-flex justify-content-between" style="border-bottom: 0;">Memory<span id="memory">Offline</span></li>
+          <li class="list-group-item" style="border-top: 0; padding-top: 0;">
+            <canvas id="memory-chart" height="30"></canvas>
+          </li>
+        </ul>
+      </div>
+      <div class="col pl-0" style="border-left: 1px solid #808080;">
+        <ul id="live-playerlist" class="list-group list-group-flush">
+          <li id="playercount" class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body" style="border-top: 1px solid #808080;">
+      <a href="#" data-toggle="modal" data-target="#modal" class="btn btn-primary disabled remote">Connect</a>
+      <a href="https://discord.gg/w3XaDVBF7K" class="btn btn-secondary">Discord</a>
+      <a href="https://minecraft.kovuthehusky.com" class="btn btn-secondary">Map</a>
+    </div>
+  </div>
+</div>
+<div id="timeline" style="height: 296px;">
+</div>
+<div class="container">
   <div class="card-columns">
-
-      <div class="card">
-    
-          <div class="card-body">
-            <h5 class="card-title">
-              Survival
-              
-              <span id="status" class="badge badge-danger">Offline</span>
-              
-              
-            </h5>
-            <p class="card-text align-middle">The current world started in version 1.7.2. No world download is available at this time, but a live map is.</p>
-            
-          </div>
-            <ul id="live" class="list-group list-group-flush">
-              
-              <li class="list-group-item d-flex justify-content-between">Version<span id="version">Offline</span></li>
-              
-              <li id="playercount" class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
-
-              <li class="list-group-item d-flex justify-content-between" style="border-top: 1px solid #808080; border-bottom: 0;">Tickrate<span id="tickrate">Offline</span></li>
-              <li class="list-group-item" style="border-top: 0; padding-top: 0;">
-                <canvas id="tickrate-chart" height="30"></canvas>
-              </li>
-
-              <li class="list-group-item d-flex justify-content-between" style="border-bottom: 0;">Memory<span id="memory">Offline</span></li>
-              <li class="list-group-item" style="border-top: 0; padding-top: 0;">
-                <canvas id="memory-chart" height="30"></canvas>
-              </li>
-              
-            </ul>
-            <div class="card-body">
-            <a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-primary disabled remote">Connect</a>
-            <a href="https://minecraft.kovuthehusky.com" class="btn btn-link">Map</a>
-          </div>
-        </div>
-
-
-
   {% for world in site.data.minecraft %}
     <div class="card">
     {% if world.image %}
@@ -84,11 +79,11 @@ permalink: /minecraft
 
 </div>
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Connect</h5>
+          <h5 class="modal-title" id="modalTitle">Connect</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -108,7 +103,6 @@ permalink: /minecraft
       </div>
     </div>
   </div>
-
 
 <script src="/node_modules/chart.js/dist/Chart.min.js"></script>
 
@@ -150,7 +144,7 @@ script.onload = function() {
       ['Online', 'Survival 2012', new Date(2011, 8, 15), new Date(2012, 2, 1)],
       ['Online', 'Creative 2012', new Date(2011, 8, 15), new Date(2012, 2, 1)],
       ['Online', 'Survival 2013', new Date(2012, 2, 12), new Date(2013, 9, 12)],
-      ['Online', 'Survival 2014', new Date(2013, 11, 3), new Date()],
+      ['Online', 'Survival LIVE', new Date(2013, 11, 3), new Date()],
       ['Online', 'Forge 2015', new Date(2015, 11, 29), new Date(2016, 5, 17)]
     ]);
     options = {
@@ -198,16 +192,11 @@ function refresh() {
     var join = $(data.Players).not(players).get();
     var part = $(players).not(data.Players).get();
     $.each(join, function(key, value) {
-      $('#tickrate').parent().before('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '"><img src="https://minecraft.kovuthehusky.com/standalone/markers.php?marker=faces/16x16/' + value + '.png" class="rounded mr-1">' + value + '</li>');
+      $('#live-playerlist').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '"><img src="https://minecraft.kovuthehusky.com/standalone/markers.php?marker=faces/16x16/' + value + '.png" class="rounded mr-1">' + value + '</li>');
     });
     $.each(part, function(key, value) {
       $('.player-' + value).remove();
     });
-    if (data['Info']['Players'] > 0) {
-      $('#playercount').css('border-bottom', 'none');
-    } else {
-      $('#playercount').css('border-bottom', '1px solid rgba(0,0,0,.125)');
-    }
     players = data.Players;
 
     var availabilityOptions = {
