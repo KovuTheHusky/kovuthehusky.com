@@ -366,3 +366,14 @@ a.disabled {
   top: -4px;
   vertical-align: bottom;
 }
+
+@media only screen and (min-width: 576px) {
+  .col-left {
+    padding-right: 0 !important;
+    border-right: none;
+  }
+  .col-right {
+    padding-left: 0 !important;
+    border-left: 1px solid #808080;
+  }
+}
