@@ -12,7 +12,7 @@
     "pokemon-icons": "TheArtificial/pokemon-icons#gh-pages",
     "pokemon-medals": "KovuTheHusky/pokemon-medals#gh-pages",
     "popper.js": "^1.16.1",
-    "simple-icons": "^4.3.0",
+    "simple-icons": "^4.4.0",
     "twemoji": "^13.0.1"
   },
   "repository": {
