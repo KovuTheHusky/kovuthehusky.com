@@ -17,7 +17,10 @@ permalink: /counter-strike
       <div class="col-sm-6 col-left">
         <ul id="live" class="list-group list-group-flush">
           <li class="list-group-item d-flex justify-content-between">Version<span id="version">Offline</span></li>
-          <li class="list-group-item d-flex justify-content-between">Map<span id="map">Offline</span></li>
+          <li class="list-group-item d-flex justify-content-between" style="border-bottom: 0;">Map<span id="map">Offline</span></li>
+          <li id="map-image-container" class="list-group-item" style="border-top: 0; padding-top: 0; display: none;">
+            <img src="" id="map-image" class="rounded" style="width: 100%;" />
+          </li>
         </ul>
       </div>
       <div class="col-sm-6 col-right">
@@ -51,6 +54,8 @@ permalink: /counter-strike
       $('#status').removeClass('badge-danger');
       $('#version').text(data['Info']['Version']);
       $('#map').text(data['Info']['Map']);
+      $('#map-image').attr('src', 'https://raw.githubusercontent.com/SteamDatabase/GameTracking-CSGO/master/csgo/maps/' + data['Info']['Map'] + '.jpg');
+      $('#map-image-container').show();
       $('#players').text(data['Info']['Players'] + ' / ' + data['Info']['MaxPlayers']);
       var playernames = [];
       $.each(data.Players, function (key, value) {
@@ -79,6 +84,7 @@ permalink: /counter-strike
       $('#status').removeClass('badge-success');
       $('#version').text('Offline');
       $('#map').text('Offline');
+      $('#map-image-container').hide();
       $('#players').text('Offline');
       $('.player-').remove();
     });
