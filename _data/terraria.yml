@@ -1,3 +1,15 @@
+- title: "Survival 2015"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: "An expert mode world created for version 1.3.x. Played throught to the end-game by KovuTheHusky, NightWolf1298, and Kuperfox."
+  buttons:
+  - label: "Download"
+    link: "https://d.kovuthehusky.com/terraria/survival-2015.zip"
+    primary: true
+  - label: "Map"
+    link: "https://d.kovuthehusky.com/terraria/survival-2015/"
+
 - title: "Survival 2014"
   badge:
     color: secondary

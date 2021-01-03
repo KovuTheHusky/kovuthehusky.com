@@ -4,32 +4,37 @@ title: Terraria
 subtitle: "Timeline, connection details, world downloads, maps."
 permalink: /terraria
 ---
-
-<div id="timeline" style="height:214px;">
-</div>
-
 <div class="container">
-
+  <div class="card" style="margin-bottom: 76px;">
+    <div class="card-body">
+      <h5 class="card-title">
+        Survival
+        <span id="status" class="badge badge-danger">Offline</span>
+      </h5>
+      <p class="card-text align-middle">A new world created for version 1.4.x. No world download is available at this time, but a live map is.</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-left">
+        <ul id="live" class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between">Version<span id="version">Offline</span></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-right">
+        <ul id="live-playerlist" class="list-group list-group-flush">
+          <li id="playercount" class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body" style="border-top: 1px solid #808080;">
+      <a href="steam://rungameid/105600//-j%2040.75.7.193" class="btn btn-primary disabled remote">Connect</a>
+      <a href="https://terraria.kovuthehusky.com" class="btn btn-link disabled remote">Map</a>
+    </div>
+  </div>
+</div>
+<div id="timeline" style="height:255px;">
+</div>
+<div class="container">
   <div class="card-columns">
-      <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">
-              Survival
-              <span id="status" class="badge badge-danger">Offline</span>
-            </h5>
-            <p class="card-text align-middle">A new world created for version 1.3.x. No world download is available at this time, but a live map is.</p>
-          </div>
-          <ul id="live" class="list-group list-group-flush">
-            <li class="list-group-item d-flex justify-content-between">Version<span id="version">Offline</span></li>
-            <li id="playercount" class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
-          </ul>
-          <div class="card-body">
-            <a href="steam://rungameid/105600//-j%20kovuthehusky.com" class="btn btn-primary disabled remote">Connect</a>
-            <a href="https://d.kovuthehusky.com/terraria/survival-2015/" class="btn btn-link disabled remote">Map</a>
-          </div>
-        </div>
-
-
     {% for world in site.data.terraria %}
     <div class="card">
     {% if world.image %}
@@ -62,7 +67,6 @@ permalink: /terraria
     </div>
   {% endfor %}
   </div>
-
 </div>
 
 <script>
@@ -102,7 +106,8 @@ script.onload = function() {
       ['Online', 'Survival 2011', new Date(2011, 4, 16), new Date(2013, 8, 30)],
       ['Online', 'Survival 2013', new Date(2013, 8, 30), new Date(2013, 11, 30)],
       ['Online', 'Survival 2014', new Date(2013, 11, 30), new Date(2014, 2, 30)],
-      ['Online', 'Survival 2015', new Date(2015, 5, 30), new Date()]
+      ['Online', 'Survival 2015', new Date(2015, 5, 30), new Date(2015, 11, 31)],
+      ['Online', 'Survival LIVE', new Date(2021, 0, 1), new Date()]
     ]);
     options = {
       backgroundColor: '#121212',
@@ -137,7 +142,7 @@ script.onload = function() {
   var players = [];
   
   function refresh() {
-    $.getJSON('https://d.kovuthehusky.com/status/terraria.json', function(data) {
+    $.getJSON('https://status.kovuthehusky.com/terraria.json', function(data) {
       $('#status').text('Online');
       $('.remote').removeClass('disabled');
       $('#status').addClass('badge-success');
@@ -151,7 +156,7 @@ script.onload = function() {
       var join = $(playernames).not(players).get();
       var part = $(players).not(playernames).get();
       $.each(join, function(key, value) {
-        $('#live').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '">' + value + '</li>');
+        $('#live-playerlist').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '">' + value + '</li>');
       });
       $.each(part, function(key, value) {
         $('.player-' + value).remove();
