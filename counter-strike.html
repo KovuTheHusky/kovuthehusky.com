@@ -5,44 +5,32 @@ subtitle: "Connection details for servers."
 permalink: /counter-strike
 ---
 <div class="container">
-
-  <div class="card-columns">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">
-          Practice
-          <span id="status-practice" class="badge badge-danger">Offline</span>
-        </h5>
-        <p class="card-text align-middle">A server that runs practice mode with an option to setup and play ten-man scrimmage matches.</p>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">
+        10man
+        <span id="status" class="badge badge-danger">Offline</span>
+      </h5>
+      <p class="card-text align-middle">A server that runs get5 for playing 10man scrimmage matches.</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-left">
+        <ul id="live" class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between">Version<span id="version">Offline</span></li>
+          <li class="list-group-item d-flex justify-content-between">Map<span id="map">Offline</span></li>
+        </ul>
       </div>
-      <ul id="list-practice" class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between">Version<span id="version-practice">Offline</span></li>
-        <li class="list-group-item d-flex justify-content-between">Map<span id="map-practice">Offline</span></li>
-        <li id="playercount-practice" class="list-group-item d-flex justify-content-between">Players<span id="players-practice">Offline</span></li>
-      </ul>
-      <div class="card-body">
-        <a href="steam://connect/kovuthehusky.com:27015/derp" class="btn btn-primary remote-practice disabled">Connect</a>
+      <div class="col-sm-6 col-right">
+        <ul id="live-playerlist" class="list-group list-group-flush">
+          <li id="playercount" class="list-group-item d-flex justify-content-between">Players<span id="players">Offline</span></li>
+        </ul>
       </div>
     </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">
-          Retake
-          <span id="status-retake" class="badge badge-danger">Offline</span>
-        </h5>
-        <p class="card-text align-middle">A server that runs the retake mod at all times with an option to change maps at any time.</p>
-      </div>
-      <ul id="list-retake" class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between">Version<span id="version-retake">Offline</span></li>
-        <li class="list-group-item d-flex justify-content-between">Map<span id="map-retake">Offline</span></li>
-        <li id="playercount-retake" class="list-group-item d-flex justify-content-between">Players<span id="players-retake">Offline</span></li>
-      </ul>
-      <div class="card-body">
-        <a href="steam://connect/kovuthehusky.com:27025/derp" class="btn btn-primary remote-retake disabled">Connect</a>
-      </div>
+    <div class="card-body" style="border-top: 1px solid #808080;">
+      <a href="steam://connect/40.75.7.193:27015/derp" class="btn btn-primary disabled remote">Connect</a>
+      <a href="https://discord.gg/6s92ew7gsy" class="btn btn-link">Discord</a>
     </div>
   </div>
-
 </div>
 
 <script>
@@ -56,14 +44,14 @@ permalink: /counter-strike
   var players = [];
   
   function refresh() {
-    $.getJSON('https://d.kovuthehusky.com/status/counterstrike-practice.json', function(data) {
-      $('#status-practice').text('Online');
-      $('.remote-practice').removeClass('disabled');
-      $('#status-practice').addClass('badge-success');
-      $('#status-practice').removeClass('badge-danger');
-      $('#version-practice').text(data['Info']['Version']);
-      $('#map-practice').text(data['Info']['Map']);
-      $('#players-practice').text(data['Info']['Players'] + ' / ' + data['Info']['MaxPlayers']);
+    $.getJSON('https://status.kovuthehusky.com/counter-strike.json', function(data) {
+      $('#status').text('Online');
+      $('.remote').removeClass('disabled');
+      $('#status').addClass('badge-success');
+      $('#status').removeClass('badge-danger');
+      $('#version').text(data['Info']['Version']);
+      $('#map').text(data['Info']['Map']);
+      $('#players').text(data['Info']['Players'] + ' / ' + data['Info']['MaxPlayers']);
       var playernames = [];
       $.each(data.Players, function (key, value) {
         if (value.Name !== '') {
@@ -73,75 +61,25 @@ permalink: /counter-strike
       var join = $(playernames).not(players).get();
       var part = $(players).not(playernames).get();
       $.each(join, function(key, value) {
-        $('#list-practice').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '">' + value + '</li>');
+        $('#live-playerlist').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '">' + value + '</li>');
       });
       $.each(part, function(key, value) {
         $('.player-' + value).remove();
       });
       if (data['Info']['Players'] > 0) {
-        $('#playercount-practice').css('border-bottom', 'none');
+        $('#playercount').css('border-bottom', 'none');
       } else {
-        $('#playercount-practice').css('border-bottom', '1px solid rgba(0,0,0,.125)');
+        $('#playercount').css('border-bottom', '1px solid rgba(0,0,0,.125)');
       }
       players = playernames;
     }).fail(function() {
-      $('#status-practice').text('Offline');
-      $('.remote-practice').addClass('disabled');
-      $('#status-practice').addClass('badge-danger');
-      $('#status-practice').removeClass('badge-success');
+      $('#status').text('Offline');
+      $('.remote').addClass('disabled');
+      $('#status').addClass('badge-danger');
+      $('#status').removeClass('badge-success');
       $('#version').text('Offline');
       $('#map').text('Offline');
       $('#players').text('Offline');
-      $('.player-').remove();
-    });
-  }
-  
-  refresh();
-  setInterval(refresh, 1000);
-  
-  </script>
-
-<script>
-
-  var players2 = [];
-  
-  function refresh() {
-    $.getJSON('https://d.kovuthehusky.com/status/counterstrike-retake.json', function(data) {
-      $('#status-retake').text('Online');
-      $('.remote-retake').removeClass('disabled');
-      $('#status-retake').addClass('badge-success');
-      $('#status-retake').removeClass('badge-danger');
-      $('#version-retake').text(data['Info']['Version']);
-      $('#map-retake').text(data['Info']['Map']);
-      $('#players-retake').text(data['Info']['Players'] + ' / ' + data['Info']['MaxPlayers']);
-      var playernames = [];
-      $.each(data.Players, function (key, value) {
-        if (value.Name !== '') {
-          playernames.push(value.Name);
-        }
-      });
-      var join = $(playernames).not(players2).get();
-      var part = $(players2).not(playernames).get();
-      $.each(join, function(key, value) {
-        $('#list-retake').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '">' + value + '</li>');
-      });
-      $.each(part, function(key, value) {
-        $('.player-' + value).remove();
-      });
-      if (data['Info']['Players'] > 0) {
-        $('#playercount-retake').css('border-bottom', 'none');
-      } else {
-        $('#playercount-retake').css('border-bottom', '1px solid rgba(0,0,0,.125)');
-      }
-      players2 = playernames;
-    }).fail(function() {
-      $('#status-retake').text('Offline');
-      $('.remote-retake').addClass('disabled');
-      $('#status-retake').addClass('badge-danger');
-      $('#status-retake').removeClass('badge-success');
-      $('#version2').text('Offline');
-      $('#map2').text('Offline');
-      $('#players2').text('Offline');
       $('.player-').remove();
     });
   }
