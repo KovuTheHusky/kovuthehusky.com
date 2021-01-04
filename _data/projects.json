@@ -554,7 +554,7 @@
       "name": "dynmap-mobs",
       "owner": "webbukkit",
       "description": "Show mobs in Dynmap (Dynmap Add-On)",
-      "forks": 26,
+      "forks": 25,
       "stars": 9
     },
     {
@@ -582,8 +582,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8808,
-      "stars": 8612
+      "forks": 8812,
+      "stars": 8615
     },
     {
       "name": "MCStatus-php",
@@ -617,8 +617,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1298,
-      "stars": 9990
+      "forks": 1299,
+      "stars": 9993
     },
     {
       "name": "TDSM_map",
