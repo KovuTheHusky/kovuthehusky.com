@@ -14,7 +14,7 @@ end
 
 gem "wdm", "~> 0.1", :install_if => Gem.win_platform?
 
-gem "nokogiri", "~> 1.10"
+gem "nokogiri", "~> 1.11"
 
 gem "jekyll-file-size", "~> 0.0.7"
 
