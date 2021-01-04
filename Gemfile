@@ -5,6 +5,7 @@ gem "jekyll", "~> 4.2"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15"
+  gem "jekyll-file-size", "~> 0.0.7"
 end
 
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
@@ -15,7 +16,5 @@ end
 gem "wdm", "~> 0.1", :install_if => Gem.win_platform?
 
 gem "nokogiri", "~> 1.11"
-
-gem "jekyll-file-size", "~> 0.0.7"
 
 gem "webrick", "~> 1.7" # TODO: Remove this once jekyll releases https://github.com/hrldcpr/poole/commit/bafd481f3347283c2edabdb56ee4a3b4b655efc1
