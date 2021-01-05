@@ -382,6 +382,7 @@
         "forks": 0,
         "stars": 0,
         "source": "https://github.com/MyFursona/MyFursona",
+        "icon": "/images/projects/icons/myfursona.svg",
         "status": "WIP"
       },
       {
@@ -409,6 +410,7 @@
           "href": "https://status.myfursona.com"
         },
         "source": "https://github.com/MyFursona/status.myfursona.com",
+        "icon": "/images/projects/icons/statusmyfursonacom.svg",
         "status": "WIP"
       },
       {
@@ -642,7 +644,7 @@
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
       "forks": 1301,
-      "stars": 10002
+      "stars": 10003
     },
     {
       "name": "TDSM_map",
