@@ -376,6 +376,15 @@
         "status": "WIP"
       },
       {
+        "name": "MyFursona",
+        "owner": "MyFursona",
+        "description": "Meta project for all discussion, documentation, and issues.",
+        "forks": 0,
+        "stars": 0,
+        "source": "https://github.com/MyFursona/MyFursona",
+        "status": "WIP"
+      },
+      {
         "name": "myfursona.com",
         "owner": "KovuTheHusky",
         "description": "A social networking website for furries. Go furpile!",
@@ -516,15 +525,6 @@
         "forks": 0,
         "stars": 0,
         "source": "https://github.com/KovuTheHusky/Morse",
-        "status": "Unknown"
-      },
-      {
-        "name": "MyFursona",
-        "owner": "MyFursona",
-        "description": "Meta project for all discussion, documentation, and issues.",
-        "forks": 0,
-        "stars": 0,
-        "source": "https://github.com/MyFursona/MyFursona",
         "status": "Unknown"
       },
       {
