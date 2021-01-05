@@ -89,15 +89,6 @@
         "status": "Active"
       },
       {
-        "name": "d.kovuthehusky.com",
-        "owner": "KovuTheHusky",
-        "description": "Dynamic components for KovuTheHusky's personal website.",
-        "forks": 0,
-        "stars": 0,
-        "source": "https://github.com/KovuTheHusky/d.kovuthehusky.com",
-        "status": "Active"
-      },
-      {
         "name": "dynmap-structures",
         "owner": "KovuTheHusky",
         "description": "A Bukkit plugin that shows your world's structures (such as Villages, Strongholds, and Pyramids) on Dynmap.",
@@ -223,6 +214,15 @@
         "forks": 0,
         "stars": 0,
         "source": "https://github.com/KovuTheHusky/1337Player",
+        "status": "Unsupported"
+      },
+      {
+        "name": "d.kovuthehusky.com",
+        "owner": "KovuTheHusky",
+        "description": "Dynamic components for KovuTheHusky's personal website.",
+        "forks": 0,
+        "stars": 0,
+        "source": "https://github.com/KovuTheHusky/d.kovuthehusky.com",
         "status": "Unsupported"
       },
       {
@@ -609,7 +609,7 @@
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
       "forks": 8813,
-      "stars": 8626
+      "stars": 8625
     },
     {
       "name": "MCStatus-php",
