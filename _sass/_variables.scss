@@ -16,6 +16,10 @@ $popover-bg: #fff;
   padding-bottom: 76px;
 }
 
+#masonry {
+  margin-bottom: -24px;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -62,19 +66,9 @@ body {
 }
 
 .btn-primary,
-.badge-primary,
+.bg-primary,
 .progress-bar {
   color: #343a40 !important;
-}
-
-.card-columns {
-  column-gap: 12px !important;
-  column-count: 1 !important;
-}
-@media screen and (min-width: 576px) {
-  .card-columns {
-    column-count: 2 !important;
-  }
 }
 
 .card,
@@ -201,6 +195,7 @@ a.disabled {
 #about {
   width: 75%;
   margin-bottom: 76px !important;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 576px) {

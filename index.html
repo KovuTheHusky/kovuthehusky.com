@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container">
   <div id="restream"></div>
-  <h1 id="about" class="text-justify m-auto">
+  <h1 id="about" class="m-auto">
       30,
       <img draggable="false" class="emoji" alt="&#x2642;" src="/node_modules/twemoji-git/assets/svg/2642.svg">,
       <img draggable="false" class="emoji" alt="&#x1F3F3;&#xFE0F;&#x200D;&#x1F308;" src="/node_modules/twemoji-git/assets/svg/1f3f3-fe0f-200d-1f308.svg">,
@@ -138,7 +138,7 @@ layout: default
 
   function refresh() {
     if (!shown) {
-      $.getJSON('https://d.kovuthehusky.com/status/restream.json', function(data) {
+      $.getJSON('https://status.kovuthehusky.com/restream.json', function(data) {
         if (data['live']) {
           shown = true;
           $('#restream').append('<iframe src="https://player.twitch.tv/?channel=kovuthehusky&parent=kovuthehusky.com" height="624" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>');
@@ -151,6 +151,6 @@ layout: default
     }
   }
 
-  refresh();
-  var interval = setInterval(refresh, 1000);
+  //refresh();
+  //var interval = setInterval(refresh, 1000);
   </script>

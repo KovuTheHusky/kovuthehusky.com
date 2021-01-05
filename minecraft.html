@@ -9,7 +9,7 @@ permalink: /minecraft
     <div class="card-body">
       <h5 class="card-title">
         Survival
-        <span id="status" class="badge badge-danger">Offline</span>
+        <span id="status" class="badge bg-danger">Offline</span>
       </h5>
       <p class="card-text align-middle">The current world started in version 1.7.2. No world download is available at this time, but a live map is.</p>
     </div>
@@ -46,35 +46,37 @@ permalink: /minecraft
 <div id="timeline" style="height: 296px;">
 </div>
 <div class="container">
-  <div class="card-columns">
+  <div id="masonry" class="row" data-masonry='{"percentPosition": true }'>
   {% for world in site.data.minecraft %}
-    <div class="card">
-    {% if world.image %}
-      <img src="/images/{{ world.image }}" class="card-img-top" alt="">
-    {% endif %}
-      <div class="card-body">
-        <h5 class="card-title">
-          {{ world.title }}
-          {% if world.badge %}
-          <span class="badge badge-{{ world.badge.color }}">{{ world.badge.label }}</span>
-          {% endif %}
-          {% if world.icon %}
-          <img class="float-right" src="/images/{{ world.icon }}" alt="{{ world.title }}" style="width: 24px; height: 24px; vertical-align: top;">
-          {% endif %}
-        </h5>
-        <p class="card-text align-middle">{{ world.description }}</p>
-        {% if world.list %}
-      </div>
-        <ul id="live" class="list-group list-group-flush">
-          {% for item in world.list %}
-          <li class="list-group-item d-flex justify-content-between">{{ item.label }}<span id="{{ item.id }}" {% if item.popover %} data-toggle="popover" data-content="{{ item.popover }}" data-html="true" {% endif %}>{{ item.text }}</span></li>
-          {% endfor %}
-        </ul>
+    <div class="col-sm-6 mb-4">
+      <div class="card">
+      {% if world.image %}
+        <img src="/images/{{ world.image }}" class="card-img-top" alt="">
+      {% endif %}
         <div class="card-body">
-        {% endif %}
-        {% for button in world.buttons %}
-        <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %}">{{ button.label }}</a>
-        {% endfor %}
+          <h5 class="card-title">
+            {{ world.title }}
+            {% if world.badge %}
+            <span class="badge bg-{{ world.badge.color }}">{{ world.badge.label }}</span>
+            {% endif %}
+            {% if world.icon %}
+            <img class="float-right" src="/images/{{ world.icon }}" alt="{{ world.title }}" style="width: 24px; height: 24px; vertical-align: top;">
+            {% endif %}
+          </h5>
+          <p class="card-text align-middle">{{ world.description }}</p>
+          {% if world.list %}
+        </div>
+          <ul id="live" class="list-group list-group-flush">
+            {% for item in world.list %}
+            <li class="list-group-item d-flex justify-content-between">{{ item.label }}<span id="{{ item.id }}" {% if item.popover %} data-toggle="popover" data-content="{{ item.popover }}" data-html="true" {% endif %}>{{ item.text }}</span></li>
+            {% endfor %}
+          </ul>
+          <div class="card-body">
+          {% endif %}
+          {% for button in world.buttons %}
+          <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %}">{{ button.label }}</a>
+          {% endfor %}
+        </div>
       </div>
     </div>
   {% endfor %}
@@ -186,8 +188,8 @@ function refresh() {
   $.getJSON('https://status.kovuthehusky.com/minecraft.json', function(data) {
     $('#status').text('Online');
     $('.remote').removeClass('disabled');
-    $('#status').addClass('badge-success');
-    $('#status').removeClass('badge-danger');
+    $('#status').addClass('bg-success');
+    $('#status').removeClass('bg-danger');
     $('#version').text(data['Info']['Version']);
     var day = data['Day'];
     $('#day').text(Number(day).toLocaleString());
@@ -321,8 +323,8 @@ function refresh() {
   }).fail(function() {
     $('#status').text('Offline');
     $('.remote').addClass('disabled');
-    $('#status').addClass('badge-danger');
-    $('#status').removeClass('badge-success');
+    $('#status').addClass('bg-danger');
+    $('#status').removeClass('bg-success');
     $('#version').text('Offline');
     $('#day').text('Offline');
     $('#time').text('Offline');

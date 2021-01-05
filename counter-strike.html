@@ -9,7 +9,7 @@ permalink: /counter-strike
     <div class="card-body">
       <h5 class="card-title">
         10man
-        <span id="status" class="badge badge-danger">Offline</span>
+        <span id="status" class="badge bg-danger">Offline</span>
       </h5>
       <p class="card-text align-middle">A server that runs get5 for playing 10man scrimmage matches.</p>
     </div>
@@ -50,8 +50,8 @@ permalink: /counter-strike
     $.getJSON('https://status.kovuthehusky.com/counter-strike.json', function(data) {
       $('#status').text('Online');
       $('.remote').removeClass('disabled');
-      $('#status').addClass('badge-success');
-      $('#status').removeClass('badge-danger');
+      $('#status').addClass('bg-success');
+      $('#status').removeClass('bg-danger');
       $('#version').text(data['Info']['Version']);
       $('#map').text(data['Info']['Map']);
       $('#map-image').attr('src', 'https://raw.githubusercontent.com/SteamDatabase/GameTracking-CSGO/master/csgo/maps/' + data['Info']['Map'] + '.jpg');
@@ -81,8 +81,8 @@ permalink: /counter-strike
     }).fail(function() {
       $('#status').text('Offline');
       $('.remote').addClass('disabled');
-      $('#status').addClass('badge-danger');
-      $('#status').removeClass('badge-success');
+      $('#status').addClass('bg-danger');
+      $('#status').removeClass('bg-success');
       $('#version').text('Offline');
       $('#map').text('Offline');
       $('#map-image-container').hide();

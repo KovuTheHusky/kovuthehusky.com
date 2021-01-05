@@ -19,23 +19,25 @@
     <link rel="stylesheet" href="/assets/main.css">
     <link rel="stylesheet" href="/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css" media="none" onload="if (media != 'all') { media='all'; }">
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/popper.js/dist/umd/popper.min.js" defer></script>
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js" defer></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
     <script src="/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer></script>
+    <script src="/node_modules/masonry-layout/dist/masonry.pkgd.min.js" defer></script>
     <script src="/node_modules/twemoji/dist/twemoji.min.js" defer></script>
     <script src='https://static.cloudflareinsights.com/beacon.min.js' defer data-cf-beacon='{"token": "dacf0061768e41309a04b1c9cc6f2778"}'></script>
     <script>$(document).ready(function () { document.body = twemoji.parse(document.body, {folder: 'svg', ext: '.svg'}); });</script>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-transparent">
+      <div class="container-fluid">
       <a class="navbar-brand" href="/">
         <img src="/images/avatar.svg" alt="{{ site.title }}" class="rounded-circle">
       </a>
       <div class="dropdown">
-        <button class="navbar-toggler bg-dark" type="button" data-toggle="dropdown" aria-label="Navigation">
+        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="dropdown" aria-label="Navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
           <a class="dropdown-item{% if page.url == '/' %} active{% endif %}" href="/">About</a>
           <a class="dropdown-item{% if page.url == '/places' %} active{% endif %}" href="/places">Places</a>
           <a class="dropdown-item{% if page.url == '/posts' or page.layout == 'post' %} active{% endif %}" href="/posts">Posts</a>
@@ -53,4 +55,5 @@
           <a class="dropdown-item{% if page.url == '/pokemon-go' %} active{% endif %}" href="/pokemon-go">Pokémon GO</a>
         </div>
       </div>
+    </div>
     </nav>
