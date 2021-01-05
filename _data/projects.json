@@ -38,6 +38,7 @@
     "martok/MCStatus-php",
     "KovuTheHusky/modusawperandi.com",
     "KovuTheHusky/Morse",
+    "MyFursona/MyFursona",
     "KovuTheHusky/myfursona.com",
     "KovuTheHusky/NBT",
     "NightWolf1298/nightwolf1298.com",
@@ -52,6 +53,7 @@
     "KovuTheHusky/Speedtest",
     "KovuTheHusky/Spiral",
     "KovuTheHusky/status.kovuthehusky.com",
+    "MyFursona/status.myfursona.com",
     "KovuTheHusky/Steam-Link-Fixer",
     "elevatorguy/TDSM_map",
     "KovuTheHusky/telegram-gifv",
@@ -388,6 +390,19 @@
         "status": "WIP"
       },
       {
+        "name": "status.myfursona.com",
+        "owner": "MyFursona",
+        "description": "Status for the MyFursona service(s).",
+        "forks": 0,
+        "stars": 0,
+        "button": {
+          "text": "Visit",
+          "href": "https://status.myfursona.com"
+        },
+        "source": "https://github.com/MyFursona/status.myfursona.com",
+        "status": "WIP"
+      },
+      {
         "name": "telegram-gifv",
         "owner": "KovuTheHusky",
         "description": "Creates videos that will appear as GIFs in Telegram.",
@@ -501,6 +516,15 @@
         "forks": 0,
         "stars": 0,
         "source": "https://github.com/KovuTheHusky/Morse",
+        "status": "Unknown"
+      },
+      {
+        "name": "MyFursona",
+        "owner": "MyFursona",
+        "description": "Meta project for all discussion, documentation, and issues.",
+        "forks": 0,
+        "stars": 0,
+        "source": "https://github.com/MyFursona/MyFursona",
         "status": "Unknown"
       },
       {
