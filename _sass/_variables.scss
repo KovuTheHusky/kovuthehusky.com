@@ -2,11 +2,14 @@ $body-bg: #121212;
 $body-color: #fff;
 $primary: #5dde95;
 
-$tooltip-color: #000;
-$popover-body-color: #000;
-
-$tooltip-bg: #fff;
-$popover-bg: #fff;
+$input-bg: #000;
+$input-disabled-bg: #343a40;
+$input-color: $body-color;
+$input-border-color: #6c757d;
+$input-focus-color: $input-color;
+$input-placeholder-color: #ced4da;
+$input-plaintext-color: $body-color;
+$input-group-addon-bg: #343a40;
 
 .gutter-top {
   padding-top: 76px;
@@ -39,6 +42,10 @@ $popover-bg: #fff;
 html,
 body {
   height: 100%;
+}
+
+.btn-close {
+  filter: invert(1);
 }
 
 .navbar {

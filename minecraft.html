@@ -37,7 +37,7 @@ permalink: /minecraft
       </div>
     </div>
     <div class="card-body" style="border-top: 1px solid #808080;">
-      <a href="#" data-toggle="modal" data-target="#modal" class="btn btn-primary disabled remote">Connect</a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#modal" class="btn btn-primary disabled remote">Connect</a>
       <a href="https://minecraft.kovuthehusky.com" class="btn btn-link">Live Map</a>
       <a href="https://discord.gg/w3XaDVBF7K" class="btn btn-link">Discord</a>
     </div>
@@ -68,7 +68,7 @@ permalink: /minecraft
         </div>
           <ul id="live" class="list-group list-group-flush">
             {% for item in world.list %}
-            <li class="list-group-item d-flex justify-content-between">{{ item.label }}<span id="{{ item.id }}" {% if item.popover %} data-toggle="popover" data-content="{{ item.popover }}" data-html="true" {% endif %}>{{ item.text }}</span></li>
+            <li class="list-group-item d-flex justify-content-between">{{ item.label }}<span id="{{ item.id }}" {% if item.popover %} data-bs-toggle="popover" data-content="{{ item.popover }}" data-html="true" {% endif %}>{{ item.text }}</span></li>
             {% endfor %}
           </ul>
           <div class="card-body">
@@ -89,21 +89,17 @@ permalink: /minecraft
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modalTitle">Connect</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <p class="mb-3">To connect to the server, log into Minecraft, select Multiplayer from the main menu, click the Add Server button, and enter the server address below.</p>
           <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" style="min-width: 80px;">Server</span>
-            </div>
-            <input type="text" class="form-control" onclick="this.select();" oninput="this.value = 'kovuthehusky.com'; this.select();" value="kovuthehusky.com">
+            <span class="input-group-text" style="min-width: 80px;">Server</span>
+            <input type="text" class="form-control" onclick="this.select();" value="kovuthehusky.com" readonly>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

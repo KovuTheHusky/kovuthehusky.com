@@ -57,7 +57,7 @@ permalink: /terraria
         </div>
           <ul id="live" class="list-group list-group-flush">
             {% for item in world.list %}
-            <li class="list-group-item d-flex justify-content-between">{{ item.label }}<span id="{{ item.id }}" {% if item.popover %} data-toggle="popover" data-content="{{ item.popover }}" data-html="true" {% endif %}>{{ item.text }}</span></li>
+            <li class="list-group-item d-flex justify-content-between">{{ item.label }}<span id="{{ item.id }}" {% if item.popover %} data-bs-toggle="popover" data-content="{{ item.popover }}" data-html="true" {% endif %}>{{ item.text }}</span></li>
             {% endfor %}
           </ul>
           <div class="card-body">
