@@ -381,6 +381,10 @@
         "description": "Meta project for all discussion, documentation, and issues.",
         "forks": 0,
         "stars": 0,
+        "button": {
+          "text": "Visit",
+          "href": "https://myfursona.com"
+        },
         "source": "https://github.com/MyFursona/MyFursona",
         "icon": "/images/projects/icons/myfursona.svg",
         "status": "WIP"

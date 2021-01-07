@@ -348,26 +348,13 @@ a.disabled {
   background-color: #e05d44;
 }
 
-.badge {
-  font-size: 16px !important;
-}
-
 .badge a, .badge .a:link, .badge a:hover {
   color: inherit;
   text-decoration: inherit;
 }
 
-.badge a:any-link {
-  display: inline-block;
-  height: 16px !important;
-}
-
-.badge .octicons {
+.octicons {
   filter: invert(1);
-}
-
-.badge .emoji {
-  top: 0;
 }
 
 .emoji {
