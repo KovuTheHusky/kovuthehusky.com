@@ -876,7 +876,8 @@ trim-newlines@^1.0.0:
 
 twemoji-git@twitter/twemoji:
   version "13.0.1"
-  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/8017ebd412a6293993aa5c0709f0e035714b3cdd"
+  uid f3c087f22b5728212ff0f607c74c9a7924ae8e7c
+  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/f3c087f22b5728212ff0f607c74c9a7924ae8e7c"
   dependencies:
     fs-extra "^8.0.1"
     jsonfile "^5.0.0"
