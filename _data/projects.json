@@ -1,5 +1,5 @@
 {
-  "since": "2021-01-12",
+  "since": "2021-01-14",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -571,7 +571,7 @@
       "owner": "webbukkit",
       "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations.",
       "forks": 320,
-      "stars": 1146
+      "stars": 1150
     },
     {
       "name": "dynmap-api",
@@ -612,8 +612,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8843,
-      "stars": 8651
+      "forks": 8848,
+      "stars": 8658
     },
     {
       "name": "MCStatus-php",
@@ -647,8 +647,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1313,
-      "stars": 10055
+      "forks": 1316,
+      "stars": 10077
     },
     {
       "name": "TDSM_map",
