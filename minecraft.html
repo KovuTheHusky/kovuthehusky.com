@@ -38,8 +38,8 @@ permalink: /minecraft
     </div>
     <div class="card-body" style="border-top: 1px solid #808080;">
       <a href="#" data-bs-toggle="modal" data-bs-target="#modal" class="btn btn-primary disabled remote">Connect</a>
-      <a href="https://minecraft.kovuthehusky.com" class="btn btn-link">Live Map</a>
-      <a href="https://discord.gg/w3XaDVBF7K" class="btn btn-link">Discord</a>
+      <a href="https://minecraft.kovuthehusky.com" class="btn btn-secondary">Live Map</a>
+      <a href="https://discord.gg/w3XaDVBF7K" class="btn btn-secondary">Discord</a>
     </div>
   </div>
 </div>
@@ -74,7 +74,7 @@ permalink: /minecraft
           <div class="card-body">
           {% endif %}
           {% for button in world.buttons %}
-          <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-link{% endif %}">{{ button.label }}</a>
+          <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-secondary{% endif %}">{{ button.label }}</a>
           {% endfor %}
         </div>
       </div>
