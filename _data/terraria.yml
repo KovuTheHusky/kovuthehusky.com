@@ -5,7 +5,7 @@
   description: "An expert mode world created for version 1.3.x. Played throught to the end-game by KovuTheHusky, NightWolf1298, and Kuperfox."
   buttons:
   - label: "Download"
-    link: "https://archive.kovuthehusky.com/terraria/survival-2015.zip"
+    link: "https://archive.kovuthehusky.com/terraria/survival-2015.wld"
     primary: true
   - label: "Map"
     link: "https://archive.kovuthehusky.com/terraria/survival-2015/"
@@ -17,7 +17,7 @@
   description: "Another world created for version 1.2.x shortly after the previous one. It ran for a very short period of time."
   buttons:
   - label: "Download"
-    link: "https://archive.kovuthehusky.com/terraria/survival-2014.zip"
+    link: "https://archive.kovuthehusky.com/terraria/survival-2014.wld"
     primary: true
   - label: "Map"
     link: "https://archive.kovuthehusky.com/terraria/survival-2014/"
@@ -29,7 +29,7 @@
   description: "A world created for version 1.2.x and retired after a short period of time. The first world with hard mode enabled."
   buttons:
   - label: "Download"
-    link: "https://archive.kovuthehusky.com/terraria/survival-2013.zip"
+    link: "https://archive.kovuthehusky.com/terraria/survival-2013.wld"
     primary: true
   - label: "Map"
     link: "https://archive.kovuthehusky.com/terraria/survival-2013/"
@@ -41,7 +41,7 @@
   description: "The original world created in version 1.0.x and retired sometime afterward. Created around the release of Terraria."
   buttons:
   - label: "Download"
-    link: "https://archive.kovuthehusky.com/terraria/survival-2011.zip"
+    link: "https://archive.kovuthehusky.com/terraria/survival-2011.wld"
     primary: true
   - label: "Map"
     link: "https://archive.kovuthehusky.com/terraria/survival-2011/"
