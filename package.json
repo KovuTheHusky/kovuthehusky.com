@@ -15,7 +15,8 @@
     "pokemon-medals": "KovuTheHusky/pokemon-medals#gh-pages",
     "simple-icons": "^4.7.0",
     "twemoji": "^13.0.1",
-    "twemoji-git": "twitter/twemoji"
+    "twemoji-git": "twitter/twemoji",
+    "twemoji-states": "keijtta/twemoji#subdiv-US"
   },
   "repository": {
     "type": "git",
