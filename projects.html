@@ -6,24 +6,23 @@ permalink: /projects
 ---
 <div class="container">
   <div class="text-center mb-4">
-    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-      <input type="checkbox" class="btn-check" id="active" value="active" autocomplete="off" onchange="hash();">
-      <label class="btn btn-outline-primary" for="active">Active</label>
-      <input type="checkbox" class="btn-check" id="inactive" value="inactive" autocomplete="off" onchange="hash();">
-      <label class="btn btn-outline-primary" for="inactive">Inactive</label>
-      <input type="checkbox" class="btn-check" id="unsupported" value="unsupported" autocomplete="off" onchange="hash();">
-      <label class="btn btn-outline-primary" for="unsupported">Unsupported</label>
-      <input type="checkbox" class="btn-check" id="suspended" value="suspended" autocomplete="off" onchange="hash();">
-      <label class="btn btn-outline-primary" for="suspended">Suspended</label>
-      <input type="checkbox" class="btn-check" id="abandoned" value="abandoned" autocomplete="off" onchange="hash();">
-      <label class="btn btn-outline-primary" for="abandoned">Abandoned</label>
-      <input type="checkbox" class="btn-check" id="wip" value="wip" autocomplete="off" onchange="hash();">
-      <label class="btn btn-outline-primary" for="wip">WIP</label>
-      <input type="checkbox" class="btn-check" id="concept" value="concept" autocomplete="off" onchange="hash();">
-      <label class="btn btn-outline-primary" for="concept">Concept</label>
-      <input type="checkbox" class="btn-check" id="unknown" value="unknown" autocomplete="off" onchange="hash();">
-      <label class="btn btn-outline-primary" for="unknown">Unknown</label>
+    Filter by
+    <div class="dropdown" style="display: inline-block !important;">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="filter-label" data-bs-toggle="dropdown" aria-expanded="false">
+        status
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" id="filter" aria-labelledby="filter-label">
+        <li><a class="dropdown-item" href="#" id="active" onclick="event.preventDefault(); $('#active').toggleClass('active'); self.hash();">active</a></li>
+        <li><a class="dropdown-item" href="#" id="inactive" onclick="event.preventDefault(); $('#inactive').toggleClass('active'); self.hash();">inactive</a></li>
+        <li><a class="dropdown-item" href="#" id="unsupported" onclick="event.preventDefault(); $('#unsupported').toggleClass('active'); self.hash();">unsupported</a></li>
+        <li><a class="dropdown-item" href="#" id="suspended" onclick="event.preventDefault(); $('#suspended').toggleClass('active'); self.hash();">suspended</a></li>
+        <li><a class="dropdown-item" href="#" id="abandoned" onclick="event.preventDefault(); $('#abandoned').toggleClass('active'); self.hash();">abandoned</a></li>
+        <li><a class="dropdown-item" href="#" id="wip" onclick="event.preventDefault(); $('#wip').toggleClass('active'); self.hash();">wip</a></li>
+        <li><a class="dropdown-item" href="#" id="concept" onclick="event.preventDefault(); $('#concept').toggleClass('active'); self.hash();">concept</a></li>
+        <li><a class="dropdown-item" href="#" id="unknown" onclick="event.preventDefault(); $('#unknown').toggleClass('active'); self.hash();">unknown</a></li>
+      </ul>
     </div>
+    of project.
   </div>
 
   <div id="masonry" class="row" data-masonry='{"percentPosition": true }'>
@@ -91,6 +90,10 @@ permalink: /projects
 
 </div>
 <script>
+  $('#filter a').click(function(e) {
+      e.stopPropagation();
+  });
+
   window.addEventListener('hashchange', fn, false);
 
   window.onload = fn;
@@ -118,10 +121,10 @@ permalink: /projects
     args = args.split('/');
     statuses.forEach(e => {
       if (args.includes(e)) {
-        $('#' + e).prop('checked', true);
+        $('#' + e).addClass('active');
         $('.repo-status-' + e + '-filter').show();
       } else {
-        $('#' + e).prop('checked', false);
+        $('#' + e).removeClass('active');
         $('.repo-status-' + e + '-filter').hide();
       }
       $('#masonry').masonry();
@@ -131,7 +134,7 @@ permalink: /projects
   function hash() {
     var arr = [];
     statuses.forEach(e => {
-      if ($('#' + e).prop('checked')) {
+      if ($('#' + e).hasClass('active')) {
         arr.push(e);
       }
     });
