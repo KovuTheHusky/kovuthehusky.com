@@ -536,6 +536,13 @@
   },
   "contributed": [
     {
+      "name": "AutoPatchWork",
+      "owner": "os0x",
+      "description": null,
+      "forks": 18,
+      "stars": 32
+    },
+    {
       "name": "Better-Sprinting",
       "owner": "chylex",
       "description": "Minecraft mod that improves and expands sprinting, sneaking, and flying mechanics.",
