@@ -1,9 +1,8 @@
 {
-  "since": "2021-01-20",
+  "since": "2021-01-22",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
-    "KovuTheHusky/assetto-corsa-server",
     "os0x/AutoPatchWork",
     "KovuTheHusky/BaseTime",
     "chylex/Better-Sprinting",
@@ -435,15 +434,6 @@
     ],
     "unknown": [
       {
-        "name": "assetto-corsa-server",
-        "owner": "KovuTheHusky",
-        "description": null,
-        "forks": 0,
-        "stars": 0,
-        "source": "https://github.com/KovuTheHusky/assetto-corsa-server",
-        "status": "Unknown"
-      },
-      {
         "name": "BaseTime",
         "owner": "KovuTheHusky",
         "description": "College project that explores class inheritance.",
@@ -546,13 +536,6 @@
   },
   "contributed": [
     {
-      "name": "AutoPatchWork",
-      "owner": "os0x",
-      "description": null,
-      "forks": 18,
-      "stars": 32
-    },
-    {
       "name": "Better-Sprinting",
       "owner": "chylex",
       "description": "Minecraft mod that improves and expands sprinting, sneaking, and flying mechanics.",
@@ -571,7 +554,7 @@
       "owner": "webbukkit",
       "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations.",
       "forks": 320,
-      "stars": 1159
+      "stars": 1161
     },
     {
       "name": "dynmap-api",
@@ -612,8 +595,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8873,
-      "stars": 8692
+      "forks": 8881,
+      "stars": 8697
     },
     {
       "name": "MCStatus-php",
@@ -647,8 +630,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1328,
-      "stars": 10118
+      "forks": 1329,
+      "stars": 10128
     },
     {
       "name": "TDSM_map",
