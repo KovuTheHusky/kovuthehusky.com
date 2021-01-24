@@ -32,6 +32,8 @@ GEM
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-file-size (0.0.7)
+    jekyll-redirect-from (0.16.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-watch (2.2.1)
@@ -78,6 +80,7 @@ DEPENDENCIES
   jekyll (~> 4.2)
   jekyll-feed (~> 0.15)
   jekyll-file-size (~> 0.0.7)
+  jekyll-redirect-from (~> 0.16.0)
   nokogiri (~> 1.11)
   tzinfo (~> 2.0)
   tzinfo-data
