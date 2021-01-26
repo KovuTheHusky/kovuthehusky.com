@@ -560,7 +560,7 @@
       "name": "dynmap",
       "owner": "webbukkit",
       "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations.",
-      "forks": 320,
+      "forks": 319,
       "stars": 1169
     },
     {
@@ -602,8 +602,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8878,
-      "stars": 8714
+      "forks": 8877,
+      "stars": 8715
     },
     {
       "name": "MCStatus-php",
