@@ -48,9 +48,9 @@
   integrity sha1-ioP5M1x4YO/6Lu7KJUMyqgru2PI=
 
 "@mapbox/tiny-sdf@^1.1.1":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@mapbox/tiny-sdf/-/tiny-sdf-1.2.0.tgz#797c859080d46ce4019aac4fc245427207adfde4"
-  integrity sha512-gy4o8kxsIQLSbY1etb+swWeXTateN6C9DrHeArrHsxuAnQFCh9MEKvy3b0C6QyMYZcrG6QEz4sJ/zr/ud9Zlgw==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@mapbox/tiny-sdf/-/tiny-sdf-1.2.2.tgz#536417dd04cd6af4d46eb0e65f932941a7540be1"
+  integrity sha512-GeJdumh5Do1JvnE2QbbLixZmJg6CzOfpzcAuS+qZadWK1Gj+yY/mj7IOVlgXCBg/yDqDmitGwSius+rrTpm8RA==
 
 "@mapbox/unitbezier@^0.0.0":
   version "0.0.0"
@@ -674,7 +674,6 @@ pokemon-icons@TheArtificial/pokemon-icons#gh-pages:
 
 pokemon-medals@KovuTheHusky/pokemon-medals#gh-pages:
   version "0.0.0"
-  uid "006dc9f8678ec3fee31e8f74e6dd19cc27e4e838"
   resolved "https://codeload.github.com/KovuTheHusky/pokemon-medals/tar.gz/006dc9f8678ec3fee31e8f74e6dd19cc27e4e838"
 
 potpack@^1.0.1:
