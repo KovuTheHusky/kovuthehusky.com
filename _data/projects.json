@@ -602,7 +602,7 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8880,
+      "forks": 8881,
       "stars": 8723
     },
     {
@@ -637,7 +637,7 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1336,
+      "forks": 1335,
       "stars": 10167
     },
     {
