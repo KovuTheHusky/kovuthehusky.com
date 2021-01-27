@@ -1,5 +1,5 @@
 {
-  "since": "2021-01-26",
+  "since": "2021-01-27",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -602,8 +602,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8877,
-      "stars": 8715
+      "forks": 8880,
+      "stars": 8723
     },
     {
       "name": "MCStatus-php",
@@ -624,7 +624,7 @@
       "owner": "TheArtificial",
       "description": "Fan art inspired by Pokémon",
       "forks": 5,
-      "stars": 57
+      "stars": 56
     },
     {
       "name": "SafariKeywordSearch",
@@ -637,8 +637,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1331,
-      "stars": 10156
+      "forks": 1336,
+      "stars": 10167
     },
     {
       "name": "TDSM_map",
