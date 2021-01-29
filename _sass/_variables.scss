@@ -11,12 +11,20 @@ $input-placeholder-color: #ced4da;
 $input-plaintext-color: $body-color;
 $input-group-addon-bg: #343a40;
 
-.gutter-top {
-  padding-top: 66px;
+.gpt {
+  padding-top: 66px !important;
 }
 
-.gutter-bottom {
-  padding-bottom: 66px;
+.gpb {
+  padding-bottom: 66px !important;
+}
+
+.gmt {
+  margin-top: 66px !important;
+}
+
+.gmb {
+  margin-bottom: 66px !important;
 }
 
 #masonry {
@@ -142,8 +150,8 @@ body {
   text-decoration: underline !important;
 }
 
-.post {
-  margin-bottom: 66px;
+.page *:last-child {
+  margin-bottom: 0;
 }
 
 .post .list-group {
@@ -173,13 +181,16 @@ body {
   margin-left: 0;
 }
 
+.post *:last-child {
+  margin-bottom: 0;
+}
+
 a.disabled {
   text-decoration: line-through;
 }
 
 #timeline {
   width: 100%;
-  margin-bottom: 66px;
 }
 
 #timeline rect,
@@ -199,16 +210,6 @@ a.disabled {
   display: none;
 }
 
-#about {
-  margin-bottom: 66px !important;
-}
-
-@media only screen and (max-width: 576px) {
-  #about {
-    width: 100%;
-  }
-}
-
 .grid {
   text-align: center;
   font-size: 0;
@@ -222,7 +223,6 @@ a.disabled {
 
 .grid-about {
   grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
-  margin-bottom: 66px;
 }
 
 .grid-about a:any-link {
