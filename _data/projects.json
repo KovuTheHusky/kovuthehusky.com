@@ -567,7 +567,7 @@
       "name": "dynmap-api",
       "owner": "webbukkit",
       "description": "Published API for Dynmap on Spigot/Bukkit",
-      "forks": 16,
+      "forks": 17,
       "stars": 17
     },
     {
@@ -602,8 +602,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8890,
-      "stars": 8744
+      "forks": 8892,
+      "stars": 8745
     },
     {
       "name": "MCStatus-php",
@@ -624,7 +624,7 @@
       "owner": "TheArtificial",
       "description": "Fan art inspired by Pokémon",
       "forks": 6,
-      "stars": 58
+      "stars": 59
     },
     {
       "name": "SafariKeywordSearch",
@@ -637,8 +637,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1337,
-      "stars": 10194
+      "forks": 1338,
+      "stars": 10195
     },
     {
       "name": "TDSM_map",
