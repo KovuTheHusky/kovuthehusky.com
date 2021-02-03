@@ -602,8 +602,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8897,
-      "stars": 8748
+      "forks": 8898,
+      "stars": 8755
     },
     {
       "name": "MCStatus-php",
@@ -638,7 +638,7 @@
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
       "forks": 1338,
-      "stars": 10197
+      "stars": 10201
     },
     {
       "name": "TDSM_map",
