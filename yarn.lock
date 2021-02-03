@@ -674,7 +674,8 @@ pokemon-icons@TheArtificial/pokemon-icons#gh-pages:
 
 pokemon-medals@KovuTheHusky/pokemon-medals#gh-pages:
   version "0.0.0"
-  resolved "https://codeload.github.com/KovuTheHusky/pokemon-medals/tar.gz/006dc9f8678ec3fee31e8f74e6dd19cc27e4e838"
+  uid "879872249637b410653e158c9ffee9f0834ab19c"
+  resolved "https://codeload.github.com/KovuTheHusky/pokemon-medals/tar.gz/879872249637b410653e158c9ffee9f0834ab19c"
 
 potpack@^1.0.1:
   version "1.0.1"
