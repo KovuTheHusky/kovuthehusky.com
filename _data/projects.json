@@ -1,5 +1,5 @@
 {
-  "since": "2021-02-03",
+  "since": "2021-02-05",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -92,7 +92,7 @@
         "owner": "KovuTheHusky",
         "description": "A Bukkit plugin that shows your world's structures (such as Villages, Strongholds, and Pyramids) on Dynmap.",
         "forks": 8,
-        "stars": 7,
+        "stars": 8,
         "button": {
           "text": "Download",
           "href": "https://github.com/KovuTheHusky/dynmap-structures/releases/latest"
@@ -561,7 +561,7 @@
       "owner": "webbukkit",
       "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations.",
       "forks": 319,
-      "stars": 1173
+      "stars": 1175
     },
     {
       "name": "dynmap-api",
@@ -602,8 +602,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8898,
-      "stars": 8756
+      "forks": 8901,
+      "stars": 8761
     },
     {
       "name": "MCStatus-php",
@@ -637,8 +637,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1338,
-      "stars": 10201
+      "forks": 1340,
+      "stars": 10205
     },
     {
       "name": "TDSM_map",
