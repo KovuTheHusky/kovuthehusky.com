@@ -561,7 +561,7 @@
       "owner": "webbukkit",
       "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations.",
       "forks": 321,
-      "stars": 1182
+      "stars": 1183
     },
     {
       "name": "dynmap-api",
@@ -638,7 +638,7 @@
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
       "forks": 1342,
-      "stars": 10221
+      "stars": 10222
     },
     {
       "name": "TDSM_map",
