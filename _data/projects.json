@@ -1,5 +1,5 @@
 {
-  "since": "2021-02-06",
+  "since": "2021-02-08",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -74,6 +74,19 @@
         "source": "https://github.com/KovuTheHusky/buttfumble.org",
         "icon": "/images/projects/icons/buttfumbleorg.svg",
         "preview_image": "/images/projects/previews/buttfumbleorg.webp",
+        "status": "Active"
+      },
+      {
+        "name": "Cliffs-Tracker",
+        "owner": "KovuTheHusky",
+        "description": "Occupancy tracker script and website for The Cliffs (DUMBO, LIC, Valhalla, and Callowhill).",
+        "forks": 0,
+        "stars": 0,
+        "button": {
+          "text": "Visit",
+          "href": "https://aws.kovuthehusky.com/cliffs-tracker"
+        },
+        "source": "https://github.com/KovuTheHusky/Cliffs-Tracker",
         "status": "Active"
       },
       {
@@ -333,19 +346,6 @@
     ],
     "wip": [
       {
-        "name": "Cliffs-Tracker",
-        "owner": "KovuTheHusky",
-        "description": "Occupancy tracker script and website for The Cliffs (DUMBO, LIC, Valhalla, and Callowhill).",
-        "forks": 0,
-        "stars": 0,
-        "button": {
-          "text": "Visit",
-          "href": "https://aws.kovuthehusky.com/cliffs-tracker"
-        },
-        "source": "https://github.com/KovuTheHusky/Cliffs-Tracker",
-        "status": "WIP"
-      },
-      {
         "name": "developer.myfursona.com",
         "owner": "MyFursona",
         "description": "Documentation for the MyFursona API.",
@@ -560,8 +560,8 @@
       "name": "dynmap",
       "owner": "webbukkit",
       "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations.",
-      "forks": 319,
-      "stars": 1179
+      "forks": 321,
+      "stars": 1182
     },
     {
       "name": "dynmap-api",
@@ -602,8 +602,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8910,
-      "stars": 8773
+      "forks": 8916,
+      "stars": 8783
     },
     {
       "name": "MCStatus-php",
@@ -637,8 +637,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1343,
-      "stars": 10212
+      "forks": 1342,
+      "stars": 10221
     },
     {
       "name": "TDSM_map",
