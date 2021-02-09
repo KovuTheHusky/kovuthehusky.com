@@ -45,6 +45,8 @@ permalink: /counter-strike
 <script>
 
   var players = [];
+  var avatars = [];
+  var urls = [];
   
   function refresh() {
     $.getJSON('https://status.kovuthehusky.com/counter-strike.json', function(data) {
@@ -59,15 +61,21 @@ permalink: /counter-strike
       $('#map-image-container').show();
       $('#players').text(data['Info']['Players'] + ' / ' + data['Info']['MaxPlayers']);
       var playernames = [];
+      var playeravatars = [];
+      var playerurls = [];
       $.each(data.Players, function (key, value) {
-        if (value.Name !== '') {
-          playernames.push(value.Name);
-        }
+        playernames.push(value.name);
+        playeravatars.push(value.avatar);
+        playerurls.push(value.url);
       });
       var join = $(playernames).not(players).get();
+      $(playeravatars).not(avatars).get();
+      $(playerurls).not(urls).get();
       var part = $(players).not(playernames).get();
+      $(avatars).not(playeravatars).get();
+      $(urls).not(playerurls).get();
       $.each(join, function(key, value) {
-        $('#live-playerlist').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '">' + value + '</li>');
+        $('#live-playerlist').append('<a href="' + playerurls[key] + '" class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '"><img src="' + playeravatars[key] + '" class="rounded me-1" style="width: 24px; height: 24px;">' + value + '</a>');
       });
       $.each(part, function(key, value) {
         $('.player-' + value).remove();
@@ -78,6 +86,8 @@ permalink: /counter-strike
         $('#playercount').css('border-bottom', '1px solid rgba(0,0,0,.125)');
       }
       players = playernames;
+      avatars = playeravatars;
+      avatars = playerurls;
     }).fail(function() {
       $('#status').text('Offline');
       $('.remote').addClass('disabled');
