@@ -2,7 +2,6 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "@ghuser/github-contribs": "^2.2.4",
     "@popperjs/core": "^2.8.4",
     "@primer/octicons": "^12.0.0",
     "bootstrap": "^5.0.0-beta2",
