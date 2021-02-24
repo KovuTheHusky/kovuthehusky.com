@@ -67,7 +67,7 @@ source.each do |entry|
     else
       region = 'unknown'
     end
-    name = name[4..]
+    name = name[4..-1]
     variant = 0
     friendlyName = name
     if (friendlyName.include? '-alola')
