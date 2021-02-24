@@ -1,5 +1,5 @@
 {
-  "since": "2021-02-11",
+  "since": "2021-02-24",
   "contributions": [
     "KovuTheHusky/1337Player",
     "KovuTheHusky/AirPlay-Chrome",
@@ -87,6 +87,7 @@
           "href": "https://aws.kovuthehusky.com/cliffs-tracker"
         },
         "source": "https://github.com/KovuTheHusky/Cliffs-Tracker",
+        "preview_image": "/images/projects/previews/cliffstracker.webp",
         "status": "Active"
       },
       {
@@ -163,7 +164,7 @@
       {
         "name": "status.kovuthehusky.com",
         "owner": "KovuTheHusky",
-        "description": null,
+        "description": "Status for KovuTheHusky's service(s).",
         "forks": 0,
         "stars": 0,
         "button": {
@@ -560,8 +561,8 @@
       "name": "dynmap",
       "owner": "webbukkit",
       "description": "A set of Minecraft mods that provide a real time web-based map system for various Minecraft server implementations.",
-      "forks": 320,
-      "stars": 1185
+      "forks": 319,
+      "stars": 1196
     },
     {
       "name": "dynmap-api",
@@ -574,8 +575,8 @@
       "name": "dynmap-mobs",
       "owner": "webbukkit",
       "description": "Show mobs in Dynmap (Dynmap Add-On)",
-      "forks": 25,
-      "stars": 9
+      "forks": 26,
+      "stars": 10
     },
     {
       "name": "DynmapCore",
@@ -602,8 +603,8 @@
       "name": "homebrew-core",
       "owner": "Homebrew",
       "description": "🍻 Default formulae for the missing package manager for macOS",
-      "forks": 8918,
-      "stars": 8797
+      "forks": 8985,
+      "stars": 8896
     },
     {
       "name": "MCStatus-php",
@@ -637,8 +638,8 @@
       "name": "simple-icons",
       "owner": "simple-icons",
       "description": "SVG icons for popular brands",
-      "forks": 1350,
-      "stars": 10245
+      "forks": 1368,
+      "stars": 10333
     },
     {
       "name": "TDSM_map",
