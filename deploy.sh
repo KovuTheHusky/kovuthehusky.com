@@ -8,18 +8,10 @@ set -e
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis CI"
 
-git checkout master
-git remote set-url origin https://${GITHUB_TOKEN}@github.com/KovuTheHusky/kovuthehusky.com.git
 echo "Updating pokédex..."
 ruby pokemongo.rb
 echo "Updating projects..."
-ruby projects.rb ${GITHUB_TOKEN}
-chmod -x deploy.sh
-if [ -n "$(git status --porcelain)" ]; then
-    git add --all
-    git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-    git push origin master
-fi
+curl -X GET "https://status.kovuthehusky.com/projects.json" > _data/projects.json
 
 rm -rf _site
 mkdir _site
