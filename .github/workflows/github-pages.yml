@@ -48,13 +48,6 @@ jobs:
 
       - run: bundle install
 
-      - name: Jekyll build
-        uses: helaili/jekyll-action@2.0.5
-        with:
-          build_only: true
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-
       - name: Pokemon GO
         id: pokemon-go
         run: ruby pokemongo.rb
