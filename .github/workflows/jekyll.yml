@@ -28,7 +28,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install
 
@@ -44,6 +44,6 @@ jobs:
 
       - run: curl -X GET "https://status.kovuthehusky.com/projects.json" > _data/projects.json
 
-      - uses: helaili/jekyll-action@2.0.5
+      - uses: helaili/jekyll-action@v2
         env:
           JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
