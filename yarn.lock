@@ -62,10 +62,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.8.6.tgz#ad75ebe8dbecfa145af3c7e4d0ae98016458d005"
   integrity sha512-1oXH2bAFXz9SttE1v/0Jp+2ZVePsPEAPGIuPKrmljWZcS3FPBEn2Q4WcANozZC0YiCjTWOF55k0g6rbSZS39ew==
 
-"@primer/octicons@^12.0.0":
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-12.0.0.tgz#cbd41af86f381bdf8303201da0d01835ecb97969"
-  integrity sha512-R3HgUaKpQQnDS1aYN0R+e3ADawsyBuvOHjzYj4ds1AJMwvV18u+Zf2/C1+kQcnWDEM5ZizANU6iQbhYrgPUcPg==
+"@primer/octicons@^12.1.0":
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-12.1.0.tgz#770c8395dc54604637c56ccb261707f9e9d59ddb"
+  integrity sha512-jayKLMTCx/0zh4fjYmkxdlEgQ8STwevn5S48fkvi/03asITmBkaYAMPrUgO8VNSQkSPHIEuc3oTLXgh+JwH0UQ==
   dependencies:
     object-assign "^4.1.1"
 
