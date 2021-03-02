@@ -406,7 +406,8 @@ tinyqueue@^2.0.3:
 
 twemoji-git@twitter/twemoji:
   version "13.0.1"
-  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/1f79250bdc1fd54bf9f963b9dc7807de9587da83"
+  uid "8e5c8c7fed4a63ba14e5612cc9bd48667a2fc8db"
+  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/8e5c8c7fed4a63ba14e5612cc9bd48667a2fc8db"
   dependencies:
     fs-extra "^8.0.1"
     jsonfile "^5.0.0"
