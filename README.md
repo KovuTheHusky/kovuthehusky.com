@@ -7,4 +7,4 @@ A personal website for KovuTheHusky.
 * Website: <https://kovuthehusky.com>
 * Issues: <https://github.com/KovuTheHusky/kovuthehusky.com/issues>
 * Source: <https://github.com/KovuTheHusky/kovuthehusky.com>
-* Builds: <https://travis-ci.com/KovuTheHusky/kovuthehusky.com>
+* Builds: <https://github.com/KovuTheHusky/kovuthehusky.com/actions>
