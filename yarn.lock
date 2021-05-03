@@ -79,10 +79,10 @@ buffer-from@^1.0.0:
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
 
-chart.js@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.2.0.tgz#3d0a4b62b6bee428f8547db6aa68c792b130c260"
-  integrity sha512-Ml3R47TvOPW6gQ6T8mg/uPvyOASPpPVVF6xb7ZyHkek1c6kJIT5ScT559afXoDf6uwtpDR2BpCommkA5KT8ODg==
+chart.js@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.2.1.tgz#1a17d6a88cef324ef711949e227eb51d6c4c26d3"
+  integrity sha512-XsNDf3854RGZkLCt+5vWAXGAtUdKP2nhfikLGZqud6G4CvRE2ts64TIxTTfspOin2kEZvPgomE29E6oU02dYjQ==
 
 clipboard@^2.0.8:
   version "2.0.8"
