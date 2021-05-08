@@ -3293,7 +3293,7 @@
         "number": 479,
         "name": "Rotom",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "479-rotom-fan": {
         "number": 479,
@@ -3547,7 +3547,7 @@
         "number": 497,
         "name": "Serperior",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "498-tepig": {
         "number": 498,
@@ -3565,7 +3565,7 @@
         "number": 500,
         "name": "Emboar",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "501-oshawott": {
         "number": 501,
@@ -3583,7 +3583,7 @@
         "number": 503,
         "name": "Samurott",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "504-patrat": {
         "number": 504,
@@ -3703,13 +3703,13 @@
         "number": 522,
         "name": "Blitzle",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "523-zebstrika": {
         "number": 523,
         "name": "Zebstrika",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "524-roggenrola": {
         "number": 524,
@@ -3727,7 +3727,7 @@
         "number": 526,
         "name": "Gigalith",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "527-woobat": {
         "number": 527,
@@ -3775,7 +3775,7 @@
         "number": 534,
         "name": "Conkeldurr",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "535-tympole": {
         "number": 535,
@@ -3811,13 +3811,13 @@
         "number": 540,
         "name": "Sewaddle",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "541-swadloon": {
         "number": 541,
         "name": "Swadloon",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "542-leavanny": {
         "number": 542,
@@ -3847,13 +3847,13 @@
         "number": 546,
         "name": "Cottonee",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "547-whimsicott": {
         "number": 547,
         "name": "Whimsicott",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "548-petili": {
         "number": 548,
@@ -3913,7 +3913,7 @@
         "number": 555,
         "name": "Darmanitan",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "555-darmanitan-zen": {
         "number": 555,
@@ -3985,7 +3985,7 @@
         "number": 566,
         "name": "Archen",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "567-archeops": {
         "number": 567,
@@ -4057,13 +4057,13 @@
         "number": 578,
         "name": "Duosion",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "579-reuniclus": {
         "number": 579,
         "name": "Reuniclus",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "580-ducklett": {
         "number": 580,
@@ -4081,13 +4081,13 @@
         "number": 582,
         "name": "Vanillite",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "583-vanillish": {
         "number": 583,
         "name": "Vanillish",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "584-vanilluxe": {
         "number": 584,
@@ -4105,7 +4105,7 @@
         "number": 585,
         "name": "Deerling",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "585-deerling-summer": {
         "number": 585,
@@ -4117,13 +4117,13 @@
         "number": 585,
         "name": "Deerling",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "586-sawsbuck-autumn": {
         "number": 586,
         "name": "Sawsbuck",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "586-sawsbuck-spring": {
         "number": 586,
@@ -4177,7 +4177,7 @@
         "number": 592,
         "name": "Frillish",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "592-frillish-m": {
         "number": 592,
@@ -4243,7 +4243,7 @@
         "number": 601,
         "name": "Klinklang",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "602-tynamo": {
         "number": 602,
@@ -4273,7 +4273,7 @@
         "number": 606,
         "name": "Beheeyem",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "607-litwick": {
         "number": 607,
@@ -4321,7 +4321,7 @@
         "number": 614,
         "name": "Beartic",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "615-cryogonal": {
         "number": 615,
@@ -4393,13 +4393,13 @@
         "number": 626,
         "name": "Bouffalant",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "627-rufflet": {
         "number": 627,
         "name": "Rufflet",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "628-braviary": {
         "number": 628,
@@ -4411,7 +4411,7 @@
         "number": 629,
         "name": "Vullaby",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "630-mandibuzz": {
         "number": 630,
