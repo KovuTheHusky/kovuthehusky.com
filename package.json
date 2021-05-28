@@ -13,7 +13,7 @@
     "pokemon-icons": "TheArtificial/pokemon-icons#gh-pages",
     "pokemon-medals": "KovuTheHusky/pokemon-medals#gh-pages",
     "simple-icons": "^4.25.0",
-    "twemoji": "^13.0.2",
+    "twemoji": "^13.1.0",
     "twemoji-git": "twitter/twemoji"
   },
   "repository": {
