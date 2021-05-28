@@ -365,19 +365,24 @@ tinyqueue@^2.0.3:
   integrity sha512-ppJZNDuKGgxzkHihX8v9v9G5f+18gzaTfrukGrq6ueg0lmH4nqVnA2IPG0AEH3jKEk2GRJCUhDoqpoiw3PHLBA==
 
 twemoji-git@twitter/twemoji:
-  version "13.0.2"
-  uid "59cb0eacce837d0f5de30223bd8f530e447f547a"
-  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/59cb0eacce837d0f5de30223bd8f530e447f547a"
+  version "13.1.0"
+  uid a5be32144e0d51f361056ed2d94d48d805906576
+  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/a5be32144e0d51f361056ed2d94d48d805906576"
   dependencies:
     fs-extra "^8.0.1"
     jsonfile "^5.0.0"
-    twemoji-parser "13.0.0"
+    twemoji-parser "13.1.0"
     universalify "^0.1.2"
 
 twemoji-parser@13.0.0:
   version "13.0.0"
   resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.0.0.tgz#bd9d1b98474f1651dc174696b45cabefdfa405af"
   integrity sha512-zMaGdskpH8yKjT2RSE/HwE340R4Fm+fbie4AaqjDa4H/l07YUmAvxkSfNl6awVWNRRQ0zdzLQ8SAJZuY5MgstQ==
+
+twemoji-parser@13.1.0:
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.1.0.tgz#65e7e449c59258791b22ac0b37077349127e3ea4"
+  integrity sha512-AQOzLJpYlpWMy8n+0ATyKKZzWlZBJN+G0C+5lhX7Ftc2PeEVdUU/7ns2Pn2vVje26AIZ/OHwFoUbdv6YYD/wGg==
 
 twemoji@^13.0.2:
   version "13.0.2"
