@@ -3805,7 +3805,7 @@
         "number": 539,
         "name": "Sawk",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "540-sewaddle": {
         "number": 540,
@@ -4249,7 +4249,7 @@
         "number": 602,
         "name": "Tynamo",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "603-eelektrik": {
         "number": 603,
@@ -5435,7 +5435,7 @@
         "number": 123,
         "name": "Scyther",
         "variant": 0,
-        "caught": 0
+        "caught": 1
       },
       "124-jynx-shiny": {
         "number": 124,
