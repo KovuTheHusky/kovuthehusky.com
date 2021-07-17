@@ -45,5 +45,5 @@ jobs:
       - run: curl -X GET "https://status.kovuthehusky.com/projects.json" > _data/projects.json
 
       - uses: helaili/jekyll-action@v2
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+        with:
+          token: ${{ secrets.JEKYLL_PAT }}
