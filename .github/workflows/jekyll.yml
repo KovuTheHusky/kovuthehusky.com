@@ -46,4 +46,4 @@ jobs:
 
       - uses: helaili/jekyll-action@v2
         with:
-          token: ${{ secrets.JEKYLL_PAT }}
+          token: ${{ secrets.TOKEN }}
