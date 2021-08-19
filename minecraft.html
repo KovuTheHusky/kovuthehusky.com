@@ -296,7 +296,7 @@ function refresh() {
       labels[i] = i;
     }
     
-    if (charttickrate == null) {
+    if (charttickrate != null) {
       charttickrate.destroy();
     }
 
@@ -314,7 +314,7 @@ function refresh() {
       options: tickrateOptions
     });
     
-    if (chartmemory == null) {
+    if (chartmemory != null) {
       chartmemory.destroy();
     }
 
