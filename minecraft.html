@@ -179,6 +179,9 @@ script.onload = function() {
 <script>
 
 var players = [];
+  
+  var charttickrate = null;
+  var chartmemory = null;
 
 function refresh() {
   $.getJSON('https://status.kovuthehusky.com/minecraft.json', function(data) {
@@ -292,6 +295,10 @@ function refresh() {
     for (var i = 0; i < data.Memory.length; i++) {
       labels[i] = i;
     }
+    
+    if (charttickrate == null) {
+      charttickrate.destroy();
+    }
 
     var charttickrate = new Chart(document.getElementById("tickrate-chart"), {
       type: 'line',
@@ -306,6 +313,10 @@ function refresh() {
       },
       options: tickrateOptions
     });
+    
+    if (chartmemory == null) {
+      chartmemory.destroy();
+    }
 
     var chartmemory = new Chart(document.getElementById("memory-chart"), {
       type: 'line',
