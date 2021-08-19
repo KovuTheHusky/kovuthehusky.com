@@ -300,7 +300,7 @@ function refresh() {
       charttickrate.destroy();
     }
 
-    var charttickrate = new Chart(document.getElementById("tickrate-chart"), {
+    charttickrate = new Chart(document.getElementById("tickrate-chart"), {
       type: 'line',
       data: {
         labels: labels,
@@ -318,7 +318,7 @@ function refresh() {
       chartmemory.destroy();
     }
 
-    var chartmemory = new Chart(document.getElementById("memory-chart"), {
+    chartmemory = new Chart(document.getElementById("memory-chart"), {
       type: 'line',
       data: {
         labels: labels,
