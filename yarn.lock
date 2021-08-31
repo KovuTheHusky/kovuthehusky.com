@@ -104,9 +104,9 @@ desandro-matches-selector@^2.0.0:
   integrity sha1-cXvu1NwT59jzdi9wem1YpndCGOE=
 
 earcut@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/earcut/-/earcut-2.2.2.tgz#41b0bc35f63e0fe80da7cddff28511e7e2e80d11"
-  integrity sha512-eZoZPPJcUHnfRZ0PjLvx2qBordSiO8ofC3vt+qACLM95u+4DovnbYNpQtJh0DNsWj8RnxrQytD4WA8gj5cRIaQ==
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/earcut/-/earcut-2.2.3.tgz#d44ced2ff5a18859568e327dd9c7d46b16f55cf4"
+  integrity sha512-iRDI1QeCQIhMCZk48DRDMVgQSSBDmbzzNhnxIo+pwx3swkfjMh6vh0nWLq1NdvGHLKH6wIrAM3vQWeTj6qeoug==
 
 ev-emitter@^1.0.0:
   version "1.1.1"
@@ -157,9 +157,9 @@ good-listener@^1.2.2:
     delegate "^3.1.2"
 
 graceful-fs@^4.1.6, graceful-fs@^4.2.0:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
-  integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
+  version "4.2.8"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
+  integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
 
 grid-index@^1.1.0:
   version "1.1.0"
@@ -280,9 +280,9 @@ potpack@^1.0.1:
   integrity sha512-15vItUAbViaYrmaB/Pbw7z6qX2xENbFSTA7Ii4tgbPtasxm5v6ryKhKtL91tpWovDJzTiZqdwzhcFBCwiMVdVw==
 
 protocol-buffers-schema@^3.3.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/protocol-buffers-schema/-/protocol-buffers-schema-3.5.1.tgz#8388e768d383ac8cbea23e1280dfadb79f4122ad"
-  integrity sha512-YVCvdhxWNDP8/nJDyXLuM+UFsuPk4+1PB7WGPVDzm3HTHbzFLxQYeW2iZpS4mmnXrQJGBzt230t/BbEb7PrQaw==
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/protocol-buffers-schema/-/protocol-buffers-schema-3.5.2.tgz#38ad35ba768607a5ed2375f8db4c2ecc5ea293c8"
+  integrity sha512-LPzSaBYp/TcbuSlpGwqT5jR9kvJ3Zp5ic2N5c2ybx6XB/lSfEHq2D7ja8AgoxHoMD91wXFALJoXsvshKPuXyew==
 
 quickselect@^2.0.0:
   version "2.0.0"
@@ -330,7 +330,6 @@ tinyqueue@^2.0.3:
 
 twemoji-git@twitter/twemoji:
   version "13.1.0"
-  uid "4d3a41480f3ff169d580fd9deb0d4c20d65f2930"
   resolved "https://codeload.github.com/twitter/twemoji/tar.gz/4d3a41480f3ff169d580fd9deb0d4c20d65f2930"
   dependencies:
     fs-extra "^8.0.1"
