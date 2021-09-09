@@ -8,7 +8,7 @@ redirect_from:
 ---
 <div class="conventions container text-center">
   <h3>Up Next</h3>
-  <h5 id="countdown"><span id="days"></span> days</h5>
+  <h5 id="countdown"><span id="days"></span> day<span id="plural">s</span></h5>
   <p><a href="https://furrymigration.org">Furry Migration</a> &bull; September 10-12 &bull; Minneapolis, Minnesota</p>
   <h3 class="gmt">Future</h3>
   <h5>2021</h5>
@@ -97,6 +97,9 @@ var difference = convention.getTime() - today.getTime();
 var days = Math.ceil(difference / (1000 * 3600 * 24));
 if (days > 0) {
   $('#days').text(days);
+  if (days == 1) {
+    $('#plural').text('');
+  }
 } else {
   $('#countdown').text('Now');
 }
