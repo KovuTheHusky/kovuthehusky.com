@@ -13,14 +13,14 @@ layout: default
         <a href="https://nightwolf1298.com">NightWolf1298</a>.
       </span>
       <a href="https://morefurless.com">More Fur Less</a> fursuiter.
-      <a href="https://furpocalypse.org">Furpocalypse</a> staff.
+      <a href="https://furcationland.org">Furcationland</a> &amp; <a href="https://furpocalypse.org">Furpocalypse</a> staff.
   </h1>
-  <div class="grid grid-about gmb">
+  <div class="grid grid-about">
     <a href="https://discord.gg/cEJFwvt2wM" style="background-color: #5865f2;">
       <img src="/node_modules/simple-icons/icons/discord.svg" alt="Discord">
       <span>Discord</span>
     </a>
-    <a href="https://foursquare.com/kovuthehusky" style="background-color: #f94877;">
+    <a href="https://foursquare.com/kovuthehusky" style="background-color: #f94877;" class="more">
       <img src="/node_modules/simple-icons/icons/foursquarecityguide.svg" alt="Foursquare">
       <span>Foursquare</span>
     </a>
@@ -32,7 +32,7 @@ layout: default
       <img src="/node_modules/simple-icons/icons/github.svg" alt="GitHub">
       <span>GitHub</span>
     </a>
-    <a href="#" style="background-color: #ea4335;" data-bs-toggle="modal" data-bs-target="#gmail">
+    <a href="#" style="background-color: #ea4335;" data-bs-toggle="modal" data-bs-target="#gmail" class="more">
       <img src="/node_modules/simple-icons/icons/gmail.svg" alt="Gmail">
       <span>Gmail</span>
     </a>
@@ -40,7 +40,7 @@ layout: default
       <img src="/node_modules/simple-icons/icons/instagram.svg" alt="Instagram">
       <span>Instagram</span>
     </a>
-    <a href="https://last.fm/user/kovuthehusky" style="background-color: #d51007;">
+    <a href="https://last.fm/user/kovuthehusky" style="background-color: #d51007;" class="more">
       <img src="/node_modules/simple-icons/icons/lastdotfm.svg" alt="Last.fm">
       <span>Last.fm</span>
     </a>
@@ -60,7 +60,7 @@ layout: default
       <img src="/node_modules/simple-icons/icons/steam.svg" alt="Steam">
       <span>Steam</span>
     </a>
-    <a href="swarm://users/1699855" style="background-color: #ffa633;">
+    <a href="swarm://users/1699855" style="background-color: #ffa633;" class="more">
       <img src="/node_modules/simple-icons/icons/swarm.svg" alt="Swarm">
       <span>Swarm</span>
     </a>
@@ -86,7 +86,12 @@ layout: default
     </a>
   </div>
 </div>
-<div class="container gpb text-center">
+<div id="ellipsis" class="container text-center" style="margin-top: 12px;">
+  <a href="#" onclick="$('.more').show(); $('#ellipsis').hide();" class="gmb">
+    <img src="/node_modules/@primer/octicons/build/svg/ellipsis-16.svg" alt="Ellipsis" class="emoji octicons">
+  </a>
+</div>
+<div class="container gmt gpb text-center">
   <small>Icons by <a href="https://simpleicons.org">Simple Icons</a>.</small>
 </div>
 <div class="modal fade" id="gmail" tabindex="-1" role="dialog">

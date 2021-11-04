@@ -230,7 +230,6 @@ a.disabled {
   color: #fff;
   font-size: 1rem;
   padding: 16px;
-  border-radius: 1px;
   text-decoration: none;
 }
 
@@ -361,6 +360,36 @@ a.disabled {
   position: relative;
   top: -4px;
   vertical-align: bottom;
+}
+
+.kovubow {
+  --angle: 0deg;
+  border: 2px solid;
+  border-image: conic-gradient(from var(--angle), #44d262, #76e9c8, #44d262) 1;
+  animation: 10s rotate linear infinite;
+}
+
+.rainbow {
+  --angle: 0deg;
+  border: 2px solid;
+  border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+  animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.more {
+  display: none;
 }
 
 @media only screen and (min-width: 576px) {
