@@ -63,7 +63,7 @@ permalink: /terraria
           <div class="card-body">
           {% endif %}
           {% for button in world.buttons %}
-          <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-secondary{% endif %} disabled remote">{{ button.label }}</a>
+          <a href="{{ button.link }}" class="btn {% if button.primary %}btn-primary{% else %}btn-secondary{% endif %}">{{ button.label }}</a>
           {% endfor %}
         </div>
       </div>
