@@ -182,7 +182,7 @@ layout: default
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <input class="form-control form-control-lg text-center" type="text" value="SW-0394-1016-0826" readonly onclick="this.select();">
+        <button type="button" class="btn btn-lg btn-light text-dark text-center w-100 mt-3" data-clipboard-text="039410160826" onmouseenter="$(this).html(copy);" onmouseleave="$(this).text('SW-0394-1016-0826');" onclick="$(this).html(check);">SW-0394-1016-0826</button>
       </div>
     </div>
   </div>
@@ -232,5 +232,6 @@ layout: default
   new ClipboardJS('.btn', { container: document.getElementById('bitcoin') });
   new ClipboardJS('.btn', { container: document.getElementById('dogecoin') });
   new ClipboardJS('.btn', { container: document.getElementById('ethereum') });
+  new ClipboardJS('.btn', { container: document.getElementById('nintendoswitch') });
   new ClipboardJS('.btn', { container: document.getElementById('pokemongo') });
 </script>
