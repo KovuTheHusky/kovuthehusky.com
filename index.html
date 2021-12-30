@@ -118,10 +118,8 @@ layout: default
     </a>
   </div>
 </div>
-<div id="ellipsis" class="container text-center" style="margin-top: 12px;">
-  <a href="#" onclick="$('.more').show(); $('#ellipsis').hide(); return false;" class="gmb">
-    <img src="/node_modules/@primer/octicons/build/svg/ellipsis-16.svg" alt="Ellipsis" class="emoji octicons">
-  </a>
+<div class="container text-center" style="margin-top: 12px;">
+  <button type="button" onclick="$('.more').show(); $(this).parent().hide();" class="btn btn-dark text-light gmb">More</button>
 </div>
 <div class="container gmt gpb text-center">
   <small>Icons by <a href="https://simpleicons.org">Simple Icons</a>.</small>
