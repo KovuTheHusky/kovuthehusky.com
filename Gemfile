@@ -4,7 +4,7 @@ gem "jekyll", "~> 4.2"
 # gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.15"
+  gem "jekyll-feed", "~> 0.16"
   gem "jekyll-file-size", "~> 0.0.7"
   gem "jekyll-redirect-from", "~> 0.16.0"
 end
