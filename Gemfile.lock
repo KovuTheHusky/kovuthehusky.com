@@ -29,7 +29,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-feed (0.15.1)
+    jekyll-feed (0.16.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-file-size (0.0.7)
     jekyll-redirect-from (0.16.0)
@@ -78,7 +78,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.2)
-  jekyll-feed (~> 0.15)
+  jekyll-feed (~> 0.16)
   jekyll-file-size (~> 0.0.7)
   jekyll-redirect-from (~> 0.16.0)
   nokogiri (~> 1.12)
