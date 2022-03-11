@@ -329,18 +329,14 @@ tinyqueue@^2.0.3:
   integrity sha512-ppJZNDuKGgxzkHihX8v9v9G5f+18gzaTfrukGrq6ueg0lmH4nqVnA2IPG0AEH3jKEk2GRJCUhDoqpoiw3PHLBA==
 
 twemoji-git@twitter/twemoji:
-  version "13.1.0"
-  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/793a6a93f303c08877dd6eb589b2fabb3d1c45ee"
+  version "14.0.0"
+  uid "10fb74986530abe5e64c02fa839a821fa043c02e"
+  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/10fb74986530abe5e64c02fa839a821fa043c02e"
   dependencies:
     fs-extra "^8.0.1"
     jsonfile "^5.0.0"
-    twemoji-parser "13.1.0"
+    twemoji-parser "14.0.0"
     universalify "^0.1.2"
-
-twemoji-parser@13.1.0:
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.1.0.tgz#65e7e449c59258791b22ac0b37077349127e3ea4"
-  integrity sha512-AQOzLJpYlpWMy8n+0ATyKKZzWlZBJN+G0C+5lhX7Ftc2PeEVdUU/7ns2Pn2vVje26AIZ/OHwFoUbdv6YYD/wGg==
 
 twemoji-parser@14.0.0:
   version "14.0.0"
