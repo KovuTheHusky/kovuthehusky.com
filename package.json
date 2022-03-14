@@ -2,7 +2,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "@popperjs/core": "^2.11.2",
+    "@popperjs/core": "^2.11.4",
     "@primer/octicons": "^17.0.0",
     "bootstrap": "^5.1.3",
     "chart.js": "^3.7.1",
