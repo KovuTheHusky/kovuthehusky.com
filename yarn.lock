@@ -329,9 +329,9 @@ tinyqueue@^2.0.3:
   integrity sha512-ppJZNDuKGgxzkHihX8v9v9G5f+18gzaTfrukGrq6ueg0lmH4nqVnA2IPG0AEH3jKEk2GRJCUhDoqpoiw3PHLBA==
 
 twemoji-git@twitter/twemoji:
-  version "14.0.1"
-  uid "36bac6943fb39df00c9ba221263ea73b9445fa23"
-  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/36bac6943fb39df00c9ba221263ea73b9445fa23"
+  version "14.0.2"
+  uid cf0abdf32502c789bdb138b6cec0ff9eff8451d7
+  resolved "https://codeload.github.com/twitter/twemoji/tar.gz/cf0abdf32502c789bdb138b6cec0ff9eff8451d7"
   dependencies:
     fs-extra "^8.0.1"
     jsonfile "^5.0.0"
