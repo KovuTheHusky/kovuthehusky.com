@@ -36,9 +36,9 @@
   integrity sha1-ioP5M1x4YO/6Lu7KJUMyqgru2PI=
 
 "@mapbox/tiny-sdf@^2.0.2":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@mapbox/tiny-sdf/-/tiny-sdf-2.0.4.tgz#497d7153a61b7cef4638b9e9e91cd37403dead07"
-  integrity sha512-CBtL2rhZiYmdIryksp0zh4Mmx54iClYfNb0mpYeHrZnq4z84lVjre7LBWGPEjWspEn6AiF0lxC1HaZDye89m3g==
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@mapbox/tiny-sdf/-/tiny-sdf-2.0.5.tgz#cdba698d3d65087643130f9af43a2b622ce0b372"
+  integrity sha512-OhXt2lS//WpLdkqrzo/KwB7SRD8AiNTFFzuo9n14IBupzIMa67yGItcK7I2W9D8Ghpa4T04Sw9FWsKCJG50Bxw==
 
 "@mapbox/unitbezier@^0.0.0":
   version "0.0.0"
@@ -157,9 +157,9 @@ good-listener@^1.2.2:
     delegate "^3.1.2"
 
 graceful-fs@^4.1.6, graceful-fs@^4.2.0:
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
-  integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
+  integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
 
 grid-index@^1.1.0:
   version "1.1.0"
@@ -306,10 +306,10 @@ select@^1.1.2:
   resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
   integrity sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
 
-simple-icons@^6.16.0:
-  version "6.16.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-6.16.0.tgz#1f98839215a9578af701fe3810bf7eb57d2c5ac8"
-  integrity sha512-CCZ8xUgTJa+aJtj8+qBmMkWRJyv/0xinBA9Ypbq65pyz5tWmeA7n9IGtQIOqb7rOxJNxPuo9ddn4vFcRQZIFlQ==
+simple-icons@^6.17.0:
+  version "6.17.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-6.17.0.tgz#1819bf7decb526159263fb1b5d959ad41719868e"
+  integrity sha512-I9szHgKC67Mr5vg7jvzdVBqLAQsnmuLB0b+aUZ69E6ZP4FmTLYNdhgnuP/w7cFKc2Gt1oGqkr7wSSJcuTXQY0A==
 
 supercluster@^7.1.4:
   version "7.1.4"
@@ -330,7 +330,6 @@ tinyqueue@^2.0.3:
 
 twemoji-git@twitter/twemoji:
   version "14.0.2"
-  uid cf0abdf32502c789bdb138b6cec0ff9eff8451d7
   resolved "https://codeload.github.com/twitter/twemoji/tar.gz/cf0abdf32502c789bdb138b6cec0ff9eff8451d7"
   dependencies:
     fs-extra "^8.0.1"
