@@ -254,6 +254,17 @@ a.disabled {
   white-space: nowrap;
 }
 
+.grid-about a.big:any-link {
+  grid-column: span 2;
+  grid-row: span 2;
+  padding: 48px;
+}
+
+.grid-about a.big:any-link img {
+  width: 64px;
+  height: 64px;
+}
+
 .pokemon h3 {
   margin: 12px auto;
   border-bottom: 1px solid #808080;
