@@ -12,6 +12,10 @@
       "title": "GO Fest 2020",
       "subtitle": "Global, July 25-26, 2020"
     },
+    "pokemon-go-tour-kanto---green.png": {
+      "title": "GO Tour Kanto",
+      "subtitle": "Global, February 20, 2021"
+    },
     "generic.png#1": {
       "title": "A Drive to Investigate",
       "subtitle": "March 20-26, 2020"
@@ -23,6 +27,14 @@
     "generic.png#3": {
       "title": "Tap... Tap... Tappity-Tap...",
       "subtitle": "December 19-20, 2020"
+    },
+    "legacy-40.png": {
+      "title": "Legacy 40",
+      "subtitle": "Achieve level 40 by December 31, 2020."
+    },
+    "pokemon-go-fest-2021.png": {
+      "title": "GO Fest 2021",
+      "subtitle": "Global, July 17-18, 2021"
     }
   },
   "standard": {
@@ -32,7 +44,7 @@
     },
     "kanto.png": {
       "title": "Kanto",
-      "rank": "gold"
+      "rank": "platinum"
     },
     "collector.png": {
       "title": "Collector",
@@ -76,7 +88,7 @@
     },
     "johto.png": {
       "title": "Johto",
-      "rank": "gold"
+      "rank": "platinum"
     },
     "champion.png": {
       "title": "Champion",
@@ -136,7 +148,7 @@
     },
     "unova.png": {
       "title": "Unova",
-      "rank": "silver"
+      "rank": "gold"
     },
     "purifier.png": {
       "title": "Purifier",
@@ -152,6 +164,22 @@
     },
     "best-buddy.png": {
       "title": "Best Buddy",
+      "rank": "shadow"
+    },
+    "wayfarer.png": {
+      "title": "Wayfarer",
+      "rank": "shadow"
+    },
+    "galar.png": {
+      "title": "Galar",
+      "rank": "shadow"
+    },
+    "successor.png": {
+      "title": "Successor",
+      "rank": "shadow"
+    },
+    "mega-evolution-guru.png": {
+      "title": "Mega Evolution Guru",
       "rank": "shadow"
     }
   },
