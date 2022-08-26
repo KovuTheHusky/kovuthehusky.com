@@ -1,3 +1,13 @@
+- title: "Survival 2022"
+  badge:
+    color: secondary
+    label: "Archived"
+  description: "The longest lasting world started in version 1.7.2 and retired in version 1.19.2. Included many players."
+  buttons:
+  - label: "Download"
+    link: "https://archive.kovuthehusky.com/minecraft/survival-2022.zip"
+    primary: true
+
 - title: "Forge 2015"
   badge:
     color: secondary
@@ -26,8 +36,8 @@
     label: "Archived"
   description: >-
     An experimental creative mode world used for versions 1.8β-1.1. Only substantial build is by
-    <img src="/images/minecraft/NightWolf1298.webp" alt="NightWolf1298" class="rounded">
-    NightWolf1298.
+    <img src="/images/minecraft/NightWolf1298.webp" alt="NightWolf1298" class="rounded" style="image-rendering: pixelated;">
+    nytewuff.
   buttons:
   - label: "Download"
     link: "https://archive.kovuthehusky.com/minecraft/creative-2012.zip"
@@ -41,11 +51,11 @@
     label: "Archived"
   description: >-
     An interim world used for versions 1.8β-1.1. Only builds are by
-    <img src="/images/minecraft/KovuTheHusky.webp" alt="KovuTheHusky" class="rounded">
+    <img src="/images/minecraft/KovuTheHusky.webp" alt="KovuTheHusky" class="rounded" style="image-rendering: pixelated;">
     KovuTheHusky,
-    <img src="/images/minecraft/NightWolf1298.webp" alt="NightWolf1298" class="rounded">
-    NightWolf1298, and
-    <img src="/images/minecraft/Cujo27.webp" alt="Cujo27" class="rounded">
+    <img src="/images/minecraft/NightWolf1298.webp" alt="NightWolf1298" class="rounded" style="image-rendering: pixelated;">
+    nytewuff, and
+    <img src="/images/minecraft/Cujo27.webp" alt="Cujo27" class="rounded" style="image-rendering: pixelated;">
     Cujo27.
   buttons:
   - label: "Download"
