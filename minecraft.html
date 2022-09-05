@@ -9,7 +9,7 @@ permalink: /minecraft
     <div class="container-fluid py-5">
       <h1 id="countdown" class="display-5 fw-bold">&#8987;</h1>
       <p class="fs-4">
-        On Monday, September 5th at 10pm EDT we will be launching a new Minecraft server!
+        On Monday, September 12th at 8pm EDT we will be launching a new Minecraft server!
         Join
         <span style="white-space: nowrap;">
           <img src="/images/minecraft/KovuTheHusky.webp" alt="KovuTheHusky" class="rounded" style="height: 1.5rem; image-rendering: pixelated;">
@@ -172,9 +172,9 @@ script.onload = function() {
       type: 'date',
       id: 'End'
     });
-    var todayOrSep1 = new Date();
-    if (todayOrSep1.getTime() < (new Date(2022, 8, 1)).getTime()) {
-      todayOrSep1 = new Date(2022, 8, 1);
+    var todayOrSep12 = new Date();
+    if (todayOrSep12.getTime() < (new Date(2022, 8, 12)).getTime()) {
+      todayOrSep12 = new Date(2022, 8, 12);
     }
     data.addRows([
       ['Online', 'Survival 2011', new Date(2011, 1, 11), new Date(2011, 8, 15)],
@@ -183,7 +183,7 @@ script.onload = function() {
       ['Online', 'Survival 2013', new Date(2012, 2, 12), new Date(2013, 9, 12)],
       ['Online', 'Survival 2022', new Date(2013, 11, 3), new Date(2022, 4, 9)],
       ['Online', 'Forge 2015', new Date(2015, 11, 29), new Date(2016, 5, 17)],
-      ['Online', 'Survival LIVE', new Date(2022, 8, 1), todayOrSep1]
+      ['Online', 'Survival LIVE', new Date(2022, 8, 12), todayOrSep12]
     ]);
     options = {
       backgroundColor: '#121212',
@@ -214,7 +214,7 @@ script.onload = function() {
 </script>
 
 <script>
-var launch = new Date("Sep 5, 2022 22:00:00").getTime();
+var launch = new Date("Sep 12, 2022 20:00:00").getTime();
 
 // Update the count down every 1 second
 function refreshTimer() {
