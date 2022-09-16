@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="container">
-  <div id="restream"></div>
+  <div id="twitch"></div>
   <h1 class="gmb">
       31,
       <img draggable="false" class="emoji" alt="&#x2642;" src="/node_modules/twemoji-git/assets/svg/2642.svg">,
@@ -182,19 +182,19 @@ layout: default
     $.ajaxSetup({ cache: false });
   });
   $(window).on('resize', function(){
-    $('#restream > iframe').height($('#restream > iframe').width() * 9 / 16);
+    $('#twitch > iframe').height($('#twitch > iframe').width() * 9 / 16);
   });
 
   var shown = false;
 
   function refresh() {
     if (!shown) {
-      $.getJSON('https://status.kovuthehusky.com/restream.json', function(data) {
-        if (data['live']) {
+      $.getJSON('https://status.kovuthehusky.com/twitch.json', function(data) {
+        if (data['type'] == 'live') {
           shown = true;
-          $('#restream').append('<iframe src="https://player.twitch.tv/?channel=kovuthehusky&parent=kovuthehusky.com" height="624" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>');
-          $('#restream').css('margin-bottom', '66px');
-          $('#restream > iframe').height($('#restream > iframe').width() * 9 / 16);
+          $('#twitch').append('<iframe src="https://player.twitch.tv/?channel=kovuthehusky&parent=kovuthehusky.com" height="624" width="100%" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>');
+          $('#twitch').css('margin-bottom', '66px');
+          $('#twitch > iframe').height($('#twitch > iframe').width() * 9 / 16);
         }
       });
     } else {
@@ -202,8 +202,8 @@ layout: default
     }
   }
 
-  //refresh();
-  //var interval = setInterval(refresh, 1000);
+  refresh();
+  var interval = setInterval(refresh, 1000);
   </script>
 <script src="/node_modules/clipboard/dist/clipboard.min.js"></script>
 <script>
