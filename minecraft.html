@@ -26,7 +26,7 @@ permalink: /minecraft
         in-game or live on <a href="https://twitch.tv/kovuthehusky">Twitch</a> as we get started!
       </p>
       <a href="#" data-bs-toggle="modal" data-bs-target="#modal" class="btn btn-primary btn-lg">Connect</a>
-      <a href="https://minecraft.kovuthehusky.com" class="btn btn-secondary btn-lg">Live Map</a>
+      <a href="https://minecraft.{{ site.hostname }}" class="btn btn-secondary btn-lg">Live Map</a>
       <a href="https://discord.gg/w3XaDVBF7K" class="btn btn-secondary btn-lg">Discord</a>
     </div>
   </div>
@@ -70,7 +70,7 @@ permalink: /minecraft
     </div>
     <div class="card-body" style="border-top: 1px solid #808080;">
       <a href="#" data-bs-toggle="modal" data-bs-target="#modal" class="btn btn-primary disabled remote">Connect</a>
-      <a href="https://minecraft.kovuthehusky.com" class="btn btn-secondary">Live Map</a>
+      <a href="https://minecraft.{{ site.hostname }}" class="btn btn-secondary">Live Map</a>
       <a href="https://discord.gg/w3XaDVBF7K" class="btn btn-secondary">Discord</a>
     </div>
   </div>
@@ -127,7 +127,7 @@ permalink: /minecraft
           <p class="mb-3">To connect to the server, log into Minecraft, select Multiplayer from the main menu, click the Add Server button, and enter the server address below.</p>
           <div class="input-group">
             <span class="input-group-text" style="min-width: 80px;">Server</span>
-            <input type="text" class="form-control" onclick="this.select();" value="kovuthehusky.com" readonly>
+            <input type="text" class="form-control" onclick="this.select();" value="{{ site.hostname }}" readonly>
           </div>
         </div>
         <div class="modal-footer">
@@ -281,7 +281,7 @@ var players = [];
   var chartmemory = null;
 
 function refresh() {
-  $.getJSON('https://status.kovuthehusky.com/minecraft.json', function(data) {
+  $.getJSON('https://status.{{ site.hostname }}/minecraft.json', function(data) {
     $('#overlay').hide();
     $('#status').text('Online');
     $('#status').css('visibility', 'visible');
@@ -311,7 +311,7 @@ function refresh() {
     var join = $(data.Players).not(players).get();
     var part = $(players).not(data.Players).get();
     $.each(join, function(key, value) {
-      $('#live-playerlist').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '"><img src="https://minecraft.kovuthehusky.com/standalone/markers.php?marker=faces/16x16/' + value + '.png" class="rounded me-1" style="width: 24px; height: 24px; image-rendering: pixelated;">' + value + '</li>');
+      $('#live-playerlist').append('<li class="list-group-item d-flex align-items-center justify-content-end player player-' + value + '"><img src="https://minecraft.{{ site.hostname }}/standalone/markers.php?marker=faces/16x16/' + value + '.png" class="rounded me-1" style="width: 24px; height: 24px; image-rendering: pixelated;">' + value + '</li>');
     });
     $.each(part, function(key, value) {
       $('.player-' + value).remove();

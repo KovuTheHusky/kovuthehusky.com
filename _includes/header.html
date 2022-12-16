@@ -7,11 +7,11 @@
     <meta name="theme-color" content="#5dde95">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle | strip_html }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:image" content="{{ site.url }}/og.png">
+    <meta property="og:image" content="https://{{ site.hostname }}/og.png">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}">
+    <meta property="og:url" content="https://{{ site.hostname }}{% if page.permalink %}{{ page.permalink }}{% endif %}">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">

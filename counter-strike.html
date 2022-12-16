@@ -47,7 +47,7 @@ permalink: /counter-strike
   var players = [];
   
   function refresh() {
-    $.getJSON('https://status.kovuthehusky.com/counter-strike.json', function(data) {
+    $.getJSON('https://status.{{ site.hostname }}/counter-strike.json', function(data) {
       $('#status').text('Online');
       $('.remote').removeClass('disabled');
       $('#status').addClass('bg-success');

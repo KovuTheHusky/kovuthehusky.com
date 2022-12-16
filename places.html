@@ -25,7 +25,7 @@ permalink: /places
   map.on('load', function () {
     map.addSource('places', {
       "type": "geojson",
-      "data": "https://status.kovuthehusky.com/places.geojson"
+      "data": "https://status.{{ site.hostname }}/places.geojson"
     });
     map.addLayer({
       "id": "places",

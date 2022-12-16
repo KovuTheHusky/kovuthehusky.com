@@ -27,7 +27,7 @@ permalink: /terraria
     </div>
     <div class="card-body" style="border-top: 1px solid #808080;">
       <a href="steam://rungameid/105600//-j%2040.75.7.193" class="btn btn-primary disabled remote">Connect</a>
-      <a href="https://terraria.kovuthehusky.com" class="btn btn-secondary">Live Map</a>
+      <a href="https://terraria.{{ site.hostname }}" class="btn btn-secondary">Live Map</a>
       <a href="https://discord.gg/MAsddFy6hv" class="btn btn-secondary">Discord</a>
     </div>
   </div>
@@ -145,7 +145,7 @@ script.onload = function() {
   var players = [];
   
   function refresh() {
-    $.getJSON('https://status.kovuthehusky.com/terraria.json', function(data) {
+    $.getJSON('https://status.{{ site.hostname }}/terraria.json', function(data) {
       $('#status').text('Online');
       $('.remote').removeClass('disabled');
       $('#status').addClass('bg-success');

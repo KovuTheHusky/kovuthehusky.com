@@ -15,9 +15,5 @@
     "simple-icons": "^8.1.0",
     "twemoji": "^14.0.2",
     "twemoji-git": "twitter/twemoji"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/KovuTheHusky/kovuthehusky.com"
   }
 }
