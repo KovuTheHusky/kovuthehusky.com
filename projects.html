@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Applications, extensions, websites &amp; more.">
+    <meta name="msapplication-TileColor" content="#5dde95">
+    <meta name="theme-color" content="#5dde95">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:description" content="Applications, extensions, websites &amp; more.">
+    <meta property="og:image" content="https://kovuthehusky.com/og.png">
+    <meta property="og:site_name" content="KovuTheHusky">
+    <meta property="og:title" content="Projects">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kovuthehusky.com/projects">
+    <title>Projects - KovuTheHusky</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css" media="none" onload="if (media != 'all') { media='all'; }">
+    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="KovuTheHusky" />
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js" defer></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <script src="/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js" defer></script>
+    <script src="/node_modules/masonry-layout/dist/masonry.pkgd.min.js" defer></script>
+    <script src="/node_modules/twemoji/dist/twemoji.min.js" defer></script>
+
+    <script>$(document).ready(function () { document.body = twemoji.parse(document.body, {folder: 'svg', ext: '.svg'}); });</script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-transparent">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/images/avatar.svg" alt="KovuTheHusky" class="rounded-circle">
+      </a>
+      <div class="dropdown">
+        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="dropdown" aria-label="Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+          <a class="dropdown-item" href="/">About</a>
+          <a class="dropdown-item" href="/places">Places</a>
+          <a class="dropdown-item" href="/posts">Posts</a>
+          <a class="dropdown-item active" href="/projects">Projects</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Furry</h6>
+          <a class="dropdown-item" href="/fursona">Fursona</a>
+          <a class="dropdown-item" href="/fursuit">Fursuit</a>
+          <a class="dropdown-item" href="/conventions">Conventions</a>
+          <a class="dropdown-item" href="/parties">Parties</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Gamer</h6>
+          <a class="dropdown-item" href="/minecraft">Minecraft</a>
+          <a class="dropdown-item" href="/terraria">Terraria</a>
+          <a class="dropdown-item" href="/counter-strike">Counter-Strike</a>
+          <a class="dropdown-item" href="/pokemon-go">Pokémon GO</a>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+<div class="text-center gmb">
+  <h1>Projects</h1>
+  <p class="mb-0">Applications, extensions, websites &amp; more.</p>
+</div>
+<div class="page gpb">
+<div class="container">
+  <div class="text-center mb-4">
+    Filter by
+    <div class="dropdown" style="display: inline-block !important;">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="filter-label" data-bs-toggle="dropdown" aria-expanded="false">
+        status
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" id="filter" aria-labelledby="filter-label">
+        <li><a class="dropdown-item" href="#" id="active" onclick="event.preventDefault(); $('#active').toggleClass('active'); self.hash();">active</a></li>
+        <li><a class="dropdown-item" href="#" id="inactive" onclick="event.preventDefault(); $('#inactive').toggleClass('active'); self.hash();">inactive</a></li>
+        <li><a class="dropdown-item" href="#" id="unsupported" onclick="event.preventDefault(); $('#unsupported').toggleClass('active'); self.hash();">unsupported</a></li>
+        <li><a class="dropdown-item" href="#" id="suspended" onclick="event.preventDefault(); $('#suspended').toggleClass('active'); self.hash();">suspended</a></li>
+        <li><a class="dropdown-item" href="#" id="abandoned" onclick="event.preventDefault(); $('#abandoned').toggleClass('active'); self.hash();">abandoned</a></li>
+        <li><a class="dropdown-item" href="#" id="wip" onclick="event.preventDefault(); $('#wip').toggleClass('active'); self.hash();">wip</a></li>
+        <li><a class="dropdown-item" href="#" id="concept" onclick="event.preventDefault(); $('#concept').toggleClass('active'); self.hash();">concept</a></li>
+        <li><a class="dropdown-item" href="#" id="unknown" onclick="event.preventDefault(); $('#unknown').toggleClass('active'); self.hash();">unknown</a></li>
+      </ul>
+    </div>
+    of project.
+  </div>
+
+  <div id="masonry" class="row" data-masonry='{"percentPosition": true }'>
+    <div class="col-sm-6"></div>
+  
+  </div>
+
+</div>
+<script>
+  $('#filter a').click(function(e) {
+      e.stopPropagation();
+  });
+
+  window.addEventListener('hashchange', fn, false);
+
+  window.onload = fn;
+
+  const statuses = [
+    'active',
+    'inactive',
+    'unsupported',
+    'suspended',
+    'abandoned',
+    'concept',
+    'wip',
+    'unknown'
+  ];
+
+  function fn() {
+    var args = window.location.hash.replace('#', '');
+    if (args == '') {
+      window.location.hash = 'active/inactive/wip';
+    }
+    filter(args);
+  }
+
+  function filter(args) {
+    args = args.split('/');
+    statuses.forEach(e => {
+      if (args.includes(e)) {
+        $('#' + e).addClass('active');
+        $('.repo-status-' + e + '-filter').show();
+      } else {
+        $('#' + e).removeClass('active');
+        $('.repo-status-' + e + '-filter').hide();
+      }
+      $('#masonry').masonry();
+    });
+  }
+
+  function hash() {
+    var arr = [];
+    statuses.forEach(e => {
+      if ($('#' + e).hasClass('active')) {
+        arr.push(e);
+      }
+    });
+    var hash = arr.join('/');
+    window.location.hash = hash;
+  }
+</script>
+
+</div>
+
+  </body>
+</html>
