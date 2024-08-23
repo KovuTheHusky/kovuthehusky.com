@@ -1,4 +1,4 @@
-# kovuthehusky.com [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) [![Build Status](https://github.com/KovuTheHusky/kovuthehusky.com/actions/workflows/jekyll.yml/badge.svg?branch=main)](https://github.com/KovuTheHusky/kovuthehusky.com/actions/workflows/jekyll.yml)
+# kovuthehusky.com [![Project Status: Moved to http://example.com – The project has been moved to a new location, and the version at that location should be considered authoritative.](https://www.repostatus.org/badges/latest/moved.svg)](https://www.repostatus.org/#moved) to [https://github.com/kovuthehusky/kovu.dog](https://github.com/kovuthehusky/kovu.dog) [![Build Status](https://github.com/KovuTheHusky/kovuthehusky.com/actions/workflows/jekyll.yml/badge.svg?branch=main)](https://github.com/KovuTheHusky/kovuthehusky.com/actions/workflows/jekyll.yml)
 
 A personal website for KovuTheHusky.
 
